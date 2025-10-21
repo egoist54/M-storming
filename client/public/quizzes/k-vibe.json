@@ -523,11 +523,36 @@
         "pt": "Sabor farto e confiável! Você é como Kimchi Jjigae - sempre confiável e honesto. Clássico, mas nunca chato!"
       },
       "traits": {
-        "ko": ["리더십", "실용적", "책임감", "안정적"],
-        "en": ["Leadership", "Practical", "Responsible", "Stable"],
-        "ja": ["リーダーシップ", "実用的", "責任感", "安定的"],
-        "es": ["Liderazgo", "Práctico", "Responsable", "Estable"],
-        "pt": ["Liderança", "Prático", "Responsável", "Estável"]
+        "ko": [
+          "리더십",
+          "실용적",
+          "책임감",
+          "안정적"
+        ],
+        "en": [
+          "Leadership",
+          "Practical",
+          "Responsible",
+          "Stable"
+        ],
+        "ja": [
+          "リーダーシップ",
+          "実用的",
+          "責任感",
+          "安定的"
+        ],
+        "es": [
+          "Liderazgo",
+          "Práctico",
+          "Responsable",
+          "Estable"
+        ],
+        "pt": [
+          "Liderança",
+          "Prático",
+          "Responsável",
+          "Estável"
+        ]
       }
     },
     {
@@ -548,12 +573,38 @@
         "pt": "Sabor tradicional profundo e rico! Você é como Doenjang Jjigae - valoriza a tradição enquanto busca constantemente melhores sabores como perfeccionista."
       },
       "traits": {
-        "ko": ["체계적", "신중함", "완벽주의", "성실함"],
-        "en": ["Systematic", "Cautious", "Perfectionist", "Diligent"],
-        "ja": ["体系的", "慎重", "完璧主義", "誠実"],
-        "es": ["Sistemático", "Cauteloso", "Perfeccionista", "Diligente"],
-        "pt": ["Sistemático", "Cauteloso", "Perfeccionista", "Diligente"]
-      }
+        "ko": [
+          "체계적",
+          "신중함",
+          "완벽주의",
+          "성실함"
+        ],
+        "en": [
+          "Systematic",
+          "Cautious",
+          "Perfectionist",
+          "Diligent"
+        ],
+        "ja": [
+          "体系的",
+          "慎重",
+          "完璧主義",
+          "誠実"
+        ],
+        "es": [
+          "Sistemático",
+          "Cauteloso",
+          "Perfeccionista",
+          "Diligente"
+        ],
+        "pt": [
+          "Sistemático",
+          "Cauteloso",
+          "Perfeccionista",
+          "Diligente"
+        ]
+      },
+      "image": "/images/korean_doenjang_jjig_27811c0d.jpg"
     },
     {
       "type": "ESTP-A",
@@ -565,7 +616,7 @@
         "pt": "Samgyeopsal"
       },
       "emoji": "🥓",
-      "image": "/images/korean_samgyeopsal_p_3c9ad1dc.jpg",
+      "image": "/images/korean_samgyeopsal_g_ae49df57.jpg",
       "description": {
         "ko": "지글지글 활기찬 에너지! 당신은 삼겹살처럼 언제나 열정적이고 현재를 즐길 줄 아는 사람입니다. 분위기 메이커!",
         "en": "Sizzling vibrant energy! You're like Samgyeopsal - always enthusiastic and know how to enjoy the present. The life of the party!",
@@ -574,11 +625,36 @@
         "pt": "Energia vibrante e crepitante! Você é como Samgyeopsal - sempre entusiasmado e sabe como aproveitar o presente. A alma da festa!"
       },
       "traits": {
-        "ko": ["행동파", "사교적", "모험적", "낙천적"],
-        "en": ["Action-oriented", "Sociable", "Adventurous", "Optimistic"],
-        "ja": ["行動派", "社交的", "冒険的", "楽天的"],
-        "es": ["Orientado a la acción", "Sociable", "Aventurero", "Optimista"],
-        "pt": ["Orientado para ação", "Sociável", "Aventureiro", "Otimista"]
+        "ko": [
+          "행동파",
+          "사교적",
+          "모험적",
+          "낙천적"
+        ],
+        "en": [
+          "Action-oriented",
+          "Sociable",
+          "Adventurous",
+          "Optimistic"
+        ],
+        "ja": [
+          "行動派",
+          "社交的",
+          "冒険的",
+          "楽天的"
+        ],
+        "es": [
+          "Orientado a la acción",
+          "Sociable",
+          "Aventurero",
+          "Optimista"
+        ],
+        "pt": [
+          "Orientado para ação",
+          "Sociável",
+          "Aventureiro",
+          "Otimista"
+        ]
       }
     },
     {
@@ -599,12 +675,38 @@
         "pt": "Crocante e viciante! Você é como Frango Frito Coreano - duro por fora, mas macio por dentro. Um perfeccionista empreendedor!"
       },
       "traits": {
-        "ko": ["적응력", "도전적", "열정적", "예민함"],
-        "en": ["Adaptable", "Challenging", "Passionate", "Sensitive"],
-        "ja": ["適応力", "挑戦的", "情熱的", "繊細"],
-        "es": ["Adaptable", "Desafiante", "Apasionado", "Sensible"],
-        "pt": ["Adaptável", "Desafiador", "Apaixonado", "Sensível"]
-      }
+        "ko": [
+          "적응력",
+          "도전적",
+          "열정적",
+          "예민함"
+        ],
+        "en": [
+          "Adaptable",
+          "Challenging",
+          "Passionate",
+          "Sensitive"
+        ],
+        "ja": [
+          "適応力",
+          "挑戦的",
+          "情熱的",
+          "繊細"
+        ],
+        "es": [
+          "Adaptable",
+          "Desafiante",
+          "Apasionado",
+          "Sensible"
+        ],
+        "pt": [
+          "Adaptável",
+          "Desafiador",
+          "Apaixonado",
+          "Sensível"
+        ]
+      },
+      "image": "/images/korean_fried_chicken_9646dd92.jpg"
     },
     {
       "type": "ESFJ-A",
@@ -616,7 +718,7 @@
         "pt": "Bibimbap"
       },
       "emoji": "🍱",
-      "image": "/images/korean_bibimbap_mixe_3d9b908b.jpg",
+      "image": "/images/korean_bibimbap_mixe_5552ea08.jpg",
       "description": {
         "ko": "조화로운 완벽 균형! 당신은 비빔밥처럼 다양한 사람들과 잘 어울리며 조화를 이루는 사람입니다. 모두를 배려하는 따뜻한 마음의 소유자!",
         "en": "Harmonious perfect balance! You're like Bibimbap - getting along well with diverse people and creating harmony. A warm-hearted person who cares for everyone!",
@@ -625,11 +727,36 @@
         "pt": "Equilíbrio perfeito e harmonioso! Você é como Bibimbap - se dá bem com pessoas diversas e cria harmonia. Uma pessoa de coração caloroso que se preocupa com todos!"
       },
       "traits": {
-        "ko": ["친절함", "협력적", "사교적", "배려심"],
-        "en": ["Kind", "Cooperative", "Sociable", "Considerate"],
-        "ja": ["親切", "協力的", "社交的", "思いやり"],
-        "es": ["Amable", "Cooperativo", "Sociable", "Considerado"],
-        "pt": ["Gentil", "Cooperativo", "Sociável", "Atencioso"]
+        "ko": [
+          "친절함",
+          "협력적",
+          "사교적",
+          "배려심"
+        ],
+        "en": [
+          "Kind",
+          "Cooperative",
+          "Sociable",
+          "Considerate"
+        ],
+        "ja": [
+          "親切",
+          "協力的",
+          "社交的",
+          "思いやり"
+        ],
+        "es": [
+          "Amable",
+          "Cooperativo",
+          "Sociable",
+          "Considerado"
+        ],
+        "pt": [
+          "Gentil",
+          "Cooperativo",
+          "Sociável",
+          "Atencioso"
+        ]
       }
     },
     {
@@ -650,12 +777,38 @@
         "pt": "Harmonia suave e delicada! Você é como Japchae - uma pessoa sensível que entrelaça vários ingredientes harmoniosamente. Personalidade calorosa buscando perfeição enquanto se preocupa com os outros!"
       },
       "traits": {
-        "ko": ["섬세함", "감성적", "세심함", "조화로움"],
-        "en": ["Delicate", "Emotional", "Attentive", "Harmonious"],
-        "ja": ["繊細", "感性的", "細心", "調和的"],
-        "es": ["Delicado", "Emocional", "Atento", "Armonioso"],
-        "pt": ["Delicado", "Emocional", "Atento", "Harmonioso"]
-      }
+        "ko": [
+          "섬세함",
+          "감성적",
+          "세심함",
+          "조화로움"
+        ],
+        "en": [
+          "Delicate",
+          "Emotional",
+          "Attentive",
+          "Harmonious"
+        ],
+        "ja": [
+          "繊細",
+          "感性的",
+          "細心",
+          "調和的"
+        ],
+        "es": [
+          "Delicado",
+          "Emocional",
+          "Atento",
+          "Armonioso"
+        ],
+        "pt": [
+          "Delicado",
+          "Emocional",
+          "Atento",
+          "Harmonioso"
+        ]
+      },
+      "image": "/images/korean_japchae_glass_b1839b88.jpg"
     },
     {
       "type": "ENFP-A",
@@ -667,7 +820,7 @@
         "pt": "Tteokbokki"
       },
       "emoji": "🌶️",
-      "image": "/images/korean_tteokbokki_sp_e5e260d5.jpg",
+      "image": "/images/korean_tteokbokki_sp_ad6a80ba.jpg",
       "description": {
         "ko": "달콤 매콤 자유로운 영혼! 당신은 떡볶이처럼 예측 불가하지만 매력적인 사람입니다. 긍정적이고 창의적인 에너지의 소유자!",
         "en": "Sweet, spicy, free spirit! You're like Tteokbokki - unpredictable but charming. Owner of positive and creative energy!",
@@ -676,11 +829,36 @@
         "pt": "Espírito doce, picante e livre! Você é como Tteokbokki - imprevisível, mas encantador. Dono de energia positiva e criativa!"
       },
       "traits": {
-        "ko": ["창의적", "열정적", "자유로움", "긍정적"],
-        "en": ["Creative", "Passionate", "Free-spirited", "Positive"],
-        "ja": ["創造的", "情熱的", "自由奔放", "ポジティブ"],
-        "es": ["Creativo", "Apasionado", "Espíritu libre", "Positivo"],
-        "pt": ["Criativo", "Apaixonado", "Espírito livre", "Positivo"]
+        "ko": [
+          "창의적",
+          "열정적",
+          "자유로움",
+          "긍정적"
+        ],
+        "en": [
+          "Creative",
+          "Passionate",
+          "Free-spirited",
+          "Positive"
+        ],
+        "ja": [
+          "創造的",
+          "情熱的",
+          "自由奔放",
+          "ポジティブ"
+        ],
+        "es": [
+          "Creativo",
+          "Apasionado",
+          "Espíritu libre",
+          "Positivo"
+        ],
+        "pt": [
+          "Criativo",
+          "Apaixonado",
+          "Espírito livre",
+          "Positivo"
+        ]
       }
     },
     {
@@ -701,12 +879,38 @@
         "pt": "Criatividade suave e flexível! Você é como Guksu - uma pessoa criativa que pode se transformar em várias formas. Personalidade emocional, mas em constante evolução!"
       },
       "traits": {
-        "ko": ["유연함", "감수성", "호기심", "성장지향"],
-        "en": ["Flexible", "Sensitive", "Curious", "Growth-oriented"],
-        "ja": ["柔軟", "感受性", "好奇心", "成長志向"],
-        "es": ["Flexible", "Sensible", "Curioso", "Orientado al crecimiento"],
-        "pt": ["Flexível", "Sensível", "Curioso", "Orientado para o crescimento"]
-      }
+        "ko": [
+          "유연함",
+          "감수성",
+          "호기심",
+          "성장지향"
+        ],
+        "en": [
+          "Flexible",
+          "Sensitive",
+          "Curious",
+          "Growth-oriented"
+        ],
+        "ja": [
+          "柔軟",
+          "感受性",
+          "好奇心",
+          "成長志向"
+        ],
+        "es": [
+          "Flexible",
+          "Sensible",
+          "Curioso",
+          "Orientado al crecimiento"
+        ],
+        "pt": [
+          "Flexível",
+          "Sensível",
+          "Curioso",
+          "Orientado para o crescimento"
+        ]
+      },
+      "image": "/images/korean_noodles_guksu_f17f6b99.jpg"
     },
     {
       "type": "ENTJ-A",
@@ -726,12 +930,38 @@
         "pt": "Liderança luxuosa e poderosa! Você é como Galbijjim - um líder natural com presença refinada, mas forte. Personalidade orientada para objetivos e confiante!"
       },
       "traits": {
-        "ko": ["리더십", "전략적", "자신감", "효율성"],
-        "en": ["Leadership", "Strategic", "Confident", "Efficient"],
-        "ja": ["リーダーシップ", "戦略的", "自信", "効率性"],
-        "es": ["Liderazgo", "Estratégico", "Seguro", "Eficiente"],
-        "pt": ["Liderança", "Estratégico", "Confiante", "Eficiente"]
-      }
+        "ko": [
+          "리더십",
+          "전략적",
+          "자신감",
+          "효율성"
+        ],
+        "en": [
+          "Leadership",
+          "Strategic",
+          "Confident",
+          "Efficient"
+        ],
+        "ja": [
+          "リーダーシップ",
+          "戦略的",
+          "自信",
+          "効率性"
+        ],
+        "es": [
+          "Liderazgo",
+          "Estratégico",
+          "Seguro",
+          "Eficiente"
+        ],
+        "pt": [
+          "Liderança",
+          "Estratégico",
+          "Confiante",
+          "Eficiente"
+        ]
+      },
+      "image": "/images/korean_galbijjim_bra_657506ed.jpg"
     },
     {
       "type": "ENTJ-T",
@@ -751,12 +981,38 @@
         "pt": "Perfeccionismo refinado e ambicioso! Você é como Bulgogi - uma pessoa com carisma doce, mas intenso. Um estrategista que busca constantemente melhorias!"
       },
       "traits": {
-        "ko": ["야망", "분석적", "결단력", "완벽추구"],
-        "en": ["Ambitious", "Analytical", "Decisive", "Perfection-seeking"],
-        "ja": ["野心", "分析的", "決断力", "完璧追求"],
-        "es": ["Ambicioso", "Analítico", "Decisivo", "Buscador de perfección"],
-        "pt": ["Ambicioso", "Analítico", "Decisivo", "Buscador de perfeição"]
-      }
+        "ko": [
+          "야망",
+          "분석적",
+          "결단력",
+          "완벽추구"
+        ],
+        "en": [
+          "Ambitious",
+          "Analytical",
+          "Decisive",
+          "Perfection-seeking"
+        ],
+        "ja": [
+          "野心",
+          "分析的",
+          "決断力",
+          "完璧追求"
+        ],
+        "es": [
+          "Ambicioso",
+          "Analítico",
+          "Decisivo",
+          "Buscador de perfección"
+        ],
+        "pt": [
+          "Ambicioso",
+          "Analítico",
+          "Decisivo",
+          "Buscador de perfeição"
+        ]
+      },
+      "image": "/images/korean_bulgogi_marin_19040ce8.jpg"
     },
     {
       "type": "ENTP-A",
@@ -776,12 +1032,38 @@
         "pt": "Inventor criativo e versátil! Você é como Gimbap - uma pessoa inovadora com combinações infinitas. Banco de ideias confiante e lógico!"
       },
       "traits": {
-        "ko": ["혁신적", "논리적", "창의적", "자신감"],
-        "en": ["Innovative", "Logical", "Creative", "Confident"],
-        "ja": ["革新的", "論理的", "創造的", "自信"],
-        "es": ["Innovador", "Lógico", "Creativo", "Seguro"],
-        "pt": ["Inovador", "Lógico", "Criativo", "Confiante"]
-      }
+        "ko": [
+          "혁신적",
+          "논리적",
+          "창의적",
+          "자신감"
+        ],
+        "en": [
+          "Innovative",
+          "Logical",
+          "Creative",
+          "Confident"
+        ],
+        "ja": [
+          "革新的",
+          "論理的",
+          "創造的",
+          "自信"
+        ],
+        "es": [
+          "Innovador",
+          "Lógico",
+          "Creativo",
+          "Seguro"
+        ],
+        "pt": [
+          "Inovador",
+          "Lógico",
+          "Criativo",
+          "Confiante"
+        ]
+      },
+      "image": "/images/korean_kimbap_rice_r_db2d38d7.jpg"
     },
     {
       "type": "ENTP-T",
@@ -801,12 +1083,38 @@
         "pt": "Gênio da criatividade espontânea! Você é como Ramyeon - simples, mas com variações infinitas. Um inovador explorando constantemente novas ideias!"
       },
       "traits": {
-        "ko": ["즉흥적", "호기심", "유연함", "실험적"],
-        "en": ["Spontaneous", "Curious", "Flexible", "Experimental"],
-        "ja": ["即興的", "好奇心", "柔軟", "実験的"],
-        "es": ["Espontáneo", "Curioso", "Flexible", "Experimental"],
-        "pt": ["Espontâneo", "Curioso", "Flexível", "Experimental"]
-      }
+        "ko": [
+          "즉흥적",
+          "호기심",
+          "유연함",
+          "실험적"
+        ],
+        "en": [
+          "Spontaneous",
+          "Curious",
+          "Flexible",
+          "Experimental"
+        ],
+        "ja": [
+          "即興的",
+          "好奇心",
+          "柔軟",
+          "実験的"
+        ],
+        "es": [
+          "Espontáneo",
+          "Curioso",
+          "Flexible",
+          "Experimental"
+        ],
+        "pt": [
+          "Espontâneo",
+          "Curioso",
+          "Flexível",
+          "Experimental"
+        ]
+      },
+      "image": "/images/korean_ramyeon_insta_eadaf359.jpg"
     },
     {
       "type": "ISTJ-A",
@@ -826,12 +1134,38 @@
         "pt": "Tradicionalista estável e equilibrado! Você é como Baekban - uma pessoa confiável buscando equilíbrio nutricional perfeito. Personalidade sistemática e diligente!"
       },
       "traits": {
-        "ko": ["신뢰성", "체계적", "실용적", "안정감"],
-        "en": ["Reliable", "Systematic", "Practical", "Stable"],
-        "ja": ["信頼性", "体系的", "実用的", "安定感"],
-        "es": ["Confiable", "Sistemático", "Práctico", "Estable"],
-        "pt": ["Confiável", "Sistemático", "Prático", "Estável"]
-      }
+        "ko": [
+          "신뢰성",
+          "체계적",
+          "실용적",
+          "안정감"
+        ],
+        "en": [
+          "Reliable",
+          "Systematic",
+          "Practical",
+          "Stable"
+        ],
+        "ja": [
+          "信頼性",
+          "体系的",
+          "実用的",
+          "安定感"
+        ],
+        "es": [
+          "Confiable",
+          "Sistemático",
+          "Práctico",
+          "Estable"
+        ],
+        "pt": [
+          "Confiável",
+          "Sistemático",
+          "Prático",
+          "Estável"
+        ]
+      },
+      "image": "/images/korean_baekban_home__c7240ac7.jpg"
     },
     {
       "type": "ISTJ-T",
@@ -851,12 +1185,38 @@
         "pt": "Perfeccionismo suave, mas sólido! Você é como Sundubu Jjigae - suave por fora, mas com princípios firmes por dentro. Personalidade meticulosa e responsável!"
       },
       "traits": {
-        "ko": ["완벽주의", "꼼꼼함", "신중함", "책임감"],
-        "en": ["Perfectionist", "Meticulous", "Cautious", "Responsible"],
-        "ja": ["完璧主義", "几帳面", "慎重", "責任感"],
-        "es": ["Perfeccionista", "Meticuloso", "Cauteloso", "Responsable"],
-        "pt": ["Perfeccionista", "Meticuloso", "Cauteloso", "Responsável"]
-      }
+        "ko": [
+          "완벽주의",
+          "꼼꼼함",
+          "신중함",
+          "책임감"
+        ],
+        "en": [
+          "Perfectionist",
+          "Meticulous",
+          "Cautious",
+          "Responsible"
+        ],
+        "ja": [
+          "完璧主義",
+          "几帳面",
+          "慎重",
+          "責任感"
+        ],
+        "es": [
+          "Perfeccionista",
+          "Meticuloso",
+          "Cauteloso",
+          "Responsable"
+        ],
+        "pt": [
+          "Perfeccionista",
+          "Meticuloso",
+          "Cauteloso",
+          "Responsável"
+        ]
+      },
+      "image": "/images/korean_sundubu_jjiga_a10f8939.jpg"
     },
     {
       "type": "ISTP-A",
@@ -876,12 +1236,38 @@
         "pt": "Artesão legal e prático! Você é como Jajangmyeon - simples, mas perfeitamente equilibrado. Personalidade calma com excelentes habilidades de resolução de problemas!"
       },
       "traits": {
-        "ko": ["침착함", "실용적", "독립적", "문제해결"],
-        "en": ["Calm", "Practical", "Independent", "Problem-solver"],
-        "ja": ["冷静", "実用的", "独立的", "問題解決"],
-        "es": ["Tranquilo", "Práctico", "Independiente", "Solucionador"],
-        "pt": ["Calmo", "Prático", "Independente", "Solucionador"]
-      }
+        "ko": [
+          "침착함",
+          "실용적",
+          "독립적",
+          "문제해결"
+        ],
+        "en": [
+          "Calm",
+          "Practical",
+          "Independent",
+          "Problem-solver"
+        ],
+        "ja": [
+          "冷静",
+          "実用的",
+          "独立的",
+          "問題解決"
+        ],
+        "es": [
+          "Tranquilo",
+          "Práctico",
+          "Independiente",
+          "Solucionador"
+        ],
+        "pt": [
+          "Calmo",
+          "Prático",
+          "Independente",
+          "Solucionador"
+        ]
+      },
+      "image": "/images/korean_jajangmyeon_b_06397ba2.jpg"
     },
     {
       "type": "ISTP-T",
@@ -901,12 +1287,38 @@
         "pt": "Analista legal, mas refrescante! Você é como Naengmyeon - de cabeça fria, mas com sabor profundo. Um perfeccionista analítico melhorando constantemente!"
       },
       "traits": {
-        "ko": ["분석적", "냉철함", "신중함", "개선지향"],
-        "en": ["Analytical", "Cool-headed", "Cautious", "Improvement-oriented"],
-        "ja": ["分析的", "冷静", "慎重", "改善志向"],
-        "es": ["Analítico", "De cabeza fría", "Cauteloso", "Orientado a la mejora"],
-        "pt": ["Analítico", "De cabeça fria", "Cauteloso", "Orientado para melhoria"]
-      }
+        "ko": [
+          "분석적",
+          "냉철함",
+          "신중함",
+          "개선지향"
+        ],
+        "en": [
+          "Analytical",
+          "Cool-headed",
+          "Cautious",
+          "Improvement-oriented"
+        ],
+        "ja": [
+          "分析的",
+          "冷静",
+          "慎重",
+          "改善志向"
+        ],
+        "es": [
+          "Analítico",
+          "De cabeza fría",
+          "Cauteloso",
+          "Orientado a la mejora"
+        ],
+        "pt": [
+          "Analítico",
+          "De cabeça fria",
+          "Cauteloso",
+          "Orientado para melhoria"
+        ]
+      },
+      "image": "/images/korean_naengmyeon_co_a6de6471.jpg"
     },
     {
       "type": "ISFJ-A",
@@ -926,12 +1338,38 @@
         "pt": "Reconfortante suave e caloroso! Você é como Gyeran Jjim - aconchegante e amado por todos. Personalidade dedicada e atenciosa!"
       },
       "traits": {
-        "ko": ["따뜻함", "헌신적", "배려심", "안정감"],
-        "en": ["Warm", "Devoted", "Considerate", "Stable"],
-        "ja": ["温かさ", "献身的", "思いやり", "安定感"],
-        "es": ["Cálido", "Devoto", "Considerado", "Estable"],
-        "pt": ["Caloroso", "Dedicado", "Atencioso", "Estável"]
-      }
+        "ko": [
+          "따뜻함",
+          "헌신적",
+          "배려심",
+          "안정감"
+        ],
+        "en": [
+          "Warm",
+          "Devoted",
+          "Considerate",
+          "Stable"
+        ],
+        "ja": [
+          "温かさ",
+          "献身的",
+          "思いやり",
+          "安定感"
+        ],
+        "es": [
+          "Cálido",
+          "Devoto",
+          "Considerado",
+          "Estable"
+        ],
+        "pt": [
+          "Caloroso",
+          "Dedicado",
+          "Atencioso",
+          "Estável"
+        ]
+      },
+      "image": "/images/korean_gyeranjjim_st_e2d176d6.jpg"
     },
     {
       "type": "ISFJ-T",
@@ -951,12 +1389,38 @@
         "pt": "Cuidador de afeição profunda! Você é como Miyeok Guk - pensando na saúde e cuidando dos outros. Coração caloroso delicado buscando perfeição!"
       },
       "traits": {
-        "ko": ["섬세함", "보살핌", "완벽추구", "감성적"],
-        "en": ["Delicate", "Caring", "Perfection-seeking", "Emotional"],
-        "ja": ["繊細", "世話好き", "完璧追求", "感性的"],
-        "es": ["Delicado", "Cariñoso", "Buscador de perfección", "Emocional"],
-        "pt": ["Delicado", "Carinhoso", "Buscador de perfeição", "Emocional"]
-      }
+        "ko": [
+          "섬세함",
+          "보살핌",
+          "완벽추구",
+          "감성적"
+        ],
+        "en": [
+          "Delicate",
+          "Caring",
+          "Perfection-seeking",
+          "Emotional"
+        ],
+        "ja": [
+          "繊細",
+          "世話好き",
+          "完璧追求",
+          "感性的"
+        ],
+        "es": [
+          "Delicado",
+          "Cariñoso",
+          "Buscador de perfección",
+          "Emocional"
+        ],
+        "pt": [
+          "Delicado",
+          "Carinhoso",
+          "Buscador de perfeição",
+          "Emocional"
+        ]
+      },
+      "image": "/images/korean_miyeokguk_sea_56acd6b3.jpg"
     },
     {
       "type": "INFP-A",
@@ -976,12 +1440,38 @@
         "pt": "Sonhador doce! Você é como Patbingsu - uma pessoa com visão de mundo única e criativa. Um idealista com espírito livre!"
       },
       "traits": {
-        "ko": ["이상주의", "창의적", "감성적", "자유로움"],
-        "en": ["Idealistic", "Creative", "Emotional", "Free-spirited"],
-        "ja": ["理想主義", "創造的", "感性的", "自由奔放"],
-        "es": ["Idealista", "Creativo", "Emocional", "Espíritu libre"],
-        "pt": ["Idealista", "Criativo", "Emocional", "Espírito livre"]
-      }
+        "ko": [
+          "이상주의",
+          "창의적",
+          "감성적",
+          "자유로움"
+        ],
+        "en": [
+          "Idealistic",
+          "Creative",
+          "Emotional",
+          "Free-spirited"
+        ],
+        "ja": [
+          "理想主義",
+          "創造的",
+          "感性的",
+          "自由奔放"
+        ],
+        "es": [
+          "Idealista",
+          "Creativo",
+          "Emocional",
+          "Espíritu libre"
+        ],
+        "pt": [
+          "Idealista",
+          "Criativo",
+          "Emocional",
+          "Espírito livre"
+        ]
+      },
+      "image": "/images/korean_patbingsu_sha_785829a8.jpg"
     },
     {
       "type": "INFP-T",
@@ -1002,11 +1492,36 @@
         "pt": "Artista caloroso e delicado! Você é como Hotteok - simples por fora, mas com emoções doces por dentro. Um sonhador emocional buscando perfeição!"
       },
       "traits": {
-        "ko": ["감수성", "섬세함", "완벽추구", "내향적"],
-        "en": ["Sensitive", "Delicate", "Perfection-seeking", "Introverted"],
-        "ja": ["感受性", "繊細", "完璧追求", "内向的"],
-        "es": ["Sensible", "Delicado", "Buscador de perfección", "Introvertido"],
-        "pt": ["Sensível", "Delicado", "Buscador de perfeição", "Introvertido"]
+        "ko": [
+          "감수성",
+          "섬세함",
+          "완벽추구",
+          "내향적"
+        ],
+        "en": [
+          "Sensitive",
+          "Delicate",
+          "Perfection-seeking",
+          "Introverted"
+        ],
+        "ja": [
+          "感受性",
+          "繊細",
+          "完璧追求",
+          "内向的"
+        ],
+        "es": [
+          "Sensible",
+          "Delicado",
+          "Buscador de perfección",
+          "Introvertido"
+        ],
+        "pt": [
+          "Sensível",
+          "Delicado",
+          "Buscador de perfeição",
+          "Introvertido"
+        ]
       }
     },
     {
@@ -1027,12 +1542,38 @@
         "pt": "Estrategista luxuoso! Você é como Hanjeongsik - buscando harmonia e profundidade perfeitas. Uma mente brilhante visionária sistemática!"
       },
       "traits": {
-        "ko": ["전략적", "독립적", "비전", "자신감"],
-        "en": ["Strategic", "Independent", "Visionary", "Confident"],
-        "ja": ["戦略的", "独立的", "ビジョン", "自信"],
-        "es": ["Estratégico", "Independiente", "Visionario", "Seguro"],
-        "pt": ["Estratégico", "Independente", "Visionário", "Confiante"]
-      }
+        "ko": [
+          "전략적",
+          "독립적",
+          "비전",
+          "자신감"
+        ],
+        "en": [
+          "Strategic",
+          "Independent",
+          "Visionary",
+          "Confident"
+        ],
+        "ja": [
+          "戦略的",
+          "独立的",
+          "ビジョン",
+          "自信"
+        ],
+        "es": [
+          "Estratégico",
+          "Independiente",
+          "Visionario",
+          "Seguro"
+        ],
+        "pt": [
+          "Estratégico",
+          "Independente",
+          "Visionário",
+          "Confiante"
+        ]
+      },
+      "image": "/images/korean_hanjeongsik_r_af5b48af.jpg"
     },
     {
       "type": "INTJ-T",
@@ -1052,12 +1593,38 @@
         "pt": "Perfeccionista refinado! Você é como Yukhoe - uma pessoa com gosto delicado e luxuoso. Um pensador estratégico buscando constantemente melhorias!"
       },
       "traits": {
-        "ko": ["분석적", "완벽주의", "신중함", "개선지향"],
-        "en": ["Analytical", "Perfectionist", "Cautious", "Improvement-oriented"],
-        "ja": ["分析的", "完璧主義", "慎重", "改善志向"],
-        "es": ["Analítico", "Perfeccionista", "Cauteloso", "Orientado a la mejora"],
-        "pt": ["Analítico", "Perfeccionista", "Cauteloso", "Orientado para melhoria"]
-      }
+        "ko": [
+          "분석적",
+          "완벽주의",
+          "신중함",
+          "개선지향"
+        ],
+        "en": [
+          "Analytical",
+          "Perfectionist",
+          "Cautious",
+          "Improvement-oriented"
+        ],
+        "ja": [
+          "分析的",
+          "完璧主義",
+          "慎重",
+          "改善志向"
+        ],
+        "es": [
+          "Analítico",
+          "Perfeccionista",
+          "Cauteloso",
+          "Orientado a la mejora"
+        ],
+        "pt": [
+          "Analítico",
+          "Perfeccionista",
+          "Cauteloso",
+          "Orientado para melhoria"
+        ]
+      },
+      "image": "/images/korean_yukhoe_beef_t_0033351d.jpg"
     },
     {
       "type": "INTP-A",
@@ -1077,12 +1644,38 @@
         "pt": "Pensador original! Você é como Bossam - uma pessoa criativa com elementos livremente combináveis. Um inovador lógico, mas independente!"
       },
       "traits": {
-        "ko": ["논리적", "창의적", "독립적", "분석적"],
-        "en": ["Logical", "Creative", "Independent", "Analytical"],
-        "ja": ["論理的", "創造的", "独立的", "分析的"],
-        "es": ["Lógico", "Creativo", "Independiente", "Analítico"],
-        "pt": ["Lógico", "Criativo", "Independente", "Analítico"]
-      }
+        "ko": [
+          "논리적",
+          "창의적",
+          "독립적",
+          "분석적"
+        ],
+        "en": [
+          "Logical",
+          "Creative",
+          "Independent",
+          "Analytical"
+        ],
+        "ja": [
+          "論理的",
+          "創造的",
+          "独立的",
+          "分析的"
+        ],
+        "es": [
+          "Lógico",
+          "Creativo",
+          "Independiente",
+          "Analítico"
+        ],
+        "pt": [
+          "Lógico",
+          "Criativo",
+          "Independente",
+          "Analítico"
+        ]
+      },
+      "image": "/images/korean_bossam_boiled_1c2a3865.jpg"
     },
     {
       "type": "INTP-T",
@@ -1102,12 +1695,38 @@
         "pt": "Analista único! Você é como Muk - simples, mas com pensamento profundo. Um teórico explorando constantemente!"
       },
       "traits": {
-        "ko": ["사색적", "호기심", "완벽추구", "내향적"],
-        "en": ["Thoughtful", "Curious", "Perfection-seeking", "Introverted"],
-        "ja": ["思索的", "好奇心", "完璧追求", "内向的"],
-        "es": ["Reflexivo", "Curioso", "Buscador de perfección", "Introvertido"],
-        "pt": ["Pensativo", "Curioso", "Buscador de perfeição", "Introvertido"]
-      }
+        "ko": [
+          "사색적",
+          "호기심",
+          "완벽추구",
+          "내향적"
+        ],
+        "en": [
+          "Thoughtful",
+          "Curious",
+          "Perfection-seeking",
+          "Introverted"
+        ],
+        "ja": [
+          "思索的",
+          "好奇心",
+          "完璧追求",
+          "内向的"
+        ],
+        "es": [
+          "Reflexivo",
+          "Curioso",
+          "Buscador de perfección",
+          "Introvertido"
+        ],
+        "pt": [
+          "Pensativo",
+          "Curioso",
+          "Buscador de perfeição",
+          "Introvertido"
+        ]
+      },
+      "image": "/images/korean_muk_acorn_jel_874b1916.jpg"
     },
     {
       "type": "ENFJ-A",
@@ -1127,12 +1746,38 @@
         "pt": "Líder carismático! Você é como Jeongol - reunindo todos. Um mentor caloroso e influente!"
       },
       "traits": {
-        "ko": ["리더십", "공감능력", "카리스마", "영향력"],
-        "en": ["Leadership", "Empathetic", "Charismatic", "Influential"],
-        "ja": ["リーダーシップ", "共感力", "カリスマ", "影響力"],
-        "es": ["Liderazgo", "Empático", "Carismático", "Influyente"],
-        "pt": ["Liderança", "Empático", "Carismático", "Influente"]
-      }
+        "ko": [
+          "리더십",
+          "공감능력",
+          "카리스마",
+          "영향력"
+        ],
+        "en": [
+          "Leadership",
+          "Empathetic",
+          "Charismatic",
+          "Influential"
+        ],
+        "ja": [
+          "リーダーシップ",
+          "共感力",
+          "カリスマ",
+          "影響力"
+        ],
+        "es": [
+          "Liderazgo",
+          "Empático",
+          "Carismático",
+          "Influyente"
+        ],
+        "pt": [
+          "Liderança",
+          "Empático",
+          "Carismático",
+          "Influente"
+        ]
+      },
+      "image": "/images/korean_jeongol_hot_p_fa44e6e1.jpg"
     },
     {
       "type": "ENFJ-T",
@@ -1152,12 +1797,38 @@
         "pt": "Mestre da fusão harmoniosa! Você é como Budae Jjigae - misturando harmoniosamente elementos diversos. Um líder buscando perfeição enquanto se preocupa com todos!"
       },
       "traits": {
-        "ko": ["조화", "배려", "완벽추구", "감성적"],
-        "en": ["Harmonious", "Considerate", "Perfection-seeking", "Emotional"],
-        "ja": ["調和", "思いやり", "完璧追求", "感性的"],
-        "es": ["Armonioso", "Considerado", "Buscador de perfección", "Emocional"],
-        "pt": ["Harmonioso", "Atencioso", "Buscador de perfeição", "Emocional"]
-      }
+        "ko": [
+          "조화",
+          "배려",
+          "완벽추구",
+          "감성적"
+        ],
+        "en": [
+          "Harmonious",
+          "Considerate",
+          "Perfection-seeking",
+          "Emotional"
+        ],
+        "ja": [
+          "調和",
+          "思いやり",
+          "完璧追求",
+          "感性的"
+        ],
+        "es": [
+          "Armonioso",
+          "Considerado",
+          "Buscador de perfección",
+          "Emocional"
+        ],
+        "pt": [
+          "Harmonioso",
+          "Atencioso",
+          "Buscador de perfeição",
+          "Emocional"
+        ]
+      },
+      "image": "/images/korean_budae_jjigae__f9cbef05.jpg"
     },
     {
       "type": "INFJ-A",
@@ -1177,12 +1848,38 @@
         "pt": "Idealista nobre! Você é como Tteokbokki Real - elegante, mas profundo. Um conselheiro caloroso com visão!"
       },
       "traits": {
-        "ko": ["통찰력", "이상주의", "공감능력", "비전"],
-        "en": ["Insightful", "Idealistic", "Empathetic", "Visionary"],
-        "ja": ["洞察力", "理想主義", "共感力", "ビジョン"],
-        "es": ["Perspicaz", "Idealista", "Empático", "Visionario"],
-        "pt": ["Perspicaz", "Idealista", "Empático", "Visionário"]
-      }
+        "ko": [
+          "통찰력",
+          "이상주의",
+          "공감능력",
+          "비전"
+        ],
+        "en": [
+          "Insightful",
+          "Idealistic",
+          "Empathetic",
+          "Visionary"
+        ],
+        "ja": [
+          "洞察力",
+          "理想主義",
+          "共感力",
+          "ビジョン"
+        ],
+        "es": [
+          "Perspicaz",
+          "Idealista",
+          "Empático",
+          "Visionario"
+        ],
+        "pt": [
+          "Perspicaz",
+          "Idealista",
+          "Empático",
+          "Visionário"
+        ]
+      },
+      "image": "/images/korean_royal_tteokbo_78f1f388.jpg"
     },
     {
       "type": "INFJ-T",
@@ -1202,12 +1899,38 @@
         "pt": "Perfeccionista delicado! Você é como Yakshik - cuidadosamente elaborado com significado profundo. Um conselheiro idealista buscando perfeição!"
       },
       "traits": {
-        "ko": ["섬세함", "완벽추구", "감성적", "내향적"],
-        "en": ["Delicate", "Perfection-seeking", "Emotional", "Introverted"],
-        "ja": ["繊細", "完璧追求", "感性的", "内向的"],
-        "es": ["Delicado", "Buscador de perfección", "Emocional", "Introvertido"],
-        "pt": ["Delicado", "Buscador de perfeição", "Emocional", "Introvertido"]
-      }
+        "ko": [
+          "섬세함",
+          "완벽추구",
+          "감성적",
+          "내향적"
+        ],
+        "en": [
+          "Delicate",
+          "Perfection-seeking",
+          "Emotional",
+          "Introverted"
+        ],
+        "ja": [
+          "繊細",
+          "完璧追求",
+          "感性的",
+          "内向的"
+        ],
+        "es": [
+          "Delicado",
+          "Buscador de perfección",
+          "Emocional",
+          "Introvertido"
+        ],
+        "pt": [
+          "Delicado",
+          "Buscador de perfeição",
+          "Emocional",
+          "Introvertido"
+        ]
+      },
+      "image": "/images/korean_yakshik_sweet_f8da4173.jpg"
     },
     {
       "type": "ESFP-A",
@@ -1227,12 +1950,38 @@
         "pt": "Bomba de energia doce! Você é como Dakgangjeong - viciante e encantador. Um criador de clima brilhante e positivo!"
       },
       "traits": {
-        "ko": ["활기참", "사교적", "즐거움", "긍정적"],
-        "en": ["Energetic", "Sociable", "Fun-loving", "Positive"],
-        "ja": ["活気", "社交的", "楽しさ", "ポジティブ"],
-        "es": ["Enérgico", "Sociable", "Amante de la diversión", "Positivo"],
-        "pt": ["Enérgico", "Sociável", "Amante de diversão", "Positivo"]
-      }
+        "ko": [
+          "활기참",
+          "사교적",
+          "즐거움",
+          "긍정적"
+        ],
+        "en": [
+          "Energetic",
+          "Sociable",
+          "Fun-loving",
+          "Positive"
+        ],
+        "ja": [
+          "活気",
+          "社交的",
+          "楽しさ",
+          "ポジティブ"
+        ],
+        "es": [
+          "Enérgico",
+          "Sociable",
+          "Amante de la diversión",
+          "Positivo"
+        ],
+        "pt": [
+          "Enérgico",
+          "Sociável",
+          "Amante de diversão",
+          "Positivo"
+        ]
+      },
+      "image": "/images/korean_dakgangjeong__f8307444.jpg"
     },
     {
       "type": "ESFP-T",
@@ -1253,11 +2002,36 @@
         "pt": "Encantador único! Você é como Sundae - unicamente atraente, mas popular. Personalidade buscando perfeição enquanto faz todos felizes!"
       },
       "traits": {
-        "ko": ["개성", "사교적", "완벽추구", "감성적"],
-        "en": ["Unique", "Sociable", "Perfection-seeking", "Emotional"],
-        "ja": ["個性", "社交的", "完璧追求", "感性的"],
-        "es": ["Único", "Sociable", "Buscador de perfección", "Emocional"],
-        "pt": ["Único", "Sociável", "Buscador de perfeição", "Emocional"]
+        "ko": [
+          "개성",
+          "사교적",
+          "완벽추구",
+          "감성적"
+        ],
+        "en": [
+          "Unique",
+          "Sociable",
+          "Perfection-seeking",
+          "Emotional"
+        ],
+        "ja": [
+          "個性",
+          "社交的",
+          "完璧追求",
+          "感性的"
+        ],
+        "es": [
+          "Único",
+          "Sociable",
+          "Buscador de perfección",
+          "Emocional"
+        ],
+        "pt": [
+          "Único",
+          "Sociável",
+          "Buscador de perfeição",
+          "Emocional"
+        ]
       }
     },
     {
@@ -1278,12 +2052,38 @@
         "pt": "Artista sutil! Você é como Sujeonggwa - único, mas elegante. Um criador de espírito livre e emocional!"
       },
       "traits": {
-        "ko": ["예술적", "감성적", "자유로움", "평화로움"],
-        "en": ["Artistic", "Emotional", "Free-spirited", "Peaceful"],
-        "ja": ["芸術的", "感性的", "自由奔放", "平和"],
-        "es": ["Artístico", "Emocional", "Espíritu libre", "Pacífico"],
-        "pt": ["Artístico", "Emocional", "Espírito livre", "Pacífico"]
-      }
+        "ko": [
+          "예술적",
+          "감성적",
+          "자유로움",
+          "평화로움"
+        ],
+        "en": [
+          "Artistic",
+          "Emotional",
+          "Free-spirited",
+          "Peaceful"
+        ],
+        "ja": [
+          "芸術的",
+          "感性的",
+          "自由奔放",
+          "平和"
+        ],
+        "es": [
+          "Artístico",
+          "Emocional",
+          "Espíritu libre",
+          "Pacífico"
+        ],
+        "pt": [
+          "Artístico",
+          "Emocional",
+          "Espírito livre",
+          "Pacífico"
+        ]
+      },
+      "image": "/images/korean_sujeonggwa_ci_30f6900f.jpg"
     },
     {
       "type": "ISFP-T",
@@ -1303,12 +2103,38 @@
         "pt": "Sonhador gentil! Você é como Sikhye - doce e delicado. Um artista emocional buscando perfeição!"
       },
       "traits": {
-        "ko": ["감수성", "완벽추구", "섬세함", "내향적"],
-        "en": ["Sensitive", "Perfection-seeking", "Delicate", "Introverted"],
-        "ja": ["感受性", "完璧追求", "繊細", "内向的"],
-        "es": ["Sensible", "Buscador de perfección", "Delicado", "Introvertido"],
-        "pt": ["Sensível", "Buscador de perfeição", "Delicado", "Introvertido"]
-      }
+        "ko": [
+          "감수성",
+          "완벽추구",
+          "섬세함",
+          "내향적"
+        ],
+        "en": [
+          "Sensitive",
+          "Perfection-seeking",
+          "Delicate",
+          "Introverted"
+        ],
+        "ja": [
+          "感受性",
+          "完璧追求",
+          "繊細",
+          "内向的"
+        ],
+        "es": [
+          "Sensible",
+          "Buscador de perfección",
+          "Delicado",
+          "Introvertido"
+        ],
+        "pt": [
+          "Sensível",
+          "Buscador de perfeição",
+          "Delicado",
+          "Introvertido"
+        ]
+      },
+      "image": "/images/korean_sikhye_sweet__3077ee90.jpg"
     }
   ]
 }
