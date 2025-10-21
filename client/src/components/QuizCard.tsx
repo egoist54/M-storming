@@ -1,6 +1,6 @@
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 interface QuizCardProps {
@@ -9,7 +9,6 @@ interface QuizCardProps {
   description: string;
   category: string;
   thumbnail: string;
-  participantCount: number;
   onStart?: () => void;
 }
 
@@ -18,7 +17,6 @@ export default function QuizCard({
   description,
   category,
   thumbnail,
-  participantCount,
   onStart
 }: QuizCardProps) {
   return (
@@ -49,21 +47,14 @@ export default function QuizCard({
           </p>
         </div>
 
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-1.5 text-sm text-muted-foreground" data-testid="text-participant-count">
-            <Users className="w-4 h-4" />
-            <span>{participantCount.toLocaleString('ko-KR')}명 참여</span>
-          </div>
-
-          <Button 
-            onClick={onStart}
-            className="gap-2"
-            data-testid="button-start-quiz"
-          >
-            시작하기
-            <ArrowRight className="w-4 h-4" />
-          </Button>
-        </div>
+        <Button 
+          onClick={onStart}
+          className="w-full gap-2"
+          data-testid="button-start-quiz"
+        >
+          시작하기
+          <ArrowRight className="w-4 h-4" />
+        </Button>
       </div>
     </Card>
   );

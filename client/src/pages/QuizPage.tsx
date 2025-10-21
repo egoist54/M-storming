@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 import { loadQuizById, QuizData } from "@/lib/quizLoader";
-import { incrementQuizParticipants } from "@/hooks/useFirebaseCounter";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function QuizPage() {
@@ -19,7 +18,6 @@ export default function QuizPage() {
   
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
-  const [hasIncremented, setHasIncremented] = useState(false);
   const [username, setUsername] = useState("");
   const [showNameInput, setShowNameInput] = useState(true);
   const [inputValue, setInputValue] = useState("");
@@ -37,13 +35,6 @@ export default function QuizPage() {
       setShowNameInput(false);
     }
   }, []);
-
-  useEffect(() => {
-    if (quiz && !hasIncremented && username) {
-      incrementQuizParticipants(quiz.id);
-      setHasIncremented(true);
-    }
-  }, [quiz, hasIncremented, username]);
 
   const handleNameSubmit = () => {
     if (inputValue.trim()) {

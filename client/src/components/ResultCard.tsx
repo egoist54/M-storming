@@ -1,13 +1,11 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Users } from "lucide-react";
 import { motion } from "framer-motion";
 
 interface ResultCardProps {
   title: string;
   description: string;
   image: string;
-  participantCount: number;
   category?: string;
   matchRate?: number;
   username?: string;
@@ -17,7 +15,6 @@ export default function ResultCard({
   title, 
   description, 
   image, 
-  participantCount,
   category,
   matchRate,
   username
@@ -74,13 +71,6 @@ export default function ResultCard({
               </div>
             </div>
           )}
-
-          <div className="flex items-center gap-2 pt-4 border-t">
-            <Users className="w-5 h-5 text-muted-foreground" />
-            <span className="text-sm text-muted-foreground" data-testid="text-result-participants">
-              <span className="font-semibold text-foreground">{participantCount.toLocaleString('ko-KR')}명</span>이 이 테스트를 했어요!
-            </span>
-          </div>
         </div>
       </Card>
     </motion.div>

@@ -1,13 +1,11 @@
 import { useQuery } from "@tanstack/react-query";
 import { useLocation } from "wouter";
 import QuizCard from "@/components/QuizCard";
-import VisitorCounter from "@/components/VisitorCounter";
 import AdBanner from "@/components/AdBanner";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Sparkles } from "lucide-react";
 import { loadAllQuizzes, QuizData } from "@/lib/quizLoader";
-import { useQuizParticipants } from "@/hooks/useFirebaseCounter";
 import personalityThumb from '@assets/generated_images/성격_퀴즈_섬네일_이미지_c75d527d.png';
 import aiThumb from '@assets/generated_images/AI_퀴즈_섬네일_이미지_cae3c536.png';
 
@@ -17,18 +15,17 @@ interface QuizCardData {
   description: string;
   category: string;
   thumbnail: string;
-  participantCount: number;
 }
 
 const thumbnailMap: Record<string, string> = {
   "1": personalityThumb,
   "kvibe": personalityThumb,
+  "k-vibe": personalityThumb,
   "2": aiThumb,
 };
 
 function QuizCardWithCount({ quiz }: { quiz: QuizData }) {
   const { language } = useLanguage();
-  const { count } = useQuizParticipants(quiz.id);
   const [, navigate] = useLocation();
   
   const cardData: QuizCardData = {
@@ -37,7 +34,6 @@ function QuizCardWithCount({ quiz }: { quiz: QuizData }) {
     description: quiz.description[language] || quiz.description.ko,
     category: quiz.category?.[language] || quiz.category?.ko || "Quiz",
     thumbnail: thumbnailMap[quiz.id] || personalityThumb,
-    participantCount: count,
   };
 
   const handleStartQuiz = () => {
@@ -77,10 +73,6 @@ export default function HomePage() {
             <p className="text-lg text-muted-foreground">
               {t.home.subtitle}
             </p>
-
-            <div className="flex justify-center pt-4">
-              <VisitorCounter label={t.common.visitors} />
-            </div>
           </div>
         </div>
       </div>
