@@ -42,8 +42,16 @@ function calculateResult(quizData: any, answers: string[]) {
       '-' +
       (atCount.A >= atCount.T ? 'A' : 'T');
 
+    const eiStrength = Math.max(eiCount.E, eiCount.I) / 3 * 100;
+    const snStrength = Math.max(snCount.S, snCount.N) / 3 * 100;
+    const tfStrength = Math.max(tfCount.T, tfCount.F) / 3 * 100;
+    const jpStrength = Math.max(jpCount.J, jpCount.P) / 3 * 100;
+    const atStrength = Math.max(atCount.A, atCount.T) / 3 * 100;
+    
+    const matchRate = Math.round((eiStrength + snStrength + tfStrength + jpStrength + atStrength) / 5);
+
     const result = quizData.results.find((r: any) => r.type === mbtiType);
-    return result || quizData.results[0];
+    return result ? { ...result, matchRate } : { ...quizData.results[0], matchRate };
   }
 
   const totalScore = answers.reduce((sum, answerId, index) => {
@@ -93,6 +101,7 @@ export default function ResultPage() {
   const title = resultData.food?.[language] || resultData.food?.ko || resultData.title?.[language] || resultData.title?.ko || "Result";
   const description = resultData.description[language] || resultData.description.ko;
   const category = quizData.category?.[language] || quizData.category?.ko || "Quiz";
+  const matchRate = resultData.matchRate;
 
   return (
     <div className="min-h-screen bg-background py-8 px-4">
@@ -125,6 +134,7 @@ export default function ResultPage() {
           image={resultData.image || positiveResult}
           participantCount={count}
           category={category}
+          matchRate={matchRate}
         />
 
         <div className="max-w-md mx-auto">

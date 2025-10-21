@@ -9,6 +9,7 @@ interface ResultCardProps {
   image: string;
   participantCount: number;
   category?: string;
+  matchRate?: number;
 }
 
 export default function ResultCard({ 
@@ -16,7 +17,8 @@ export default function ResultCard({
   description, 
   image, 
   participantCount,
-  category 
+  category,
+  matchRate
 }: ResultCardProps) {
   return (
     <motion.div
@@ -50,6 +52,20 @@ export default function ResultCard({
               {description}
             </p>
           </div>
+
+          {matchRate !== undefined && (
+            <div className="flex items-center justify-center py-6">
+              <div className="text-center space-y-2">
+                <p className="text-sm text-muted-foreground">K-VIBE 일치율</p>
+                <div className="flex items-baseline gap-1">
+                  <span className="text-5xl font-bold text-primary" data-testid="text-match-rate">
+                    {matchRate}
+                  </span>
+                  <span className="text-2xl font-semibold text-primary">%</span>
+                </div>
+              </div>
+            </div>
+          )}
 
           <div className="flex items-center gap-2 pt-4 border-t">
             <Users className="w-5 h-5 text-muted-foreground" />
