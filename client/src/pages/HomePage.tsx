@@ -33,7 +33,7 @@ function QuizCardWithCount({ quiz }: { quiz: QuizData }) {
     id: quiz.id,
     title: quiz.title[language] || quiz.title.ko,
     description: quiz.description[language] || quiz.description.ko,
-    category: quiz.category[language] || quiz.category.ko,
+    category: quiz.category?.[language] || quiz.category?.ko || "Quiz",
     thumbnail: thumbnailMap[quiz.id] || personalityThumb,
     participantCount: count,
   };

@@ -1,0 +1,1308 @@
+{
+  "id": "k-vibe",
+  "title": {
+    "ko": "🇰🇷 K-VIBE: 당신의 한국 음식 MBTI는?",
+    "en": "🇰🇷 K-VIBE: What's Your Korean Food MBTI?",
+    "ja": "🇰🇷 K-VIBE: あなたの韓国料理MBTIは？",
+    "es": "🇰🇷 K-VIBE: ¿Cuál es tu MBTI de comida coreana?",
+    "pt": "🇰🇷 K-VIBE: Qual é o seu MBTI de comida coreana?"
+  },
+  "description": {
+    "ko": "15가지 질문으로 알아보는 나와 가장 잘 맞는 한국 음식! MBTI-AT 5개 축을 측정하여 32가지 한국 음식 중 당신의 진짜 취향을 찾아드립니다.",
+    "en": "Discover your perfect Korean food match through 15 questions! We measure 5 MBTI-AT dimensions to find your true taste among 32 Korean dishes.",
+    "ja": "15の質問であなたにぴったりの韓国料理を見つけよう！MBTI-ATの5つの軸を測定し、32種類の韓国料理からあなたの本当の好みを見つけます。",
+    "es": "¡Descubre tu comida coreana perfecta a través de 15 preguntas! Medimos 5 dimensiones MBTI-AT para encontrar tu verdadero gusto entre 32 platos coreanos.",
+    "pt": "Descubra sua comida coreana perfeita através de 15 perguntas! Medimos 5 dimensões MBTI-AT para encontrar seu verdadeiro gosto entre 32 pratos coreanos."
+  },
+  "category": {
+    "ko": "성격 테스트",
+    "en": "Personality",
+    "ja": "性格テスト",
+    "es": "Personalidad",
+    "pt": "Personalidade"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "text": {
+        "ko": "친구들과 한식당에 갔을 때, 나는?",
+        "en": "When I go to a Korean restaurant with friends, I:",
+        "ja": "友達と韓国料理店に行ったとき、私は：",
+        "es": "Cuando voy a un restaurante coreano con amigos, yo:",
+        "pt": "Quando vou a um restaurante coreano com amigos, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "먼저 메뉴판을 펴고 다 같이 고민하자고 한다",
+            "en": "Open the menu first and suggest we decide together",
+            "ja": "まずメニューを開いて、みんなで一緒に考えようと言う",
+            "es": "Abro el menú primero y sugiero que decidamos juntos",
+            "pt": "Abro o cardápio primeiro e sugiro que decidamos juntos"
+          },
+          "dimension": "E"
+        },
+        {
+          "text": {
+            "ko": "조용히 메뉴판을 보며 내가 먹고 싶은 걸 생각한다",
+            "en": "Quietly look at the menu and think about what I want",
+            "ja": "静かにメニューを見て、自分が食べたいものを考える",
+            "es": "Miro el menú en silencio y pienso en lo que quiero",
+            "pt": "Olho o cardápio em silêncio e penso no que quero"
+          },
+          "dimension": "I"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": {
+        "ko": "새로운 한식 메뉴를 볼 때, 나는?",
+        "en": "When I see a new Korean dish, I:",
+        "ja": "新しい韓国料理のメニューを見たとき、私は：",
+        "es": "Cuando veo un nuevo plato coreano, yo:",
+        "pt": "Quando vejo um novo prato coreano, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"이거 어떤 맛일까?\" 궁금해하며 설명을 꼼꼼히 읽는다",
+            "en": "Wonder \"What does this taste like?\" and read the description carefully",
+            "ja": "「これはどんな味かな？」と気になって説明を丁寧に読む",
+            "es": "Me pregunto \"¿A qué sabe esto?\" y leo la descripción cuidadosamente",
+            "pt": "Me pergunto \"Qual é o gosto disso?\" e leio a descrição cuidadosamente"
+          },
+          "dimension": "E"
+        },
+        {
+          "text": {
+            "ko": "\"내가 좋아하는 맛이랑 비슷할까?\" 생각하며 조용히 고민한다",
+            "en": "Think silently \"Is this similar to flavors I like?\"",
+            "ja": "「自分の好きな味と似ているかな？」と静かに考える",
+            "es": "Pienso en silencio \"¿Esto es similar a los sabores que me gustan?\"",
+            "pt": "Penso em silêncio \"Isso é parecido com sabores que eu gosto?\""
+          },
+          "dimension": "I"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": {
+        "ko": "맛집을 추천할 때, 나는?",
+        "en": "When recommending a restaurant, I:",
+        "ja": "おすすめのお店を紹介するとき、私は：",
+        "es": "Cuando recomiendo un restaurante, yo:",
+        "pt": "Ao recomendar um restaurante, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"거기 완전 분위기 좋고 사람들 많아!\" 열정적으로 설명한다",
+            "en": "Enthusiastically explain \"The atmosphere is amazing and it's always packed!\"",
+            "ja": "「あそこは雰囲気が最高で人がいっぱい！」と熱心に説明する",
+            "es": "Explico con entusiasmo \"¡El ambiente es increíble y siempre está lleno!\"",
+            "pt": "Explico com entusiasmo \"A atmosfera é incrível e está sempre lotado!\""
+          },
+          "dimension": "E"
+        },
+        {
+          "text": {
+            "ko": "\"나는 좋았어, 한번 가봐\" 간단하게 추천한다",
+            "en": "Simply recommend \"I liked it, you should try it\"",
+            "ja": "「私は良かったよ、一度行ってみて」と簡単に勧める",
+            "es": "Simplemente recomiendo \"Me gustó, deberías probarlo\"",
+            "pt": "Simplesmente recomendo \"Eu gostei, você deveria experimentar\""
+          },
+          "dimension": "I"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": {
+        "ko": "한식을 먹을 때, 나는?",
+        "en": "When eating Korean food, I:",
+        "ja": "韓国料理を食べるとき、私は：",
+        "es": "Cuando como comida coreana, yo:",
+        "pt": "Ao comer comida coreana, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "지금 눈앞에 있는 음식의 맛과 향을 즐긴다",
+            "en": "Enjoy the taste and aroma of the food in front of me",
+            "ja": "目の前にある料理の味と香りを楽しむ",
+            "es": "Disfruto el sabor y aroma de la comida frente a mí",
+            "pt": "Aproveito o sabor e aroma da comida na minha frente"
+          },
+          "dimension": "S"
+        },
+        {
+          "text": {
+            "ko": "\"이 음식의 레시피는 어떨까?\" 상상해본다",
+            "en": "Wonder \"What might the recipe be like?\"",
+            "ja": "「この料理のレシピはどうかな？」と想像する",
+            "es": "Me pregunto \"¿Cómo será la receta?\"",
+            "pt": "Me pergunto \"Como será a receita?\""
+          },
+          "dimension": "N"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": {
+        "ko": "음식 사진을 찍을 때, 나는?",
+        "en": "When taking food photos, I:",
+        "ja": "料理の写真を撮るとき、私は：",
+        "es": "Cuando tomo fotos de comida, yo:",
+        "pt": "Ao tirar fotos de comida, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "음식의 실제 모습을 있는 그대로 담는다",
+            "en": "Capture the food exactly as it looks",
+            "ja": "料理の実際の姿をそのまま撮る",
+            "es": "Capturo la comida exactamente como se ve",
+            "pt": "Capturo a comida exatamente como ela parece"
+          },
+          "dimension": "S"
+        },
+        {
+          "text": {
+            "ko": "독특한 각도나 분위기를 연출해서 찍는다",
+            "en": "Create unique angles or atmosphere",
+            "ja": "ユニークな角度や雰囲気を演出して撮る",
+            "es": "Creo ángulos o atmósfera únicos",
+            "pt": "Crio ângulos ou atmosfera únicos"
+          },
+          "dimension": "N"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": {
+        "ko": "처음 먹어보는 한식에 대해, 나는?",
+        "en": "About Korean food I'm trying for the first time, I:",
+        "ja": "初めて食べる韓国料理について、私は：",
+        "es": "Sobre la comida coreana que pruebo por primera vez, yo:",
+        "pt": "Sobre comida coreana que estou experimentando pela primeira vez, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "맛, 식감, 온도 등 구체적인 특징을 관찰한다",
+            "en": "Observe specific characteristics like taste, texture, temperature",
+            "ja": "味、食感、温度などの具体的な特徴を観察する",
+            "es": "Observo características específicas como sabor, textura, temperatura",
+            "pt": "Observo características específicas como sabor, textura, temperatura"
+          },
+          "dimension": "S"
+        },
+        {
+          "text": {
+            "ko": "\"이걸 응용하면 어떤 요리를 만들 수 있을까?\" 상상한다",
+            "en": "Imagine \"What dish could I create by adapting this?\"",
+            "ja": "「これを応用したらどんな料理が作れるかな？」と想像する",
+            "es": "Imagino \"¿Qué plato podría crear adaptando esto?\"",
+            "pt": "Imagino \"Que prato eu poderia criar adaptando isso?\""
+          },
+          "dimension": "N"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": {
+        "ko": "친구가 음식을 고민할 때, 나는?",
+        "en": "When a friend is deciding what to eat, I:",
+        "ja": "友達が料理を悩んでいるとき、私は：",
+        "es": "Cuando un amigo está decidiendo qué comer, yo:",
+        "pt": "Quando um amigo está decidindo o que comer, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"이게 더 저렴하고 양도 많아\" 객관적으로 분석한다",
+            "en": "Objectively analyze \"This is cheaper and has more portions\"",
+            "ja": "「こっちの方が安くて量も多い」と客観的に分析する",
+            "es": "Analizo objetivamente \"Esto es más barato y tiene más porciones\"",
+            "pt": "Analiso objetivamente \"Isso é mais barato e tem mais porções\""
+          },
+          "dimension": "T"
+        },
+        {
+          "text": {
+            "ko": "\"네가 좋아할 것 같은 건 이거야\" 친구 취향을 고려한다",
+            "en": "Consider their taste \"I think you'd like this\"",
+            "ja": "「あなたが好きそうなのはこれだよ」と友達の好みを考慮する",
+            "es": "Considero su gusto \"Creo que te gustaría esto\"",
+            "pt": "Considero o gosto dele \"Acho que você gostaria disso\""
+          },
+          "dimension": "F"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": {
+        "ko": "맛없는 음식을 먹었을 때, 나는?",
+        "en": "When I eat disappointing food, I:",
+        "ja": "おいしくない料理を食べたとき、私は：",
+        "es": "Cuando como comida decepcionante, yo:",
+        "pt": "Quando como comida decepcionante, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"이 가격에 이 정도면 별로네\" 냉정하게 평가한다",
+            "en": "Coolly evaluate \"Not worth it for this price\"",
+            "ja": "「この値段でこれはイマイチだね」と冷静に評価する",
+            "es": "Evalúo fríamente \"No vale la pena por este precio\"",
+            "pt": "Avalio friamente \"Não vale a pena por este preço\""
+          },
+          "dimension": "T"
+        },
+        {
+          "text": {
+            "ko": "\"주방에서 힘들게 만들었을 텐데...\" 아쉬워한다",
+            "en": "Feel bad \"They must have worked hard in the kitchen...\"",
+            "ja": "「キッチンで一生懸命作ったのに...」と残念に思う",
+            "es": "Me siento mal \"Deben haber trabajado duro en la cocina...\"",
+            "pt": "Fico com pena \"Eles devem ter trabalhado duro na cozinha...\""
+          },
+          "dimension": "F"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": {
+        "ko": "식당 리뷰를 쓸 때, 나는?",
+        "en": "When writing a restaurant review, I:",
+        "ja": "レストランのレビューを書くとき、私は：",
+        "es": "Cuando escribo una reseña de restaurante, yo:",
+        "pt": "Ao escrever uma avaliação de restaurante, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "가성비, 위생, 서비스 등을 논리적으로 평가한다",
+            "en": "Logically evaluate value, hygiene, service, etc.",
+            "ja": "コスパ、衛生、サービスなどを論理的に評価する",
+            "es": "Evalúo lógicamente el valor, higiene, servicio, etc.",
+            "pt": "Avalio logicamente valor, higiene, serviço, etc."
+          },
+          "dimension": "T"
+        },
+        {
+          "text": {
+            "ko": "전체적인 느낌과 분위기, 감정을 중심으로 쓴다",
+            "en": "Write focusing on overall feeling, atmosphere, emotions",
+            "ja": "全体的な雰囲気や感情を中心に書く",
+            "es": "Escribo enfocándome en la sensación general, atmósfera, emociones",
+            "pt": "Escrevo focando na sensação geral, atmosfera, emoções"
+          },
+          "dimension": "F"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": {
+        "ko": "식사 약속을 잡을 때, 나는?",
+        "en": "When making dinner plans, I:",
+        "ja": "食事の約束をするとき、私は：",
+        "es": "Cuando hago planes para cenar, yo:",
+        "pt": "Ao fazer planos para jantar, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "미리 식당을 예약하고 시간을 정확히 정한다",
+            "en": "Book the restaurant in advance and set an exact time",
+            "ja": "事前にレストランを予約し、時間を正確に決める",
+            "es": "Reservo el restaurante con anticipación y fijo una hora exacta",
+            "pt": "Reservo o restaurante com antecedência e marco um horário exato"
+          },
+          "dimension": "J"
+        },
+        {
+          "text": {
+            "ko": "\"그날 기분 보고 정하자\" 유연하게 생각한다",
+            "en": "Think flexibly \"Let's decide based on how we feel that day\"",
+            "ja": "「その日の気分で決めよう」と柔軟に考える",
+            "es": "Pienso con flexibilidad \"Decidamos según cómo nos sintamos ese día\"",
+            "pt": "Penso com flexibilidade \"Vamos decidir de acordo com como nos sentimos naquele dia\""
+          },
+          "dimension": "P"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": {
+        "ko": "배달 음식을 주문할 때, 나는?",
+        "en": "When ordering delivery food, I:",
+        "ja": "デリバリーを注文するとき、私は：",
+        "es": "Cuando pido comida a domicilio, yo:",
+        "pt": "Ao pedir comida para entrega, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "평소 먹던 익숙한 메뉴를 주문한다",
+            "en": "Order the familiar menu I usually eat",
+            "ja": "いつも食べている馴染みのメニューを注文する",
+            "es": "Pido el menú familiar que suelo comer",
+            "pt": "Peço o cardápio familiar que costumo comer"
+          },
+          "dimension": "J"
+        },
+        {
+          "text": {
+            "ko": "그때그때 끌리는 새로운 메뉴를 시도한다",
+            "en": "Try new menu items that appeal to me at the moment",
+            "ja": "その時その時に惹かれる新しいメニューを試す",
+            "es": "Pruebo nuevos elementos del menú que me atraen en el momento",
+            "pt": "Experimento novos itens do cardápio que me atraem no momento"
+          },
+          "dimension": "P"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": {
+        "ko": "장을 볼 때, 나는?",
+        "en": "When grocery shopping, I:",
+        "ja": "買い物をするとき、私は：",
+        "es": "Cuando hago la compra, yo:",
+        "pt": "Ao fazer compras no supermercado, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "미리 작성한 장보기 리스트를 따라 산다",
+            "en": "Follow a pre-written shopping list",
+            "ja": "事前に作成した買い物リストに従って買う",
+            "es": "Sigo una lista de compras pre-escrita",
+            "pt": "Sigo uma lista de compras pré-escrita"
+          },
+          "dimension": "J"
+        },
+        {
+          "text": {
+            "ko": "매장을 둘러보며 필요한 것을 즉석에서 고른다",
+            "en": "Browse the store and pick what I need on the spot",
+            "ja": "店内を見回して必要なものをその場で選ぶ",
+            "es": "Navego por la tienda y elijo lo que necesito en el momento",
+            "pt": "Navego pela loja e escolho o que preciso na hora"
+          },
+          "dimension": "P"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": {
+        "ko": "친구가 실수로 음식을 쏟았을 때, 나는?",
+        "en": "When a friend accidentally spills food, I:",
+        "ja": "友達が誤って料理をこぼしたとき、私は：",
+        "es": "Cuando un amigo derrama comida accidentalmente, yo:",
+        "pt": "Quando um amigo derrama comida acidentalmente, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"괜찮아, 실수할 수 있지\" 편안하게 넘긴다",
+            "en": "Calmly say \"It's okay, accidents happen\"",
+            "ja": "「大丈夫だよ、誰でもミスはある」と穏やかに言う",
+            "es": "Digo tranquilamente \"Está bien, los accidentes pasan\"",
+            "pt": "Digo calmamente \"Tudo bem, acidentes acontecem\""
+          },
+          "dimension": "A"
+        },
+        {
+          "text": {
+            "ko": "\"조심하지\" 하며 다소 긴장된다",
+            "en": "Say \"Be careful\" feeling somewhat tense",
+            "ja": "「気をつけて」と言いながら少し緊張する",
+            "es": "Digo \"Ten cuidado\" sintiéndome algo tenso",
+            "pt": "Digo \"Tenha cuidado\" me sentindo um pouco tenso"
+          },
+          "dimension": "T"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": {
+        "ko": "음식을 나눠 먹을 때, 나는?",
+        "en": "When sharing food, I:",
+        "ja": "料理を分けて食べるとき、私は：",
+        "es": "Cuando comparto comida, yo:",
+        "pt": "Ao compartilhar comida, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"내 거 더 먹을래?\" 자연스럽게 양보한다",
+            "en": "Naturally offer \"Want to have more of mine?\"",
+            "ja": "「私のもっと食べる？」と自然に譲る",
+            "es": "Ofrezco naturalmente \"¿Quieres más de lo mío?\"",
+            "pt": "Ofereço naturalmente \"Quer mais do meu?\""
+          },
+          "dimension": "A"
+        },
+        {
+          "text": {
+            "ko": "공평하게 나눠 먹는 게 중요하다고 생각한다",
+            "en": "Think it's important to divide fairly",
+            "ja": "公平に分けて食べることが重要だと思う",
+            "es": "Pienso que es importante dividir equitativamente",
+            "pt": "Acho que é importante dividir igualmente"
+          },
+          "dimension": "T"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": {
+        "ko": "레스토랑에서 대기할 때, 나는?",
+        "en": "When waiting at a restaurant, I:",
+        "ja": "レストランで待つとき、私は：",
+        "es": "Cuando espero en un restaurante, yo:",
+        "pt": "Ao esperar em um restaurante, eu:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"사람 많은 건 인기 많다는 증거지\" 긍정적으로 생각한다",
+            "en": "Think positively \"Crowded means it's popular\"",
+            "ja": "「人が多いのは人気がある証拠だ」とポジティブに考える",
+            "es": "Pienso positivamente \"Lleno significa que es popular\"",
+            "pt": "Penso positivamente \"Lotado significa que é popular\""
+          },
+          "dimension": "A"
+        },
+        {
+          "text": {
+            "ko": "\"이렇게 기다릴 만한 가치가 있을까?\" 걱정된다",
+            "en": "Worry \"Is it worth waiting this long?\"",
+            "ja": "「こんなに待つ価値があるかな？」と心配になる",
+            "es": "Me preocupo \"¿Vale la pena esperar tanto?\"",
+            "pt": "Me preocupo \"Vale a pena esperar tanto?\""
+          },
+          "dimension": "T"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "type": "ESTJ-A",
+      "food": {
+        "ko": "김치찌개",
+        "en": "Kimchi Jjigae",
+        "ja": "キムチチゲ",
+        "es": "Kimchi Jjigae",
+        "pt": "Kimchi Jjigae"
+      },
+      "emoji": "🥘",
+      "description": {
+        "ko": "든든하고 확실한 맛! 당신은 김치찌개처럼 언제나 믿을 수 있고 정직한 사람입니다. 클래식하지만 결코 지루하지 않은 매력의 소유자!",
+        "en": "Hearty and reliable taste! You're like Kimchi Jjigae - always dependable and honest. Classic yet never boring!",
+        "ja": "しっかりとした確かな味！あなたはキムチチゲのようにいつも信頼でき、正直な人です。クラシックだけど決して退屈ではない魅力の持ち主！",
+        "es": "¡Sabor abundante y confiable! Eres como Kimchi Jjigae: siempre confiable y honesto. ¡Clásico pero nunca aburrido!",
+        "pt": "Sabor farto e confiável! Você é como Kimchi Jjigae - sempre confiável e honesto. Clássico, mas nunca chato!"
+      },
+      "traits": {
+        "ko": ["리더십", "실용적", "책임감", "안정적"],
+        "en": ["Leadership", "Practical", "Responsible", "Stable"],
+        "ja": ["リーダーシップ", "実用的", "責任感", "安定的"],
+        "es": ["Liderazgo", "Práctico", "Responsable", "Estable"],
+        "pt": ["Liderança", "Prático", "Responsável", "Estável"]
+      }
+    },
+    {
+      "type": "ESTJ-T",
+      "food": {
+        "ko": "된장찌개",
+        "en": "Doenjang Jjigae",
+        "ja": "テンジャンチゲ",
+        "es": "Doenjang Jjigae",
+        "pt": "Doenjang Jjigae"
+      },
+      "emoji": "🍲",
+      "description": {
+        "ko": "깊고 진한 맛의 정통파! 당신은 된장찌개처럼 전통을 중시하면서도 끊임없이 더 나은 맛을 추구하는 완벽주의자입니다.",
+        "en": "Deep and rich traditional taste! You're like Doenjang Jjigae - valuing tradition while constantly pursuing better flavors as a perfectionist.",
+        "ja": "深くて濃い味の正統派！あなたはテンジャンチゲのように伝統を重視しながらも、常により良い味を追求する完璧主義者です。",
+        "es": "¡Sabor tradicional profundo y rico! Eres como Doenjang Jjigae: valoras la tradición mientras buscas constantemente mejores sabores como perfeccionista.",
+        "pt": "Sabor tradicional profundo e rico! Você é como Doenjang Jjigae - valoriza a tradição enquanto busca constantemente melhores sabores como perfeccionista."
+      },
+      "traits": {
+        "ko": ["체계적", "신중함", "완벽주의", "성실함"],
+        "en": ["Systematic", "Cautious", "Perfectionist", "Diligent"],
+        "ja": ["体系的", "慎重", "完璧主義", "誠実"],
+        "es": ["Sistemático", "Cauteloso", "Perfeccionista", "Diligente"],
+        "pt": ["Sistemático", "Cauteloso", "Perfeccionista", "Diligente"]
+      }
+    },
+    {
+      "type": "ESTP-A",
+      "food": {
+        "ko": "삼겹살",
+        "en": "Samgyeopsal",
+        "ja": "サムギョプサル",
+        "es": "Samgyeopsal",
+        "pt": "Samgyeopsal"
+      },
+      "emoji": "🥓",
+      "description": {
+        "ko": "지글지글 활기찬 에너지! 당신은 삼겹살처럼 언제나 열정적이고 현재를 즐길 줄 아는 사람입니다. 분위기 메이커!",
+        "en": "Sizzling vibrant energy! You're like Samgyeopsal - always enthusiastic and know how to enjoy the present. The life of the party!",
+        "ja": "ジュージューと活気あるエネルギー！あなたはサムギョプサルのようにいつも熱心で、今を楽しむ方法を知っている人です。ムードメーカー！",
+        "es": "¡Energía vibrante y chispeante! Eres como Samgyeopsal: siempre entusiasta y sabes cómo disfrutar el presente. ¡El alma de la fiesta!",
+        "pt": "Energia vibrante e crepitante! Você é como Samgyeopsal - sempre entusiasmado e sabe como aproveitar o presente. A alma da festa!"
+      },
+      "traits": {
+        "ko": ["행동파", "사교적", "모험적", "낙천적"],
+        "en": ["Action-oriented", "Sociable", "Adventurous", "Optimistic"],
+        "ja": ["行動派", "社交的", "冒険的", "楽天的"],
+        "es": ["Orientado a la acción", "Sociable", "Aventurero", "Optimista"],
+        "pt": ["Orientado para ação", "Sociável", "Aventureiro", "Otimista"]
+      }
+    },
+    {
+      "type": "ESTP-T",
+      "food": {
+        "ko": "치킨",
+        "en": "Korean Fried Chicken",
+        "ja": "チキン",
+        "es": "Pollo Frito Coreano",
+        "pt": "Frango Frito Coreano"
+      },
+      "emoji": "🍗",
+      "description": {
+        "ko": "바삭하고 중독적인 매력! 당신은 치킨처럼 겉은 강해 보이지만 속은 부드러운 사람입니다. 완벽을 추구하는 행동파!",
+        "en": "Crispy and addictively charming! You're like Korean Fried Chicken - tough outside but tender inside. A perfectionist go-getter!",
+        "ja": "サクサクで中毒性のある魅力！あなたはチキンのように外は強そうだけど中は柔らかい人です。完璧を追求する行動派！",
+        "es": "¡Crujiente y adictivamente encantador! Eres como el Pollo Frito Coreano: duro por fuera pero tierno por dentro. ¡Un emprendedor perfeccionista!",
+        "pt": "Crocante e viciante! Você é como Frango Frito Coreano - duro por fora, mas macio por dentro. Um perfeccionista empreendedor!"
+      },
+      "traits": {
+        "ko": ["적응력", "도전적", "열정적", "예민함"],
+        "en": ["Adaptable", "Challenging", "Passionate", "Sensitive"],
+        "ja": ["適応力", "挑戦的", "情熱的", "繊細"],
+        "es": ["Adaptable", "Desafiante", "Apasionado", "Sensible"],
+        "pt": ["Adaptável", "Desafiador", "Apaixonado", "Sensível"]
+      }
+    },
+    {
+      "type": "ESFJ-A",
+      "food": {
+        "ko": "비빔밥",
+        "en": "Bibimbap",
+        "ja": "ビビンバ",
+        "es": "Bibimbap",
+        "pt": "Bibimbap"
+      },
+      "emoji": "🍱",
+      "description": {
+        "ko": "조화로운 완벽 균형! 당신은 비빔밥처럼 다양한 사람들과 잘 어울리며 조화를 이루는 사람입니다. 모두를 배려하는 따뜻한 마음의 소유자!",
+        "en": "Harmonious perfect balance! You're like Bibimbap - getting along well with diverse people and creating harmony. A warm-hearted person who cares for everyone!",
+        "ja": "調和のとれた完璧なバランス！あなたはビビンバのように様々な人とうまく調和する人です。みんなを思いやる温かい心の持ち主！",
+        "es": "¡Equilibrio perfecto y armonioso! Eres como Bibimbap: te llevas bien con personas diversas y creas armonía. ¡Una persona de buen corazón que se preocupa por todos!",
+        "pt": "Equilíbrio perfeito e harmonioso! Você é como Bibimbap - se dá bem com pessoas diversas e cria harmonia. Uma pessoa de coração caloroso que se preocupa com todos!"
+      },
+      "traits": {
+        "ko": ["친절함", "협력적", "사교적", "배려심"],
+        "en": ["Kind", "Cooperative", "Sociable", "Considerate"],
+        "ja": ["親切", "協力的", "社交的", "思いやり"],
+        "es": ["Amable", "Cooperativo", "Sociable", "Considerado"],
+        "pt": ["Gentil", "Cooperativo", "Sociável", "Atencioso"]
+      }
+    },
+    {
+      "type": "ESFJ-T",
+      "food": {
+        "ko": "잡채",
+        "en": "Japchae",
+        "ja": "チャプチェ",
+        "es": "Japchae",
+        "pt": "Japchae"
+      },
+      "emoji": "🍜",
+      "description": {
+        "ko": "부드럽고 섬세한 조화! 당신은 잡채처럼 여러 재료를 조화롭게 엮어내는 감각적인 사람입니다. 완벽을 추구하며 타인을 배려하는 따뜻한 성격!",
+        "en": "Soft and delicate harmony! You're like Japchae - a sensitive person who weaves various ingredients harmoniously. Warm personality pursuing perfection while caring for others!",
+        "ja": "柔らかくて繊細な調和！あなたはチャプチェのように様々な材料を調和よく織り交ぜる感覚的な人です。完璧を追求しながら他人を思いやる温かい性格！",
+        "es": "¡Armonía suave y delicada! Eres como Japchae: una persona sensible que entrelaza varios ingredientes armoniosamente. ¡Personalidad cálida que busca la perfección mientras se preocupa por los demás!",
+        "pt": "Harmonia suave e delicada! Você é como Japchae - uma pessoa sensível que entrelaça vários ingredientes harmoniosamente. Personalidade calorosa buscando perfeição enquanto se preocupa com os outros!"
+      },
+      "traits": {
+        "ko": ["섬세함", "감성적", "세심함", "조화로움"],
+        "en": ["Delicate", "Emotional", "Attentive", "Harmonious"],
+        "ja": ["繊細", "感性的", "細心", "調和的"],
+        "es": ["Delicado", "Emocional", "Atento", "Armonioso"],
+        "pt": ["Delicado", "Emocional", "Atento", "Harmonioso"]
+      }
+    },
+    {
+      "type": "ENFP-A",
+      "food": {
+        "ko": "떡볶이",
+        "en": "Tteokbokki",
+        "ja": "トッポッキ",
+        "es": "Tteokbokki",
+        "pt": "Tteokbokki"
+      },
+      "emoji": "🌶️",
+      "description": {
+        "ko": "달콤 매콤 자유로운 영혼! 당신은 떡볶이처럼 예측 불가하지만 매력적인 사람입니다. 긍정적이고 창의적인 에너지의 소유자!",
+        "en": "Sweet, spicy, free spirit! You're like Tteokbokki - unpredictable but charming. Owner of positive and creative energy!",
+        "ja": "甘辛い自由な魂！あなたはトッポッキのように予測不可能だけど魅力的な人です。ポジティブで創造的なエネルギーの持ち主！",
+        "es": "¡Espíritu dulce, picante y libre! Eres como Tteokbokki: impredecible pero encantador. ¡Dueño de energía positiva y creativa!",
+        "pt": "Espírito doce, picante e livre! Você é como Tteokbokki - imprevisível, mas encantador. Dono de energia positiva e criativa!"
+      },
+      "traits": {
+        "ko": ["창의적", "열정적", "자유로움", "긍정적"],
+        "en": ["Creative", "Passionate", "Free-spirited", "Positive"],
+        "ja": ["創造的", "情熱的", "自由奔放", "ポジティブ"],
+        "es": ["Creativo", "Apasionado", "Espíritu libre", "Positivo"],
+        "pt": ["Criativo", "Apaixonado", "Espírito livre", "Positivo"]
+      }
+    },
+    {
+      "type": "ENFP-T",
+      "food": {
+        "ko": "국수",
+        "en": "Guksu (Korean Noodles)",
+        "ja": "クッス（韓国麺）",
+        "es": "Guksu (Fideos Coreanos)",
+        "pt": "Guksu (Macarrão Coreano)"
+      },
+      "emoji": "🍝",
+      "description": {
+        "ko": "부드럽고 유연한 창의력! 당신은 국수처럼 다양한 형태로 변화 가능한 창의적인 사람입니다. 감성적이면서도 끊임없이 발전하는 성격!",
+        "en": "Soft and flexible creativity! You're like Guksu - a creative person who can transform into various forms. Emotional yet constantly evolving personality!",
+        "ja": "柔らかくて柔軟な創造力！あなたはクッスのように様々な形に変化できる創造的な人です。感性的でありながら絶えず進化する性格！",
+        "es": "¡Creatividad suave y flexible! Eres como Guksu: una persona creativa que puede transformarse en varias formas. ¡Personalidad emocional pero en constante evolución!",
+        "pt": "Criatividade suave e flexível! Você é como Guksu - uma pessoa criativa que pode se transformar em várias formas. Personalidade emocional, mas em constante evolução!"
+      },
+      "traits": {
+        "ko": ["유연함", "감수성", "호기심", "성장지향"],
+        "en": ["Flexible", "Sensitive", "Curious", "Growth-oriented"],
+        "ja": ["柔軟", "感受性", "好奇心", "成長志向"],
+        "es": ["Flexible", "Sensible", "Curioso", "Orientado al crecimiento"],
+        "pt": ["Flexível", "Sensível", "Curioso", "Orientado para o crescimento"]
+      }
+    },
+    {
+      "type": "ENTJ-A",
+      "food": {
+        "ko": "갈비찜",
+        "en": "Galbijjim",
+        "ja": "カルビチム",
+        "es": "Galbijjim",
+        "pt": "Galbijjim"
+      },
+      "emoji": "🥩",
+      "description": {
+        "ko": "고급스럽고 강력한 리더십! 당신은 갈비찜처럼 세련되면서도 강한 존재감을 가진 타고난 리더입니다. 목표 지향적이고 자신감 넘치는 성격!",
+        "en": "Luxurious and powerful leadership! You're like Galbijjim - a natural leader with refined yet strong presence. Goal-oriented and confident personality!",
+        "ja": "高級で強力なリーダーシップ！あなたはカルビチムのように洗練されながらも強い存在感を持つ生まれながらのリーダーです。目標志向で自信に満ちた性格！",
+        "es": "¡Liderazgo lujoso y poderoso! Eres como Galbijjim: un líder natural con presencia refinada pero fuerte. ¡Personalidad orientada a objetivos y segura!",
+        "pt": "Liderança luxuosa e poderosa! Você é como Galbijjim - um líder natural com presença refinada, mas forte. Personalidade orientada para objetivos e confiante!"
+      },
+      "traits": {
+        "ko": ["리더십", "전략적", "자신감", "효율성"],
+        "en": ["Leadership", "Strategic", "Confident", "Efficient"],
+        "ja": ["リーダーシップ", "戦略的", "自信", "効率性"],
+        "es": ["Liderazgo", "Estratégico", "Seguro", "Eficiente"],
+        "pt": ["Liderança", "Estratégico", "Confiante", "Eficiente"]
+      }
+    },
+    {
+      "type": "ENTJ-T",
+      "food": {
+        "ko": "불고기",
+        "en": "Bulgogi",
+        "ja": "プルコギ",
+        "es": "Bulgogi",
+        "pt": "Bulgogi"
+      },
+      "emoji": "🔥",
+      "description": {
+        "ko": "세련되고 야심찬 완벽주의! 당신은 불고기처럼 달콤하면서도 강렬한 카리스마를 가진 사람입니다. 끊임없이 발전을 추구하는 전략가!",
+        "en": "Refined and ambitious perfectionism! You're like Bulgogi - a person with sweet yet intense charisma. A strategist constantly pursuing improvement!",
+        "ja": "洗練された野心的な完璧主義！あなたはプルコギのように甘くても強烈なカリスマを持つ人です。絶えず向上を追求する戦略家！",
+        "es": "¡Perfeccionismo refinado y ambicioso! Eres como Bulgogi: una persona con carisma dulce pero intenso. ¡Un estratega que busca constantemente mejorar!",
+        "pt": "Perfeccionismo refinado e ambicioso! Você é como Bulgogi - uma pessoa com carisma doce, mas intenso. Um estrategista que busca constantemente melhorias!"
+      },
+      "traits": {
+        "ko": ["야망", "분석적", "결단력", "완벽추구"],
+        "en": ["Ambitious", "Analytical", "Decisive", "Perfection-seeking"],
+        "ja": ["野心", "分析的", "決断力", "完璧追求"],
+        "es": ["Ambicioso", "Analítico", "Decisivo", "Buscador de perfección"],
+        "pt": ["Ambicioso", "Analítico", "Decisivo", "Buscador de perfeição"]
+      }
+    },
+    {
+      "type": "ENTP-A",
+      "food": {
+        "ko": "김밥",
+        "en": "Gimbap",
+        "ja": "キンパ",
+        "es": "Gimbap",
+        "pt": "Gimbap"
+      },
+      "emoji": "🍙",
+      "description": {
+        "ko": "다재다능 창의적 발명가! 당신은 김밥처럼 무한한 조합이 가능한 혁신적인 사람입니다. 자신감 있고 논리적인 아이디어 뱅크!",
+        "en": "Versatile creative inventor! You're like Gimbap - an innovative person with infinite combinations. Confident and logical idea bank!",
+        "ja": "多才で創造的な発明家！あなたはキンパのように無限の組み合わせが可能な革新的な人です。自信に満ちた論理的なアイデアバンク！",
+        "es": "¡Inventor creativo y versátil! Eres como Gimbap: una persona innovadora con combinaciones infinitas. ¡Banco de ideas confiado y lógico!",
+        "pt": "Inventor criativo e versátil! Você é como Gimbap - uma pessoa inovadora com combinações infinitas. Banco de ideias confiante e lógico!"
+      },
+      "traits": {
+        "ko": ["혁신적", "논리적", "창의적", "자신감"],
+        "en": ["Innovative", "Logical", "Creative", "Confident"],
+        "ja": ["革新的", "論理的", "創造的", "自信"],
+        "es": ["Innovador", "Lógico", "Creativo", "Seguro"],
+        "pt": ["Inovador", "Lógico", "Criativo", "Confiante"]
+      }
+    },
+    {
+      "type": "ENTP-T",
+      "food": {
+        "ko": "라면",
+        "en": "Ramyeon",
+        "ja": "ラーメン",
+        "es": "Ramyeon",
+        "pt": "Ramyeon"
+      },
+      "emoji": "🍜",
+      "description": {
+        "ko": "즉흥적 창의력의 천재! 당신은 라면처럼 간단하지만 무궁무진한 변화가 가능한 사람입니다. 끊임없이 새로운 아이디어를 탐구하는 혁신가!",
+        "en": "Genius of spontaneous creativity! You're like Ramyeon - simple but with infinite variations. An innovator constantly exploring new ideas!",
+        "ja": "即興的創造力の天才！あなたはラーメンのようにシンプルだけど無限の変化が可能な人です。絶えず新しいアイデアを探求する革新者！",
+        "es": "¡Genio de creatividad espontánea! Eres como Ramyeon: simple pero con variaciones infinitas. ¡Un innovador que explora constantemente nuevas ideas!",
+        "pt": "Gênio da criatividade espontânea! Você é como Ramyeon - simples, mas com variações infinitas. Um inovador explorando constantemente novas ideias!"
+      },
+      "traits": {
+        "ko": ["즉흥적", "호기심", "유연함", "실험적"],
+        "en": ["Spontaneous", "Curious", "Flexible", "Experimental"],
+        "ja": ["即興的", "好奇心", "柔軟", "実験的"],
+        "es": ["Espontáneo", "Curioso", "Flexible", "Experimental"],
+        "pt": ["Espontâneo", "Curioso", "Flexível", "Experimental"]
+      }
+    },
+    {
+      "type": "ISTJ-A",
+      "food": {
+        "ko": "백반",
+        "en": "Baekban (Korean Set Meal)",
+        "ja": "ペッパン（韓国定食）",
+        "es": "Baekban (Menú Coreano)",
+        "pt": "Baekban (Refeição Coreana)"
+      },
+      "emoji": "🍚",
+      "description": {
+        "ko": "안정적이고 균형 잡힌 정통파! 당신은 백반처럼 완벽한 영양 밸런스를 추구하는 신뢰할 수 있는 사람입니다. 체계적이고 성실한 성격!",
+        "en": "Stable and balanced traditionalist! You're like Baekban - a reliable person pursuing perfect nutritional balance. Systematic and diligent personality!",
+        "ja": "安定してバランスの取れた正統派！あなたはペッパンのように完璧な栄養バランスを追求する信頼できる人です。体系的で誠実な性格！",
+        "es": "¡Tradicionalista estable y equilibrado! Eres como Baekban: una persona confiable que busca un equilibrio nutricional perfecto. ¡Personalidad sistemática y diligente!",
+        "pt": "Tradicionalista estável e equilibrado! Você é como Baekban - uma pessoa confiável buscando equilíbrio nutricional perfeito. Personalidade sistemática e diligente!"
+      },
+      "traits": {
+        "ko": ["신뢰성", "체계적", "실용적", "안정감"],
+        "en": ["Reliable", "Systematic", "Practical", "Stable"],
+        "ja": ["信頼性", "体系的", "実用的", "安定感"],
+        "es": ["Confiable", "Sistemático", "Práctico", "Estable"],
+        "pt": ["Confiável", "Sistemático", "Prático", "Estável"]
+      }
+    },
+    {
+      "type": "ISTJ-T",
+      "food": {
+        "ko": "순두부찌개",
+        "en": "Sundubu Jjigae",
+        "ja": "スンドゥブチゲ",
+        "es": "Sundubu Jjigae",
+        "pt": "Sundubu Jjigae"
+      },
+      "emoji": "🥣",
+      "description": {
+        "ko": "부드럽지만 견고한 완벽주의! 당신은 순두부찌개처럼 겉은 부드럽지만 속은 단단한 원칙을 가진 사람입니다. 꼼꼼하고 책임감 강한 성격!",
+        "en": "Soft but solid perfectionism! You're like Sundubu Jjigae - soft outside but with firm principles inside. Meticulous and responsible personality!",
+        "ja": "柔らかいけど堅固な完璧主義！あなたはスンドゥブチゲのように外は柔らかいけど中は固い原則を持つ人です。几帳面で責任感の強い性格！",
+        "es": "¡Perfeccionismo suave pero sólido! Eres como Sundubu Jjigae: suave por fuera pero con principios firmes por dentro. ¡Personalidad meticulosa y responsable!",
+        "pt": "Perfeccionismo suave, mas sólido! Você é como Sundubu Jjigae - suave por fora, mas com princípios firmes por dentro. Personalidade meticulosa e responsável!"
+      },
+      "traits": {
+        "ko": ["완벽주의", "꼼꼼함", "신중함", "책임감"],
+        "en": ["Perfectionist", "Meticulous", "Cautious", "Responsible"],
+        "ja": ["完璧主義", "几帳面", "慎重", "責任感"],
+        "es": ["Perfeccionista", "Meticuloso", "Cauteloso", "Responsable"],
+        "pt": ["Perfeccionista", "Meticuloso", "Cauteloso", "Responsável"]
+      }
+    },
+    {
+      "type": "ISTP-A",
+      "food": {
+        "ko": "짜장면",
+        "en": "Jajangmyeon",
+        "ja": "ジャージャー麺",
+        "es": "Jajangmyeon",
+        "pt": "Jajangmyeon"
+      },
+      "emoji": "🍝",
+      "description": {
+        "ko": "쿨하고 실용적인 장인! 당신은 짜장면처럼 심플하지만 완벽한 조화를 이루는 사람입니다. 침착하고 문제 해결 능력이 뛰어난 성격!",
+        "en": "Cool and practical craftsman! You're like Jajangmyeon - simple but perfectly balanced. Calm personality with excellent problem-solving skills!",
+        "ja": "クールで実用的な職人！あなたはジャージャー麺のようにシンプルだけど完璧な調和を成す人です。落ち着いた問題解決能力に優れた性格！",
+        "es": "¡Artesano frío y práctico! Eres como Jajangmyeon: simple pero perfectamente equilibrado. ¡Personalidad tranquila con excelentes habilidades para resolver problemas!",
+        "pt": "Artesão legal e prático! Você é como Jajangmyeon - simples, mas perfeitamente equilibrado. Personalidade calma com excelentes habilidades de resolução de problemas!"
+      },
+      "traits": {
+        "ko": ["침착함", "실용적", "독립적", "문제해결"],
+        "en": ["Calm", "Practical", "Independent", "Problem-solver"],
+        "ja": ["冷静", "実用的", "独立的", "問題解決"],
+        "es": ["Tranquilo", "Práctico", "Independiente", "Solucionador"],
+        "pt": ["Calmo", "Prático", "Independente", "Solucionador"]
+      }
+    },
+    {
+      "type": "ISTP-T",
+      "food": {
+        "ko": "냉면",
+        "en": "Naengmyeon",
+        "ja": "冷麺",
+        "es": "Naengmyeon",
+        "pt": "Naengmyeon"
+      },
+      "emoji": "❄️",
+      "description": {
+        "ko": "차가운 듯 시원한 분석가! 당신은 냉면처럼 냉철하지만 깊은 맛을 가진 사람입니다. 분석적이며 끊임없이 개선하는 완벽주의자!",
+        "en": "Cool yet refreshing analyst! You're like Naengmyeon - cold-headed but with deep flavor. An analytical perfectionist constantly improving!",
+        "ja": "冷たくても爽やかな分析家！あなたは冷麺のように冷静だけど深い味を持つ人です。分析的で絶えず改善する完璧主義者！",
+        "es": "¡Analista frío pero refrescante! Eres como Naengmyeon: de cabeza fría pero con sabor profundo. ¡Un perfeccionista analítico mejorando constantemente!",
+        "pt": "Analista legal, mas refrescante! Você é como Naengmyeon - de cabeça fria, mas com sabor profundo. Um perfeccionista analítico melhorando constantemente!"
+      },
+      "traits": {
+        "ko": ["분석적", "냉철함", "신중함", "개선지향"],
+        "en": ["Analytical", "Cool-headed", "Cautious", "Improvement-oriented"],
+        "ja": ["分析的", "冷静", "慎重", "改善志向"],
+        "es": ["Analítico", "De cabeza fría", "Cauteloso", "Orientado a la mejora"],
+        "pt": ["Analítico", "De cabeça fria", "Cauteloso", "Orientado para melhoria"]
+      }
+    },
+    {
+      "type": "ISFJ-A",
+      "food": {
+        "ko": "계란찜",
+        "en": "Gyeran Jjim",
+        "ja": "ケランチム",
+        "es": "Gyeran Jjim",
+        "pt": "Gyeran Jjim"
+      },
+      "emoji": "🥚",
+      "description": {
+        "ko": "부드럽고 따뜻한 위로자! 당신은 계란찜처럼 포근하고 누구에게나 사랑받는 사람입니다. 헌신적이고 배려심 깊은 성격!",
+        "en": "Soft and warm comforter! You're like Gyeran Jjim - cozy and loved by everyone. Devoted and considerate personality!",
+        "ja": "柔らかくて温かい慰め手！あなたはケランチムのように心地よく誰からも愛される人です。献身的で思いやりの深い性格！",
+        "es": "¡Reconfortante suave y cálido! Eres como Gyeran Jjim: acogedor y amado por todos. ¡Personalidad devota y considerada!",
+        "pt": "Reconfortante suave e caloroso! Você é como Gyeran Jjim - aconchegante e amado por todos. Personalidade dedicada e atenciosa!"
+      },
+      "traits": {
+        "ko": ["따뜻함", "헌신적", "배려심", "안정감"],
+        "en": ["Warm", "Devoted", "Considerate", "Stable"],
+        "ja": ["温かさ", "献身的", "思いやり", "安定感"],
+        "es": ["Cálido", "Devoto", "Considerado", "Estable"],
+        "pt": ["Caloroso", "Dedicado", "Atencioso", "Estável"]
+      }
+    },
+    {
+      "type": "ISFJ-T",
+      "food": {
+        "ko": "미역국",
+        "en": "Miyeok Guk",
+        "ja": "ワカメスープ",
+        "es": "Miyeok Guk",
+        "pt": "Miyeok Guk"
+      },
+      "emoji": "🥬",
+      "description": {
+        "ko": "깊은 애정의 케어테이커! 당신은 미역국처럼 건강을 생각하며 타인을 돌보는 사람입니다. 섬세하고 완벽을 추구하는 따뜻한 마음!",
+        "en": "Deep affection caretaker! You're like Miyeok Guk - thinking of health and caring for others. Delicate warm heart pursuing perfection!",
+        "ja": "深い愛情のケアテイカー！あなたはワカメスープのように健康を考えて他人を世話する人です。繊細で完璧を追求する温かい心！",
+        "es": "¡Cuidador de profundo afecto! Eres como Miyeok Guk: pensando en la salud y cuidando a otros. ¡Corazón cálido delicado que busca la perfección!",
+        "pt": "Cuidador de afeição profunda! Você é como Miyeok Guk - pensando na saúde e cuidando dos outros. Coração caloroso delicado buscando perfeição!"
+      },
+      "traits": {
+        "ko": ["섬세함", "보살핌", "완벽추구", "감성적"],
+        "en": ["Delicate", "Caring", "Perfection-seeking", "Emotional"],
+        "ja": ["繊細", "世話好き", "完璧追求", "感性的"],
+        "es": ["Delicado", "Cariñoso", "Buscador de perfección", "Emocional"],
+        "pt": ["Delicado", "Carinhoso", "Buscador de perfeição", "Emocional"]
+      }
+    },
+    {
+      "type": "INFP-A",
+      "food": {
+        "ko": "팥빙수",
+        "en": "Patbingsu",
+        "ja": "パッピンス",
+        "es": "Patbingsu",
+        "pt": "Patbingsu"
+      },
+      "emoji": "🍧",
+      "description": {
+        "ko": "달콤한 몽상가! 당신은 팥빙수처럼 독특하고 창의적인 세계관을 가진 사람입니다. 이상주의적이고 자유로운 영혼의 소유자!",
+        "en": "Sweet dreamer! You're like Patbingsu - a person with unique and creative worldview. An idealist with free spirit!",
+        "ja": "甘い夢想家！あなたはパッピンスのようにユニークで創造的な世界観を持つ人です。理想主義で自由な魂の持ち主！",
+        "es": "¡Soñador dulce! Eres como Patbingsu: una persona con visión única y creativa del mundo. ¡Un idealista con espíritu libre!",
+        "pt": "Sonhador doce! Você é como Patbingsu - uma pessoa com visão de mundo única e criativa. Um idealista com espírito livre!"
+      },
+      "traits": {
+        "ko": ["이상주의", "창의적", "감성적", "자유로움"],
+        "en": ["Idealistic", "Creative", "Emotional", "Free-spirited"],
+        "ja": ["理想主義", "創造的", "感性的", "自由奔放"],
+        "es": ["Idealista", "Creativo", "Emocional", "Espíritu libre"],
+        "pt": ["Idealista", "Criativo", "Emocional", "Espírito livre"]
+      }
+    },
+    {
+      "type": "INFP-T",
+      "food": {
+        "ko": "호떡",
+        "en": "Hotteok",
+        "ja": "ホットク",
+        "es": "Hotteok",
+        "pt": "Hotteok"
+      },
+      "emoji": "🥞",
+      "description": {
+        "ko": "따뜻하고 섬세한 예술가! 당신은 호떡처럼 겉은 소박하지만 속은 달콤한 감성을 가진 사람입니다. 완벽을 추구하는 감성적 몽상가!",
+        "en": "Warm and delicate artist! You're like Hotteok - simple outside but sweet emotions inside. An emotional dreamer pursuing perfection!",
+        "ja": "温かくて繊細な芸術家！あなたはホットクのように外は素朴だけど中は甘い感性を持つ人です。完璧を追求する感性的な夢想家！",
+        "es": "¡Artista cálido y delicado! Eres como Hotteok: simple por fuera pero con emociones dulces por dentro. ¡Un soñador emocional que busca la perfección!",
+        "pt": "Artista caloroso e delicado! Você é como Hotteok - simples por fora, mas com emoções doces por dentro. Um sonhador emocional buscando perfeição!"
+      },
+      "traits": {
+        "ko": ["감수성", "섬세함", "완벽추구", "내향적"],
+        "en": ["Sensitive", "Delicate", "Perfection-seeking", "Introverted"],
+        "ja": ["感受性", "繊細", "完璧追求", "内向的"],
+        "es": ["Sensible", "Delicado", "Buscador de perfección", "Introvertido"],
+        "pt": ["Sensível", "Delicado", "Buscador de perfeição", "Introvertido"]
+      }
+    },
+    {
+      "type": "INTJ-A",
+      "food": {
+        "ko": "한정식",
+        "en": "Hanjeongsik (Korean Course Meal)",
+        "ja": "韓定食",
+        "es": "Hanjeongsik (Menú Degustación)",
+        "pt": "Hanjeongsik (Refeição Completa)"
+      },
+      "emoji": "👑",
+      "description": {
+        "ko": "고급스러운 전략가! 당신은 한정식처럼 완벽한 조화와 깊이를 추구하는 사람입니다. 체계적이고 비전을 가진 마스터마인드!",
+        "en": "Luxurious strategist! You're like Hanjeongsik - pursuing perfect harmony and depth. A systematic visionary mastermind!",
+        "ja": "高級な戦略家！あなたは韓定食のように完璧な調和と深みを追求する人です。体系的でビジョンを持つマスターマインド！",
+        "es": "¡Estratega lujoso! Eres como Hanjeongsik: buscando armonía y profundidad perfectas. ¡Una mente maestra visionaria sistemática!",
+        "pt": "Estrategista luxuoso! Você é como Hanjeongsik - buscando harmonia e profundidade perfeitas. Uma mente brilhante visionária sistemática!"
+      },
+      "traits": {
+        "ko": ["전략적", "독립적", "비전", "자신감"],
+        "en": ["Strategic", "Independent", "Visionary", "Confident"],
+        "ja": ["戦略的", "独立的", "ビジョン", "自信"],
+        "es": ["Estratégico", "Independiente", "Visionario", "Seguro"],
+        "pt": ["Estratégico", "Independente", "Visionário", "Confiante"]
+      }
+    },
+    {
+      "type": "INTJ-T",
+      "food": {
+        "ko": "육회",
+        "en": "Yukhoe (Korean Beef Tartare)",
+        "ja": "ユッケ",
+        "es": "Yukhoe (Tartar de Carne)",
+        "pt": "Yukhoe (Tártaro de Carne)"
+      },
+      "emoji": "🥩",
+      "description": {
+        "ko": "세련된 완벽주의자! 당신은 육회처럼 섬세하고 고급스러운 취향을 가진 사람입니다. 끊임없이 발전을 추구하는 전략적 사고가!",
+        "en": "Refined perfectionist! You're like Yukhoe - a person with delicate and luxurious taste. A strategic thinker constantly pursuing improvement!",
+        "ja": "洗練された完璧主義者！あなたはユッケのように繊細で高級な趣味を持つ人です。絶えず向上を追求する戦略的思考家！",
+        "es": "¡Perfeccionista refinado! Eres como Yukhoe: una persona con gusto delicado y lujoso. ¡Un pensador estratégico buscando constantemente mejorar!",
+        "pt": "Perfeccionista refinado! Você é como Yukhoe - uma pessoa com gosto delicado e luxuoso. Um pensador estratégico buscando constantemente melhorias!"
+      },
+      "traits": {
+        "ko": ["분석적", "완벽주의", "신중함", "개선지향"],
+        "en": ["Analytical", "Perfectionist", "Cautious", "Improvement-oriented"],
+        "ja": ["分析的", "完璧主義", "慎重", "改善志向"],
+        "es": ["Analítico", "Perfeccionista", "Cauteloso", "Orientado a la mejora"],
+        "pt": ["Analítico", "Perfeccionista", "Cauteloso", "Orientado para melhoria"]
+      }
+    },
+    {
+      "type": "INTP-A",
+      "food": {
+        "ko": "보쌈",
+        "en": "Bossam",
+        "ja": "ポッサム",
+        "es": "Bossam",
+        "pt": "Bossam"
+      },
+      "emoji": "🥬",
+      "description": {
+        "ko": "독창적인 사색가! 당신은 보쌈처럼 자유롭게 조합 가능한 창의적인 사람입니다. 논리적이면서도 독립적인 혁신가!",
+        "en": "Original thinker! You're like Bossam - a creative person with freely combinable elements. A logical yet independent innovator!",
+        "ja": "独創的な思索家！あなたはポッサムのように自由に組み合わせ可能な創造的な人です。論理的でありながら独立的な革新者！",
+        "es": "¡Pensador original! Eres como Bossam: una persona creativa con elementos libremente combinables. ¡Un innovador lógico pero independiente!",
+        "pt": "Pensador original! Você é como Bossam - uma pessoa criativa com elementos livremente combináveis. Um inovador lógico, mas independente!"
+      },
+      "traits": {
+        "ko": ["논리적", "창의적", "독립적", "분석적"],
+        "en": ["Logical", "Creative", "Independent", "Analytical"],
+        "ja": ["論理的", "創造的", "独立的", "分析的"],
+        "es": ["Lógico", "Creativo", "Independiente", "Analítico"],
+        "pt": ["Lógico", "Criativo", "Independente", "Analítico"]
+      }
+    },
+    {
+      "type": "INTP-T",
+      "food": {
+        "ko": "묵",
+        "en": "Muk (Acorn Jelly)",
+        "ja": "ムク（どんぐり寒天）",
+        "es": "Muk (Gelatina de Bellota)",
+        "pt": "Muk (Gelatina de Bolota)"
+      },
+      "emoji": "🟫",
+      "description": {
+        "ko": "독특한 분석가! 당신은 묵처럼 담백하지만 깊이 있는 사고를 가진 사람입니다. 끊임없이 탐구하는 이론가!",
+        "en": "Unique analyst! You're like Muk - plain but with deep thinking. A constantly exploring theorist!",
+        "ja": "ユニークな分析家！あなたはムクのように淡白だけど深い思考を持つ人です。絶えず探求する理論家！",
+        "es": "¡Analista único! Eres como Muk: simple pero con pensamiento profundo. ¡Un teórico que explora constantemente!",
+        "pt": "Analista único! Você é como Muk - simples, mas com pensamento profundo. Um teórico explorando constantemente!"
+      },
+      "traits": {
+        "ko": ["사색적", "호기심", "완벽추구", "내향적"],
+        "en": ["Thoughtful", "Curious", "Perfection-seeking", "Introverted"],
+        "ja": ["思索的", "好奇心", "完璧追求", "内向的"],
+        "es": ["Reflexivo", "Curioso", "Buscador de perfección", "Introvertido"],
+        "pt": ["Pensativo", "Curioso", "Buscador de perfeição", "Introvertido"]
+      }
+    },
+    {
+      "type": "ENFJ-A",
+      "food": {
+        "ko": "전골",
+        "en": "Jeongol (Korean Hot Pot)",
+        "ja": "チョンゴル（韓国鍋）",
+        "es": "Jeongol (Olla Caliente)",
+        "pt": "Jeongol (Panela Quente)"
+      },
+      "emoji": "🍲",
+      "description": {
+        "ko": "카리스마 넘치는 리더! 당신은 전골처럼 모두를 하나로 모으는 사람입니다. 따뜻하고 영향력 있는 멘토!",
+        "en": "Charismatic leader! You're like Jeongol - bringing everyone together. A warm and influential mentor!",
+        "ja": "カリスマ溢れるリーダー！あなたはチョンゴルのようにみんなを一つにまとめる人です。温かくて影響力のあるメンター！",
+        "es": "¡Líder carismático! Eres como Jeongol: reuniendo a todos. ¡Un mentor cálido e influyente!",
+        "pt": "Líder carismático! Você é como Jeongol - reunindo todos. Um mentor caloroso e influente!"
+      },
+      "traits": {
+        "ko": ["리더십", "공감능력", "카리스마", "영향력"],
+        "en": ["Leadership", "Empathetic", "Charismatic", "Influential"],
+        "ja": ["リーダーシップ", "共感力", "カリスマ", "影響力"],
+        "es": ["Liderazgo", "Empático", "Carismático", "Influyente"],
+        "pt": ["Liderança", "Empático", "Carismático", "Influente"]
+      }
+    },
+    {
+      "type": "ENFJ-T",
+      "food": {
+        "ko": "부대찌개",
+        "en": "Budae Jjigae",
+        "ja": "プデチゲ",
+        "es": "Budae Jjigae",
+        "pt": "Budae Jjigae"
+      },
+      "emoji": "🍜",
+      "description": {
+        "ko": "융합의 조화사! 당신은 부대찌개처럼 다양한 요소를 조화롭게 융합하는 사람입니다. 완벽을 추구하며 모두를 배려하는 리더!",
+        "en": "Harmony fusion master! You're like Budae Jjigae - harmoniously blending diverse elements. A leader pursuing perfection while caring for all!",
+        "ja": "融合の調和師！あなたはプデチゲのように様々な要素を調和よく融合する人です。完璧を追求しながらみんなを思いやるリーダー！",
+        "es": "¡Maestro de fusión armoniosa! Eres como Budae Jjigae: mezclando armoniosamente elementos diversos. ¡Un líder que busca la perfección mientras se preocupa por todos!",
+        "pt": "Mestre da fusão harmoniosa! Você é como Budae Jjigae - misturando harmoniosamente elementos diversos. Um líder buscando perfeição enquanto se preocupa com todos!"
+      },
+      "traits": {
+        "ko": ["조화", "배려", "완벽추구", "감성적"],
+        "en": ["Harmonious", "Considerate", "Perfection-seeking", "Emotional"],
+        "ja": ["調和", "思いやり", "完璧追求", "感性的"],
+        "es": ["Armonioso", "Considerado", "Buscador de perfección", "Emocional"],
+        "pt": ["Harmonioso", "Atencioso", "Buscador de perfeição", "Emocional"]
+      }
+    },
+    {
+      "type": "INFJ-A",
+      "food": {
+        "ko": "궁중떡볶이",
+        "en": "Royal Tteokbokki",
+        "ja": "宮廷トッポッキ",
+        "es": "Tteokbokki Real",
+        "pt": "Tteokbokki Real"
+      },
+      "emoji": "👑",
+      "description": {
+        "ko": "고귀한 이상주의자! 당신은 궁중떡볶이처럼 우아하면서도 깊이 있는 사람입니다. 비전을 가진 따뜻한 조언자!",
+        "en": "Noble idealist! You're like Royal Tteokbokki - elegant yet profound. A warm advisor with vision!",
+        "ja": "高貴な理想主義者！あなたは宮廷トッポッキのように優雅で深みのある人です。ビジョンを持つ温かいアドバイザー！",
+        "es": "¡Idealista noble! Eres como Tteokbokki Real: elegante pero profundo. ¡Un asesor cálido con visión!",
+        "pt": "Idealista nobre! Você é como Tteokbokki Real - elegante, mas profundo. Um conselheiro caloroso com visão!"
+      },
+      "traits": {
+        "ko": ["통찰력", "이상주의", "공감능력", "비전"],
+        "en": ["Insightful", "Idealistic", "Empathetic", "Visionary"],
+        "ja": ["洞察力", "理想主義", "共感力", "ビジョン"],
+        "es": ["Perspicaz", "Idealista", "Empático", "Visionario"],
+        "pt": ["Perspicaz", "Idealista", "Empático", "Visionário"]
+      }
+    },
+    {
+      "type": "INFJ-T",
+      "food": {
+        "ko": "약식",
+        "en": "Yakshik (Sweet Rice)",
+        "ja": "ヤクシク（甘い餅米）",
+        "es": "Yakshik (Arroz Dulce)",
+        "pt": "Yakshik (Arroz Doce)"
+      },
+      "emoji": "🍯",
+      "description": {
+        "ko": "섬세한 완벽주의자! 당신은 약식처럼 정성스럽고 깊은 의미를 담은 사람입니다. 완벽을 추구하는 이상주의적 조언자!",
+        "en": "Delicate perfectionist! You're like Yakshik - carefully crafted with deep meaning. An idealistic advisor pursuing perfection!",
+        "ja": "繊細な完璧主義者！あなたはヤクシクのように丁寧で深い意味を込めた人です。完璧を追求する理想主義的アドバイザー！",
+        "es": "¡Perfeccionista delicado! Eres como Yakshik: cuidadosamente elaborado con significado profundo. ¡Un asesor idealista que busca la perfección!",
+        "pt": "Perfeccionista delicado! Você é como Yakshik - cuidadosamente elaborado com significado profundo. Um conselheiro idealista buscando perfeição!"
+      },
+      "traits": {
+        "ko": ["섬세함", "완벽추구", "감성적", "내향적"],
+        "en": ["Delicate", "Perfection-seeking", "Emotional", "Introverted"],
+        "ja": ["繊細", "完璧追求", "感性的", "内向的"],
+        "es": ["Delicado", "Buscador de perfección", "Emocional", "Introvertido"],
+        "pt": ["Delicado", "Buscador de perfeição", "Emocional", "Introvertido"]
+      }
+    },
+    {
+      "type": "ESFP-A",
+      "food": {
+        "ko": "닭강정",
+        "en": "Dakgangjeong",
+        "ja": "ダッカンジョン",
+        "es": "Dakgangjeong",
+        "pt": "Dakgangjeong"
+      },
+      "emoji": "🍗",
+      "description": {
+        "ko": "달콤한 에너지 폭탄! 당신은 닭강정처럼 중독적인 매력을 가진 사람입니다. 밝고 긍정적인 분위기 메이커!",
+        "en": "Sweet energy bomb! You're like Dakgangjeong - addictively charming. A bright and positive mood maker!",
+        "ja": "甘いエネルギー爆弾！あなたはダッカンジョンのように中毒性のある魅力を持つ人です。明るくてポジティブなムードメーカー！",
+        "es": "¡Bomba de energía dulce! Eres como Dakgangjeong: adictivamente encantador. ¡Un creador de ambiente brillante y positivo!",
+        "pt": "Bomba de energia doce! Você é como Dakgangjeong - viciante e encantador. Um criador de clima brilhante e positivo!"
+      },
+      "traits": {
+        "ko": ["활기참", "사교적", "즐거움", "긍정적"],
+        "en": ["Energetic", "Sociable", "Fun-loving", "Positive"],
+        "ja": ["活気", "社交的", "楽しさ", "ポジティブ"],
+        "es": ["Enérgico", "Sociable", "Amante de la diversión", "Positivo"],
+        "pt": ["Enérgico", "Sociável", "Amante de diversão", "Positivo"]
+      }
+    },
+    {
+      "type": "ESFP-T",
+      "food": {
+        "ko": "순대",
+        "en": "Sundae (Blood Sausage)",
+        "ja": "スンデ（腸詰め）",
+        "es": "Sundae (Morcilla)",
+        "pt": "Sundae (Linguiça de Sangue)"
+      },
+      "emoji": "🌭",
+      "description": {
+        "ko": "독특한 매력쟁이! 당신은 순대처럼 개성 넘치면서도 대중적인 사람입니다. 완벽을 추구하며 모두를 즐겁게 하는 성격!",
+        "en": "Unique charmer! You're like Sundae - uniquely appealing yet popular. Personality pursuing perfection while making everyone happy!",
+        "ja": "ユニークな魅力者！あなたはスンデのように個性溢れながらも大衆的な人です。完璧を追求しながらみんなを楽しませる性格！",
+        "es": "¡Encantador único! Eres como Sundae: único pero popular. ¡Personalidad que busca la perfección mientras hace feliz a todos!",
+        "pt": "Encantador único! Você é como Sundae - unicamente atraente, mas popular. Personalidade buscando perfeição enquanto faz todos felizes!"
+      },
+      "traits": {
+        "ko": ["개성", "사교적", "완벽추구", "감성적"],
+        "en": ["Unique", "Sociable", "Perfection-seeking", "Emotional"],
+        "ja": ["個性", "社交的", "完璧追求", "感性的"],
+        "es": ["Único", "Sociable", "Buscador de perfección", "Emocional"],
+        "pt": ["Único", "Sociável", "Buscador de perfeição", "Emocional"]
+      }
+    },
+    {
+      "type": "ISFP-A",
+      "food": {
+        "ko": "수정과",
+        "en": "Sujeonggwa (Cinnamon Punch)",
+        "ja": "スジョンガ（シナモンパンチ）",
+        "es": "Sujeonggwa (Ponche de Canela)",
+        "pt": "Sujeonggwa (Ponche de Canela)"
+      },
+      "emoji": "🥤",
+      "description": {
+        "ko": "은은한 예술가! 당신은 수정과처럼 독특하면서도 우아한 사람입니다. 자유롭고 감성적인 크리에이터!",
+        "en": "Subtle artist! You're like Sujeonggwa - unique yet elegant. A free-spirited and emotional creator!",
+        "ja": "ほのかな芸術家！あなたはスジョンガのようにユニークで優雅な人です。自由で感性的なクリエイター！",
+        "es": "¡Artista sutil! Eres como Sujeonggwa: único pero elegante. ¡Un creador de espíritu libre y emocional!",
+        "pt": "Artista sutil! Você é como Sujeonggwa - único, mas elegante. Um criador de espírito livre e emocional!"
+      },
+      "traits": {
+        "ko": ["예술적", "감성적", "자유로움", "평화로움"],
+        "en": ["Artistic", "Emotional", "Free-spirited", "Peaceful"],
+        "ja": ["芸術的", "感性的", "自由奔放", "平和"],
+        "es": ["Artístico", "Emocional", "Espíritu libre", "Pacífico"],
+        "pt": ["Artístico", "Emocional", "Espírito livre", "Pacífico"]
+      }
+    },
+    {
+      "type": "ISFP-T",
+      "food": {
+        "ko": "식혜",
+        "en": "Sikhye (Sweet Rice Drink)",
+        "ja": "シッケ（甘い米飲料）",
+        "es": "Sikhye (Bebida de Arroz Dulce)",
+        "pt": "Sikhye (Bebida de Arroz Doce)"
+      },
+      "emoji": "🥛",
+      "description": {
+        "ko": "부드러운 몽상가! 당신은 식혜처럼 달콤하고 섬세한 사람입니다. 완벽을 추구하는 감성적 아티스트!",
+        "en": "Gentle dreamer! You're like Sikhye - sweet and delicate. An emotional artist pursuing perfection!",
+        "ja": "優しい夢想家！あなたはシッケのように甘くて繊細な人です。完璧を追求する感性的なアーティスト！",
+        "es": "¡Soñador gentil! Eres como Sikhye: dulce y delicado. ¡Un artista emocional que busca la perfección!",
+        "pt": "Sonhador gentil! Você é como Sikhye - doce e delicado. Um artista emocional buscando perfeição!"
+      },
+      "traits": {
+        "ko": ["감수성", "완벽추구", "섬세함", "내향적"],
+        "en": ["Sensitive", "Perfection-seeking", "Delicate", "Introverted"],
+        "ja": ["感受性", "完璧追求", "繊細", "内向的"],
+        "es": ["Sensible", "Buscador de perfección", "Delicado", "Introvertido"],
+        "pt": ["Sensível", "Buscador de perfeição", "Delicado", "Introvertido"]
+      }
+    }
+  ]
+}

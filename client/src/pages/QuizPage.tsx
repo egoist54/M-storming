@@ -62,10 +62,10 @@ export default function QuizPage() {
 
   const currentQ = quiz.questions[currentQuestion];
   const questionText = currentQ.text[language] || currentQ.text.ko;
-  const answerOptions = currentQ.answers.map(a => ({
-    id: a.id,
+  const answerOptions = currentQ.options.map((a, index) => ({
+    id: a.dimension || `option-${index}`,
     text: a.text[language] || a.text.ko,
-    score: typeof a.score === 'string' ? 1 : a.score,
+    score: 1,
   }));
 
   return (

@@ -11,36 +11,51 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import positiveResult from '@assets/generated_images/긍정적_결과_이미지_42ed835e.png';
 
 function calculateResult(quizData: any, answers: string[]) {
-  if (quizData.id === "kvibe") {
-    const dimensions: Record<string, number> = { E: 0, S: 0, T: 0, J: 0, A: 0 };
+  if (quizData.id === "k-vibe") {
+    const eiCount = { E: 0, I: 0 };
+    const snCount = { S: 0, N: 0 };
+    const tfCount = { T: 0, F: 0 };
+    const jpCount = { J: 0, P: 0 };
+    const atCount = { A: 0, T: 0 };
     
-    answers.forEach((answerId, index) => {
-      const question = quizData.questions[index];
-      const answer = question.answers.find((a: any) => a.id === answerId);
-      if (answer && typeof answer.score === 'string') {
-        dimensions[answer.score] = (dimensions[answer.score] || 0) + 1;
+    answers.forEach((dimension, index) => {
+      if (!dimension) return;
+      
+      if (index < 3) {
+        if (dimension === 'E' || dimension === 'I') eiCount[dimension]++;
+      } else if (index < 6) {
+        if (dimension === 'S' || dimension === 'N') snCount[dimension]++;
+      } else if (index < 9) {
+        if (dimension === 'T' || dimension === 'F') tfCount[dimension]++;
+      } else if (index < 12) {
+        if (dimension === 'J' || dimension === 'P') jpCount[dimension]++;
+      } else if (index < 15) {
+        if (dimension === 'A' || dimension === 'T') atCount[dimension]++;
       }
     });
 
     const mbtiType = 
-      (dimensions.E > quizData.questions.filter((q: any) => q.dimension === 'E').length / 2 ? 'E' : 'I') +
-      (dimensions.S > quizData.questions.filter((q: any) => q.dimension === 'S').length / 2 ? 'S' : 'N') +
-      (dimensions.T > quizData.questions.filter((q: any) => q.dimension === 'T').length / 2 ? 'T' : 'F') +
-      (dimensions.J > quizData.questions.filter((q: any) => q.dimension === 'J').length / 2 ? 'J' : 'P') +
-      (dimensions.A > quizData.questions.filter((q: any) => q.dimension === 'A').length / 2 ? 'A' : 'T');
+      (eiCount.E > eiCount.I ? 'E' : 'I') +
+      (snCount.S > snCount.N ? 'S' : 'N') +
+      (tfCount.T > tfCount.F ? 'T' : 'F') +
+      (jpCount.J > jpCount.P ? 'J' : 'P') +
+      '-' +
+      (atCount.A > atCount.T ? 'A' : 'T');
 
-    return quizData.results[mbtiType] || Object.values(quizData.results)[0];
+    const result = quizData.results.find((r: any) => r.type === mbtiType);
+    return result || quizData.results[0];
   }
 
   const totalScore = answers.reduce((sum, answerId, index) => {
     const question = quizData.questions[index];
-    const answer = question.answers.find((a: any) => a.id === answerId);
-    return sum + (answer ? (typeof answer.score === 'number' ? answer.score : 1) : 0);
+    const answer = question.options?.find((a: any) => a.dimension === answerId);
+    return sum + (answer ? 1 : 0);
   }, 0);
 
   const avgScore = totalScore / answers.length;
-  const resultKey = avgScore > 1.5 ? 'neutral' : 'positive';
-  return quizData.results[resultKey] || Object.values(quizData.results)[0];
+  const resultKey = avgScore > 0.5 ? 'positive' : 'neutral';
+  const result = quizData.results.find((r: any) => r.type === resultKey);
+  return result || quizData.results[0];
 }
 
 export default function ResultPage() {
@@ -75,9 +90,9 @@ export default function ResultPage() {
   }
 
   const resultData = calculateResult(quizData, answers);
-  const title = resultData.title[language] || resultData.title.ko;
+  const title = resultData.food?.[language] || resultData.food?.ko || resultData.title?.[language] || resultData.title?.ko || "Result";
   const description = resultData.description[language] || resultData.description.ko;
-  const category = quizData.category[language] || quizData.category.ko;
+  const category = quizData.category?.[language] || quizData.category?.ko || "Quiz";
 
   return (
     <div className="min-h-screen bg-background py-8 px-4">
