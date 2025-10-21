@@ -4,3 +4,6 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+
+# Keep docs/ for GitHub Pages deployment
+# docs/ should be committed to repository
