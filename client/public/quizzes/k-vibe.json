@@ -514,7 +514,7 @@
         "pt": "Kimchi Jjigae"
       },
       "emoji": "🥘",
-      "image": "/images/korean_kimchi_jjigae_47052574.jpg",
+      "image": "/images/kimchi_jjigae.png",
       "description": {
         "ko": "든든하고 확실한 맛! 당신은 김치찌개처럼 언제나 믿을 수 있고 정직한 사람입니다. 클래식하지만 결코 지루하지 않은 매력의 소유자!",
         "en": "Hearty and reliable taste! You're like Kimchi Jjigae - always dependable and honest. Classic yet never boring!",
@@ -718,7 +718,7 @@
         "pt": "Bibimbap"
       },
       "emoji": "🍱",
-      "image": "/images/korean_bibimbap_mixe_5552ea08.jpg",
+      "image": "/images/bibimbap.jpg",
       "description": {
         "ko": "조화로운 완벽 균형! 당신은 비빔밥처럼 다양한 사람들과 잘 어울리며 조화를 이루는 사람입니다. 모두를 배려하는 따뜻한 마음의 소유자!",
         "en": "Harmonious perfect balance! You're like Bibimbap - getting along well with diverse people and creating harmony. A warm-hearted person who cares for everyone!",
@@ -808,7 +808,7 @@
           "Harmonioso"
         ]
       },
-      "image": "/images/japchae.png"
+      "image": "/images/japchae2.png"
     },
     {
       "type": "ENFP-A",
@@ -910,7 +910,7 @@
           "Orientado para o crescimento"
         ]
       },
-      "image": "/images/korean_noodles_guksu_f17f6b99.jpg"
+      "image": "/images/guksu.png"
     },
     {
       "type": "ENTJ-A",
@@ -961,7 +961,7 @@
           "Eficiente"
         ]
       },
-      "image": "/images/korean_galbijjim_bra_657506ed.jpg"
+      "image": "/images/galbijjim.jpg"
     },
     {
       "type": "ENTJ-T",
@@ -1012,7 +1012,7 @@
           "Buscador de perfeição"
         ]
       },
-      "image": "/images/korean_bulgogi_marin_19040ce8.jpg"
+      "image": "/images/bulgogi.jpg"
     },
     {
       "type": "ENTP-A",
@@ -1114,7 +1114,7 @@
           "Experimental"
         ]
       },
-      "image": "/images/korean_ramyeon_insta_eadaf359.jpg"
+      "image": "/images/ramyeon.png"
     },
     {
       "type": "ISTJ-A",
@@ -1216,7 +1216,7 @@
           "Responsável"
         ]
       },
-      "image": "/images/korean_sundubu_jjiga_a10f8939.jpg"
+      "image": "/images/sundubu_jjigae.png"
     },
     {
       "type": "ISTP-A",
