@@ -1,0 +1,85 @@
+1. 프로젝트 목표 및 환경 설정
+"Replit Agent 3, 다음 요구 사항을 만족하는 **정적 웹사이트 프로젝트 'M-storming-Firebase-FE'**를 생성해 주십시오. 이 프로젝트는 GitHub Pages에 배포될 예정이며, 모든 동적 데이터 처리(이용자 카운팅)는 Firebase Realtime Database를 통해 프론트엔드 JavaScript에서 직접 처리됩니다. 백엔드 서버는 필요하지 않습니다."
+
+2. 기술 스택 및 초기 설정
+기술 스택: HTML5, CSS3, Vanilla JavaScript, Firebase JavaScript SDK (Realtime Database).
+
+파일 구성: index.html, quiz.html, result.html, style.css, script.js, quizzes.json, 그리고 Firebase 설정 정보를 포함할 firebase-config.js 파일.
+
+Firebase 설정:
+
+index.html의 <head> 태그에 Firebase SDK 스크립트를 추가하고, firebase-config.js 파일을 로드하여 초기화하도록 합니다.
+
+(주의: Firebase API 키, 앱 ID 등의 설정 정보는 코드에 하드코딩하지 말고, 사용자에게 입력받을 변수로 처리하거나, 초기에는 Placeholder로 남겨두고 사용자에게 추후 입력 지침을 제공해야 합니다.)
+
+3. 핵심 기능 구현 (JavaScript 중심)
+3.1. 정적 데이터 관리 (quizzes.json)
+quizzes.json 파일을 생성하고, 최소 2개의 샘플 퀴즈 데이터를 포함합니다. (카테고리: '성격', 'AI' 구분 필수)
+
+script.js는 fetch API를 사용하여 이 JSON 파일을 로드하고 퀴즈 내용을 구성합니다.
+
+3.2. 동적 데이터 관리 (Firebase) 및 카운팅 로직
+Firebase 데이터 구조: Firebase Realtime Database에 다음과 같은 단순한 카운터 구조를 가정합니다.
+
+JSON
+
+{
+  "counts": {
+    "total_access": 12345,
+    "quiz_1_users": 500,
+    "quiz_2_users": 734
+  }
+}
+전체 접속자 카운트 로직:
+
+index.html 로드 시, script.js는 Firebase의 total_access 값을 읽고 화면에 표시합니다.
+
+접속 시마다 total_access 값을 1 증가시키도록 Firebase 업데이트 함수를 호출합니다.
+
+개별 테스트 이용자 카운트 로직:
+
+result.html 로드 시 (퀴즈 완료 시점), script.js는 해당 퀴즈 ID(quiz_<ID>_users)에 해당하는 값을 읽고 화면에 표시합니다.
+
+결과 화면 표시 직전에 해당 퀴즈의 이용자 카운트 값을 1 증가시키도록 Firebase 업데이트 함수를 호출합니다.
+
+3.3. UI/UX 구성
+메인 페이지 (index.html):
+
+상단에 누적 접속자 수를 표시할 영역(id="total-access-count")을 명확하게 배치합니다.
+
+퀴즈 목록 카드마다 해당 테스트의 누적 이용자 수를 표시할 영역을 포함합니다.
+
+결과 페이지 (result.html):
+
+결과 이미지, 설명 외에, 해당 테스트의 현재 누적 이용자 수를 표시할 영역을 배치합니다.
+
+바이럴을 위한 공유 버튼 (카카오톡, URL 복사) 및 광고 배너 영역을 포함합니다.
+
+4. Replit 지시 사항 (프롬프트 최종)
+Create a static web project for a viral quiz site named 'M-storming-Firebase-FE' using HTML, CSS, and Vanilla JavaScript. The core requirement is to integrate **Firebase Realtime Database** for dynamic user count tracking (total access and per-quiz user count), making the site deployable on GitHub Pages.
+
+**Files to Generate:**
+1.  `index.html`: Home page displaying the quiz list and total access count.
+2.  `quiz.html`: Template for the quiz questions.
+3.  `result.html`: Template for displaying the final result and quiz-specific user count.
+4.  `style.css`: Mobile-first design focusing on readability and shareability.
+5.  `script.js`: Core quiz logic and Firebase interaction.
+6.  `quizzes.json`: Static data file for quiz content (2 samples: '성격', 'AI').
+7.  `firebase-config.js`: Placeholder for Firebase initialization code.
+
+**Key Implementation Tasks in `script.js`:**
+* **Firebase Setup:** Include the necessary code to initialize Firebase. Use placeholders for configuration variables (e.g., `YOUR_API_KEY`).
+* **Total Access Counting:** Implement a function that runs on `index.html` load to:
+    1. Read the `total_access` value from Firebase.
+    2. Display the value in the HTML element with `id="total-access-count"`.
+    3. **Increment** the `total_access` value in Firebase by 1.
+* **Per-Quiz Counting:** Implement a function that runs on `result.html` load to:
+    1. Identify the completed quiz ID.
+    2. Read the corresponding count (`quiz_<ID>_users`) from Firebase.
+    3. Display the value on the page.
+    4. **Increment** the specific quiz user count value in Firebase by 1.
+* **Quiz Flow:** Implement the logic to load data from `quizzes.json`, handle question progression, calculate scores, and match the final score to a result type, redirecting to `result.html` with necessary parameters.
+
+**HTML Design Constraints:**
+* Ensure clear placeholders for all count metrics and the **광고 배너 영역 (Ad Banner Placeholder)**.
+* The design must be fully responsive for mobile sharing.
