@@ -33,7 +33,7 @@ export default function QuestionCard({ question, answers, onAnswer }: QuestionCa
             <Button
               key={answer.id}
               variant="outline"
-              className="w-full min-h-16 text-base font-medium justify-start px-6 hover-elevate active-elevate-2"
+              className="w-full h-auto min-h-16 py-4 text-base font-medium justify-start text-left whitespace-normal px-6 hover-elevate active-elevate-2"
               onClick={() => onAnswer(answer.id)}
               data-testid={`button-answer-${index}`}
             >
