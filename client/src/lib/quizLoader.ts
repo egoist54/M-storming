@@ -8,7 +8,11 @@ export interface QuizData {
     id: string;
     dimension?: string;
     text: Record<string, string>;
-    answers: Array<{
+    options?: Array<{
+      dimension?: string;
+      text: Record<string, string>;
+    }>;
+    answers?: Array<{
       id: string;
       text: Record<string, string>;
       score: number | string;

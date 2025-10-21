@@ -74,6 +74,7 @@ export default function ResultPage() {
   
   const answersParam = new URLSearchParams(window.location.search).get('answers');
   const answers = answersParam ? answersParam.split(',') : [];
+  const username = sessionStorage.getItem('quiz-username') || "";
 
   const { data: quizData, isLoading } = useQuery({
     queryKey: ['quiz', quizId],
@@ -135,6 +136,7 @@ export default function ResultPage() {
           participantCount={count}
           category={category}
           matchRate={matchRate}
+          username={username}
         />
 
         <div className="max-w-md mx-auto">

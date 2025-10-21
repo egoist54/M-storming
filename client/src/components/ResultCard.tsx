@@ -10,6 +10,7 @@ interface ResultCardProps {
   participantCount: number;
   category?: string;
   matchRate?: number;
+  username?: string;
 }
 
 export default function ResultCard({ 
@@ -18,7 +19,8 @@ export default function ResultCard({
   image, 
   participantCount,
   category,
-  matchRate
+  matchRate,
+  username
 }: ResultCardProps) {
   return (
     <motion.div
@@ -43,6 +45,12 @@ export default function ResultCard({
             </Badge>
           )}
 
+          {username && (
+            <p className="text-lg text-muted-foreground" data-testid="text-username">
+              {username}님의 결과는
+            </p>
+          )}
+
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-primary" data-testid="text-result-title">
               {title}
@@ -56,7 +64,7 @@ export default function ResultCard({
           {matchRate !== undefined && (
             <div className="flex items-center justify-center py-6">
               <div className="text-center space-y-2">
-                <p className="text-sm text-muted-foreground">K-VIBE 일치율</p>
+                <p className="text-base font-medium text-foreground">한국생활 적합성</p>
                 <div className="flex items-baseline gap-1">
                   <span className="text-5xl font-bold text-primary" data-testid="text-match-rate">
                     {matchRate}
