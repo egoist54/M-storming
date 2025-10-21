@@ -35,12 +35,12 @@ function calculateResult(quizData: any, answers: string[]) {
     });
 
     const mbtiType = 
-      (eiCount.E > eiCount.I ? 'E' : 'I') +
-      (snCount.S > snCount.N ? 'S' : 'N') +
-      (tfCount.T > tfCount.F ? 'T' : 'F') +
-      (jpCount.J > jpCount.P ? 'J' : 'P') +
+      (eiCount.E >= eiCount.I ? 'E' : 'I') +
+      (snCount.S >= snCount.N ? 'S' : 'N') +
+      (tfCount.T >= tfCount.F ? 'T' : 'F') +
+      (jpCount.J >= jpCount.P ? 'J' : 'P') +
       '-' +
-      (atCount.A > atCount.T ? 'A' : 'T');
+      (atCount.A >= atCount.T ? 'A' : 'T');
 
     const result = quizData.results.find((r: any) => r.type === mbtiType);
     return result || quizData.results[0];
