@@ -11,6 +11,9 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import positiveResult from '@assets/generated_images/긍정적_결과_이미지_42ed835e.png';
 
 function calculateResult(quizData: any, answers: string[]) {
+  console.log('[calculateResult] Quiz ID:', quizData.id);
+  console.log('[calculateResult] Answers:', answers);
+  
   if (quizData.id === "k-vibe") {
     const eiCount = { E: 0, I: 0 };
     const snCount = { S: 0, N: 0 };
@@ -34,6 +37,8 @@ function calculateResult(quizData: any, answers: string[]) {
       }
     });
 
+    console.log('[calculateResult] Counts:', { eiCount, snCount, tfCount, jpCount, atCount });
+
     const mbtiType = 
       (eiCount.E >= eiCount.I ? 'E' : 'I') +
       (snCount.S >= snCount.N ? 'S' : 'N') +
@@ -41,6 +46,8 @@ function calculateResult(quizData: any, answers: string[]) {
       (jpCount.J >= jpCount.P ? 'J' : 'P') +
       '-' +
       (atCount.A >= atCount.T ? 'A' : 'T');
+
+    console.log('[calculateResult] Calculated MBTI type:', mbtiType);
 
     const eiStrength = Math.max(eiCount.E, eiCount.I) / 3 * 100;
     const snStrength = Math.max(snCount.S, snCount.N) / 3 * 100;
@@ -50,7 +57,11 @@ function calculateResult(quizData: any, answers: string[]) {
     
     const matchRate = Math.round((eiStrength + snStrength + tfStrength + jpStrength + atStrength) / 5);
 
+    console.log('[calculateResult] Match rate:', matchRate);
+
     const result = quizData.results.find((r: any) => r.type === mbtiType);
+    console.log('[calculateResult] Found result:', result ? result.type : 'Not found, using first');
+    
     return result ? { ...result, matchRate } : { ...quizData.results[0], matchRate };
   }
 
@@ -77,6 +88,10 @@ export default function ResultPage() {
   const answers = answersParam ? answersParam.split(',') : [];
   const username = sessionStorage.getItem('quiz-username') || "";
 
+  console.log('[ResultPage] Quiz ID:', quizId);
+  console.log('[ResultPage] Answers from URL:', answers);
+  console.log('[ResultPage] Location:', location);
+
   const { data: quizData, isLoading } = useQuery({
     queryKey: ['quiz', quizId],
     queryFn: () => loadQuizById(quizId),
@@ -100,10 +115,19 @@ export default function ResultPage() {
   }
 
   const resultData = calculateResult(quizData, answers);
+  console.log('[ResultPage] Result data:', resultData);
+  console.log('[ResultPage] Match rate:', resultData.matchRate);
+  
   const title = resultData.food?.[language] || resultData.food?.ko || resultData.title?.[language] || resultData.title?.ko || "Result";
   const description = resultData.description[language] || resultData.description.ko;
   const category = quizData.category?.[language] || quizData.category?.ko || "Quiz";
   const matchRate = resultData.matchRate;
+  
+  const imagePath = resultData.image 
+    ? `${import.meta.env.BASE_URL}${resultData.image.replace(/^\//, '')}` 
+    : positiveResult;
+  
+  console.log('[ResultPage] Image path:', imagePath);
 
   return (
     <div className="min-h-screen bg-background py-8 px-4">
@@ -133,7 +157,7 @@ export default function ResultPage() {
         <ResultCard
           title={title}
           description={description}
-          image={resultData.image || positiveResult}
+          image={imagePath}
           participantCount={count}
           category={category}
           matchRate={matchRate}
