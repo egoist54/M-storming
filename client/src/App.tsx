@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/contexts/LanguageContext";
 import HomePage from "@/pages/HomePage";
 import QuizPage from "@/pages/QuizPage";
 import ResultPage from "@/pages/ResultPage";
+import ImageCheckPage from "@/pages/ImageCheckPage";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -15,6 +16,7 @@ function Router() {
       <Route path="/" component={HomePage} />
       <Route path="/quiz/:id" component={QuizPage} />
       <Route path="/result/:id" component={ResultPage} />
+      <Route path="/image-check" component={ImageCheckPage} />
       <Route component={NotFound} />
     </Switch>
   );
