@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useRoute } from "wouter";
+import { useRoute, useLocation } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import QuizProgress from "@/components/QuizProgress";
 import QuestionCard from "@/components/QuestionCard";
@@ -13,6 +13,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function QuizPage() {
   const [, params] = useRoute("/quiz/:id");
+  const [, navigate] = useLocation();
   const quizId = params?.id || "";
   const { language } = useLanguage();
   
@@ -65,13 +66,13 @@ export default function QuizPage() {
       }, 300);
     } else {
       setTimeout(() => {
-        window.location.href = `/result/${quizId}?answers=${newAnswers.join(',')}`;
+        navigate(`/result/${quizId}?answers=${newAnswers.join(',')}`);
       }, 300);
     }
   };
 
   const handleBack = () => {
-    window.location.href = '/';
+    navigate('/');
   };
 
   if (isLoading || !quiz) {

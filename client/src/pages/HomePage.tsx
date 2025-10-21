@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { useLocation } from "wouter";
 import QuizCard from "@/components/QuizCard";
 import VisitorCounter from "@/components/VisitorCounter";
 import AdBanner from "@/components/AdBanner";
@@ -28,6 +29,7 @@ const thumbnailMap: Record<string, string> = {
 function QuizCardWithCount({ quiz }: { quiz: QuizData }) {
   const { language } = useLanguage();
   const { count } = useQuizParticipants(quiz.id);
+  const [, navigate] = useLocation();
   
   const cardData: QuizCardData = {
     id: quiz.id,
@@ -39,7 +41,7 @@ function QuizCardWithCount({ quiz }: { quiz: QuizData }) {
   };
 
   const handleStartQuiz = () => {
-    window.location.href = `/quiz/${quiz.id}`;
+    navigate(`/quiz/${quiz.id}`);
   };
 
   return <QuizCard {...cardData} onStart={handleStartQuiz} />;

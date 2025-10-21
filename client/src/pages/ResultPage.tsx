@@ -1,4 +1,4 @@
-import { useRoute } from "wouter";
+import { useRoute, useLocation } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import ResultCard from "@/components/ResultCard";
@@ -68,11 +68,12 @@ function calculateResult(quizData: any, answers: string[]) {
 
 export default function ResultPage() {
   const [, params] = useRoute("/result/:id");
+  const [location, navigate] = useLocation();
   const quizId = params?.id || "1";
   const { language } = useLanguage();
   const { count } = useQuizParticipants(quizId);
   
-  const answersParam = new URLSearchParams(window.location.search).get('answers');
+  const answersParam = new URLSearchParams(location.split('?')[1] || '').get('answers');
   const answers = answersParam ? answersParam.split(',') : [];
   const username = sessionStorage.getItem('quiz-username') || "";
 
@@ -83,11 +84,11 @@ export default function ResultPage() {
   });
 
   const handleBack = () => {
-    window.location.href = '/';
+    navigate('/');
   };
 
   const handleRetry = () => {
-    window.location.href = `/quiz/${quizId}`;
+    navigate(`/quiz/${quizId}`);
   };
 
   if (isLoading || !quizData) {
