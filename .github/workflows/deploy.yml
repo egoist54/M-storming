@@ -42,13 +42,18 @@ jobs:
           VITE_FIREBASE_APP_ID: ${{ secrets.VITE_FIREBASE_APP_ID }}
         run: npm run build
 
+      - name: Copy to docs folder for GitHub Pages
+        run: |
+          rm -rf docs
+          cp -r dist/public docs
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/public'
+          path: './docs'
 
   deploy:
     environment:
