@@ -1,6 +1,6 @@
-# GitHub Pages 배포 가이드
+# GitHub Pages 배포 가이드 (Deploy from Branch)
 
-이 프로젝트를 GitHub Pages에 배포하는 방법입니다.
+이 프로젝트를 GitHub Pages에 "Deploy from branch" 모드로 배포하는 방법입니다.
 
 ## 사전 준비
 
@@ -8,80 +8,104 @@
 
 먼저 [FIREBASE_SETUP.md](./FIREBASE_SETUP.md)를 참고하여 Firebase 프로젝트를 생성하고 설정하세요.
 
-### 2. GitHub Repository Secrets 설정
+### 2. 환경 변수 설정
 
-Firebase 환경변수를 GitHub Secrets에 추가해야 합니다:
+로컬 개발 및 배포를 위해 `.env` 파일을 생성하고 Firebase 환경변수를 설정하세요:
+
+```bash
+# client/.env
+VITE_FIREBASE_API_KEY=your_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project_id.firebaseapp.com
+VITE_FIREBASE_DATABASE_URL=https://your_project_id-default-rtdb.firebaseio.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project_id.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+```
+
+## 배포 방법
+
+### 1단계: 빌드 및 docs 폴더 생성
+
+**권장 방법: 자동 스크립트 사용**
+
+배포 스크립트를 실행하여 프로젝트를 빌드하고 GitHub Pages용 `docs/` 폴더를 생성합니다.
+스크립트가 자동으로 저장소 이름을 감지하여 올바른 base path로 빌드합니다:
+
+```bash
+# 배포 스크립트 실행
+./deploy-gh-pages.sh
+```
+
+**스크립트 작동 방식:**
+- Git remote URL에서 repository 이름을 자동 감지
+- Repository 이름이 `.github.io`로 끝나면 → User/Organization 페이지로 인식 → base path: `/`
+- 그 외의 경우 → Project 페이지로 인식 → base path: `/repository-name/`
+- 자동으로 올바른 base path로 빌드하므로 수동 설정 불필요
+
+**수동 방법:**
+
+수동으로 배포하려면 저장소 유형에 따라 base path를 설정해야 합니다:
+
+```bash
+# A. User/Organization 페이지 (username.github.io)의 경우:
+npm run build -- --base="/"
+
+# B. Project 페이지 (username.github.io/repository-name)의 경우:
+npm run build -- --base="/repository-name/"
+
+# 이후 공통 단계:
+# 2. docs 폴더 생성 및 파일 복사
+rm -rf docs
+mkdir -p docs
+cp -R dist/public/* docs/
+
+# 3. .nojekyll 파일 생성 (Jekyll 비활성화)
+touch docs/.nojekyll
+```
+
+> **중요**: Base path를 잘못 설정하면 CSS, JavaScript, 이미지 등의 asset이 로드되지 않습니다.
+> 자동 스크립트 사용을 권장합니다.
+
+### 2단계: Git에 커밋 및 푸시
+
+빌드된 `docs/` 폴더를 저장소에 커밋하고 푸시합니다:
+
+```bash
+# docs 폴더 추가
+git add docs/
+
+# 커밋
+git commit -m "Deploy to GitHub Pages"
+
+# 메인 브랜치에 푸시
+git push origin main
+```
+
+### 3단계: GitHub Pages 설정
 
 1. GitHub 저장소 페이지로 이동
-2. **Settings** → **Secrets and variables** → **Actions** 클릭
-3. **New repository secret** 버튼 클릭
-4. 다음 secrets을 하나씩 추가:
+2. **Settings** 탭 클릭
+3. 왼쪽 메뉴에서 **Pages** 클릭
+4. **Build and deployment** 섹션에서:
+   - **Source**: **Deploy from a branch** 선택
+   - **Branch**: **main** 선택
+   - **Folder**: **/docs** 선택
+5. **Save** 버튼 클릭
 
-   - `VITE_FIREBASE_API_KEY`: Firebase API Key
-   - `VITE_FIREBASE_AUTH_DOMAIN`: Firebase Auth Domain
-   - `VITE_FIREBASE_DATABASE_URL`: Firebase Database URL
-   - `VITE_FIREBASE_PROJECT_ID`: Firebase Project ID
-   - `VITE_FIREBASE_STORAGE_BUCKET`: Firebase Storage Bucket
-   - `VITE_FIREBASE_MESSAGING_SENDER_ID`: Firebase Messaging Sender ID
-   - `VITE_FIREBASE_APP_ID`: Firebase App ID
+### 4단계: 배포 확인
 
-## 자동 배포 (GitHub Actions)
-
-### 설정
-
-1. 저장소의 **Settings** → **Pages**로 이동
-2. **Source**를 **GitHub Actions**로 선택
-3. 저장
-
-### 배포
-
-`.github/workflows/deploy.yml` 파일이 이미 준비되어 있습니다.
-
-배포는 다음과 같이 자동으로 실행됩니다:
-- `main` 브랜치에 push할 때마다
-- 또는 Actions 탭에서 수동으로 실행
-
-### 배포 확인
-
-1. **Actions** 탭에서 워크플로우 실행 상태 확인
-2. 배포 완료 후 `https://<your-username>.github.io/<repository-name>/`에서 확인
-
-## 수동 배포
-
-GitHub Actions를 사용하지 않고 수동으로 배포하려면:
-
-### 1. 로컬에서 빌드
-
-```bash
-# 의존성 설치
-npm install
-
-# 빌드 (repository 이름을 실제 이름으로 변경)
-VITE_BASE_URL=/repository-name/ \
-VITE_FIREBASE_API_KEY=your_key \
-VITE_FIREBASE_AUTH_DOMAIN=your_domain \
-VITE_FIREBASE_DATABASE_URL=your_url \
-VITE_FIREBASE_PROJECT_ID=your_project_id \
-VITE_FIREBASE_STORAGE_BUCKET=your_bucket \
-VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id \
-VITE_FIREBASE_APP_ID=your_app_id \
-npm run build
-```
-
-### 2. 빌드 결과 배포
-
-```bash
-# gh-pages 브랜치에 배포 (gh-pages 패키지 필요)
-npx gh-pages -d dist/public
-```
+- 몇 분 후 GitHub Pages 설정 페이지 상단에 사이트 URL이 표시됩니다
+- 보통 `https://your-username.github.io/repository-name/` 형식입니다
+- **Visit site** 버튼을 클릭하여 사이트 확인
 
 ## 로컬 테스트
 
 배포 전 로컬에서 프로덕션 빌드를 테스트하려면:
 
 ```bash
-# 빌드
-VITE_BASE_URL=/repository-name/ npm run build
+# Repository 이름에 맞게 base path 설정하여 빌드
+npm run build -- --base="/repository-name/"
 
 # 미리보기 서버 실행
 npx vite preview --outDir dist/public
@@ -89,39 +113,94 @@ npx vite preview --outDir dist/public
 
 브라우저에서 `http://localhost:4173/repository-name/`을 열어 테스트하세요.
 
+> **참고**: User/Organization 페이지(`username.github.io`)인 경우 `--base="/"`를 사용하고 `http://localhost:4173/`에 접속하세요.
+
+## 업데이트 배포
+
+코드를 수정한 후 업데이트된 버전을 배포하려면:
+
+```bash
+# 1. 배포 스크립트 실행
+./deploy-gh-pages.sh
+
+# 2. Git에 커밋 및 푸시
+git add docs/
+git commit -m "Update: [변경 내용 설명]"
+git push origin main
+```
+
+## Repository 홈페이지에 사이트 URL 표시
+
+저장소 홈페이지에 GitHub Pages 사이트 링크를 표시하려면:
+
+1. 저장소 홈페이지로 이동
+2. 오른쪽 **About** 섹션의 톱니바퀴(⚙️) 아이콘 클릭
+3. **Use your GitHub Pages website** 체크박스 선택
+4. **Save changes** 클릭
+
 ## 문제 해결
 
 ### 페이지가 404 오류를 표시합니다
 
-- GitHub Pages 설정에서 Source가 **GitHub Actions**로 설정되어 있는지 확인
-- Actions 탭에서 워크플로우가 성공적으로 완료되었는지 확인
-- Repository 이름이 올바르게 설정되었는지 확인
+- GitHub Pages 설정에서 Source가 **Deploy from a branch**로 설정되어 있는지 확인
+- Branch가 **main**, Folder가 **/docs**로 설정되어 있는지 확인
+- `docs/` 폴더가 저장소에 커밋되었는지 확인
+- `docs/index.html` 파일이 존재하는지 확인
 
 ### Firebase 데이터가 로드되지 않습니다
 
-- GitHub Secrets에 모든 Firebase 환경변수가 올바르게 설정되었는지 확인
+- `.env` 파일에 모든 Firebase 환경변수가 올바르게 설정되었는지 확인
 - Firebase Console에서 Realtime Database가 활성화되어 있는지 확인
+- Database Rules가 올바르게 설정되어 있는지 확인
 - 브라우저 개발자 도구의 Console 탭에서 오류 확인
 
 ### Assets(이미지, CSS)가 로드되지 않습니다
 
-- `VITE_BASE_URL`이 올바르게 설정되었는지 확인
-- 값은 슬래시로 시작하고 끝나야 합니다: `/repository-name/`
-- Actions 워크플로우가 올바른 repository name을 사용하는지 확인
+- 빌드가 정상적으로 완료되었는지 확인
+- `docs/` 폴더에 모든 파일이 복사되었는지 확인
+- 브라우저에서 캐시를 지우고 다시 시도
 
 ### 빌드가 실패합니다
 
 - Node.js 버전 확인 (v20 권장)
 - `npm install`을 실행하여 의존성이 최신인지 확인
-- Actions 로그에서 구체적인 오류 메시지 확인
+- `.env` 파일이 `client/` 디렉토리에 있는지 확인
+
+### 변경 사항이 반영되지 않습니다
+
+- GitHub Pages는 업데이트가 반영되기까지 최대 10분 정도 걸릴 수 있습니다
+- 브라우저 캐시를 지우고 다시 시도
+- 강제 새로고침 (Ctrl+Shift+R 또는 Cmd+Shift+R)
 
 ## Custom Domain 설정 (선택사항)
 
 Custom domain을 사용하려면:
 
 1. DNS 설정에서 CNAME 레코드 추가
+   - Name: `www` (또는 원하는 서브도메인)
+   - Value: `your-username.github.io`
+
 2. GitHub Pages 설정에서 Custom domain 입력
-3. `public/CNAME` 파일 생성 및 도메인 입력
-4. HTTPS 활성화
+
+3. `docs/CNAME` 파일 생성 및 도메인 입력:
+   ```bash
+   echo "www.yourdomain.com" > docs/CNAME
+   git add docs/CNAME
+   git commit -m "Add custom domain"
+   git push origin main
+   ```
+
+4. GitHub Pages 설정에서 **Enforce HTTPS** 활성화 (DNS 전파 후)
 
 자세한 내용은 [GitHub 공식 문서](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site)를 참조하세요.
+
+## 배포 자동화 (선택사항)
+
+매번 수동으로 배포하는 것이 번거롭다면, 로컬에서 alias를 설정할 수 있습니다:
+
+```bash
+# ~/.bashrc 또는 ~/.zshrc에 추가
+alias deploy-quiz="./deploy-gh-pages.sh && git add docs/ && git commit -m 'Deploy update' && git push origin main"
+```
+
+이후 `deploy-quiz` 명령어 하나로 빌드부터 배포까지 완료됩니다.
