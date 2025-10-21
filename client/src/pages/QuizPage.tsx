@@ -1,50 +1,43 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useRoute } from "wouter";
+import { useQuery } from "@tanstack/react-query";
 import QuizProgress from "@/components/QuizProgress";
 import QuestionCard from "@/components/QuestionCard";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
-
-//todo: remove mock functionality - this will be loaded from quizzes data
-const mockQuestions = [
-  {
-    id: "q1",
-    question: "주말에 가장 하고 싶은 활동은?",
-    answers: [
-      { id: "a1", text: "친구들과 함께 밖에 나가서 놀기", score: 1 },
-      { id: "a2", text: "집에서 혼자 영화 보거나 책 읽기", score: 2 }
-    ]
-  },
-  {
-    id: "q2",
-    question: "새로운 프로젝트를 시작할 때 당신은?",
-    answers: [
-      { id: "a1", text: "세부 계획을 먼저 철저히 세운다", score: 1 },
-      { id: "a2", text: "큰 그림만 보고 바로 시작한다", score: 2 }
-    ]
-  },
-  {
-    id: "q3",
-    question: "의사결정을 할 때 더 중요하게 생각하는 것은?",
-    answers: [
-      { id: "a1", text: "논리와 객관적 사실", score: 1 },
-      { id: "a2", text: "감정과 인간관계", score: 2 }
-    ]
-  }
-];
+import { loadQuizById, QuizData } from "@/lib/quizLoader";
+import { incrementQuizParticipants } from "@/hooks/useFirebaseCounter";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function QuizPage() {
   const [, params] = useRoute("/quiz/:id");
-  const quizId = params?.id;
+  const quizId = params?.id || "";
+  const { language } = useLanguage();
   
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
+  const [hasIncremented, setHasIncremented] = useState(false);
+
+  const { data: quiz, isLoading } = useQuery<QuizData>({
+    queryKey: ['quiz', quizId],
+    queryFn: () => loadQuizById(quizId),
+    enabled: !!quizId,
+  });
+
+  useEffect(() => {
+    if (quiz && !hasIncremented) {
+      incrementQuizParticipants(quiz.id);
+      setHasIncremented(true);
+    }
+  }, [quiz, hasIncremented]);
 
   const handleAnswer = (answerId: string) => {
+    if (!quiz) return;
+
     const newAnswers = [...answers, answerId];
     setAnswers(newAnswers);
 
-    if (currentQuestion < mockQuestions.length - 1) {
+    if (currentQuestion < quiz.questions.length - 1) {
       setTimeout(() => {
         setCurrentQuestion(currentQuestion + 1);
       }, 300);
@@ -58,6 +51,22 @@ export default function QuizPage() {
   const handleBack = () => {
     window.location.href = '/';
   };
+
+  if (isLoading || !quiz) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <p className="text-muted-foreground">Loading quiz...</p>
+      </div>
+    );
+  }
+
+  const currentQ = quiz.questions[currentQuestion];
+  const questionText = currentQ.text[language] || currentQ.text.ko;
+  const answerOptions = currentQ.answers.map(a => ({
+    id: a.id,
+    text: a.text[language] || a.text.ko,
+    score: typeof a.score === 'string' ? 1 : a.score,
+  }));
 
   return (
     <div className="min-h-screen bg-background py-8 px-4">
@@ -77,13 +86,13 @@ export default function QuizPage() {
         <div className="mb-8">
           <QuizProgress 
             current={currentQuestion + 1} 
-            total={mockQuestions.length} 
+            total={quiz.questions.length} 
           />
         </div>
 
         <QuestionCard
-          question={mockQuestions[currentQuestion].question}
-          answers={mockQuestions[currentQuestion].answers}
+          question={questionText}
+          answers={answerOptions}
           onAnswer={handleAnswer}
         />
       </div>

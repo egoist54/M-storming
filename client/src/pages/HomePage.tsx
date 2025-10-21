@@ -5,11 +5,12 @@ import AdBanner from "@/components/AdBanner";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { Sparkles } from "lucide-react";
+import { loadAllQuizzes, QuizData } from "@/lib/quizLoader";
+import { useQuizParticipants } from "@/hooks/useFirebaseCounter";
 import personalityThumb from '@assets/generated_images/성격_퀴즈_섬네일_이미지_c75d527d.png';
 import aiThumb from '@assets/generated_images/AI_퀴즈_섬네일_이미지_cae3c536.png';
 
-//todo: remove mock functionality
-interface Quiz {
+interface QuizCardData {
   id: string;
   title: string;
   description: string;
@@ -18,52 +19,39 @@ interface Quiz {
   participantCount: number;
 }
 
-const mockQuizzes: Quiz[] = [
-  {
-    id: "1",
-    title: "당신의 성격 유형은?",
-    description: "10가지 질문으로 알아보는 나의 진짜 성격! 친구들과 결과를 비교해보세요.",
-    category: "성격",
-    thumbnail: personalityThumb,
-    participantCount: 5234
-  },
-  {
-    id: "2",
-    title: "나에게 맞는 AI 도구는?",
-    description: "당신의 업무 스타일에 딱 맞는 AI 도구를 찾아드려요. 생산성을 높여보세요!",
-    category: "AI",
-    thumbnail: aiThumb,
-    participantCount: 3847
-  },
-  {
-    id: "kvibe",
-    title: "Find Your K-Food Soulmate 🍜",
-    description: "15개의 질문으로 나와 닮은 한국 음식 찾기! MBTI-AT 기반 퍼스널 푸드 매칭.",
-    category: "K-VIBE",
-    thumbnail: personalityThumb,
-    participantCount: 8921
-  }
-];
+const thumbnailMap: Record<string, string> = {
+  "1": personalityThumb,
+  "kvibe": personalityThumb,
+  "2": aiThumb,
+};
+
+function QuizCardWithCount({ quiz }: { quiz: QuizData }) {
+  const { language } = useLanguage();
+  const { count } = useQuizParticipants(quiz.id);
+  
+  const cardData: QuizCardData = {
+    id: quiz.id,
+    title: quiz.title[language] || quiz.title.ko,
+    description: quiz.description[language] || quiz.description.ko,
+    category: quiz.category[language] || quiz.category.ko,
+    thumbnail: thumbnailMap[quiz.id] || personalityThumb,
+    participantCount: count,
+  };
+
+  const handleStartQuiz = () => {
+    window.location.href = `/quiz/${quiz.id}`;
+  };
+
+  return <QuizCard {...cardData} onStart={handleStartQuiz} />;
+}
 
 export default function HomePage() {
   const { t } = useLanguage();
   
-  //todo: remove mock functionality
-  const { data: totalVisitors = 12345 } = useQuery<number>({
-    queryKey: ['/api/visitors/total'],
-    enabled: false
+  const { data: quizzes = [], isLoading } = useQuery<QuizData[]>({
+    queryKey: ['quizzes'],
+    queryFn: loadAllQuizzes,
   });
-
-  //todo: remove mock functionality
-  const { data: quizzes = mockQuizzes } = useQuery<Quiz[]>({
-    queryKey: ['/api/quizzes'],
-    enabled: false
-  });
-
-  const handleStartQuiz = (quizId: string) => {
-    console.log('Starting quiz:', quizId);
-    window.location.href = `/quiz/${quizId}`;
-  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -89,29 +77,32 @@ export default function HomePage() {
             </p>
 
             <div className="flex justify-center pt-4">
-              <VisitorCounter count={totalVisitors} label={t.common.visitors} />
+              <VisitorCounter label={t.common.visitors} />
             </div>
           </div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 py-12 md:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          {quizzes.map((quiz, index) => (
-            <div key={quiz.id}>
-              <QuizCard
-                {...quiz}
-                onStart={() => handleStartQuiz(quiz.id)}
-              />
-              
-              {index === 3 && (
-                <div className="md:col-span-2 lg:col-span-3 my-4">
-                  <AdBanner slot="homepage-middle" format="horizontal" />
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+        {isLoading ? (
+          <div className="text-center py-12">
+            <p className="text-muted-foreground">Loading quizzes...</p>
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+            {quizzes.map((quiz, index) => (
+              <div key={quiz.id}>
+                <QuizCardWithCount quiz={quiz} />
+                
+                {index === 3 && (
+                  <div className="md:col-span-2 lg:col-span-3 my-4">
+                    <AdBanner slot="homepage-middle" format="horizontal" />
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
 
         <div className="mt-12">
           <AdBanner slot="homepage-bottom" format="horizontal" />

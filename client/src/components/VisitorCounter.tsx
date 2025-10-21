@@ -1,13 +1,15 @@
 import { Users } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useVisitorCounter } from "@/hooks/useFirebaseCounter";
 
 interface VisitorCounterProps {
-  count: number;
   label?: string;
 }
 
-export default function VisitorCounter({ count, label = "명이 방문했어요" }: VisitorCounterProps) {
-  const formattedCount = count.toLocaleString('ko-KR');
+export default function VisitorCounter({ label = "명이 방문했어요" }: VisitorCounterProps) {
+  const { count, loading } = useVisitorCounter();
+  
+  const formattedCount = loading ? "..." : count.toLocaleString('ko-KR');
   
   return (
     <Badge 

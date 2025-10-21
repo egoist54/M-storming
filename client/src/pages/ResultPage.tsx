@@ -1,42 +1,62 @@
 import { useRoute } from "wouter";
+import { useQuery } from "@tanstack/react-query";
 import { Button } from "@/components/ui/button";
 import ResultCard from "@/components/ResultCard";
 import ShareButtons from "@/components/ShareButtons";
 import AdBanner from "@/components/AdBanner";
 import { ArrowLeft, RotateCcw } from "lucide-react";
+import { loadQuizById } from "@/lib/quizLoader";
+import { useQuizParticipants } from "@/hooks/useFirebaseCounter";
+import { useLanguage } from "@/contexts/LanguageContext";
 import positiveResult from '@assets/generated_images/긍정적_결과_이미지_42ed835e.png';
-import neutralResult from '@assets/generated_images/중립적_결과_이미지_505ea5da.png';
 
-//todo: remove mock functionality
-const mockResults = {
-  "1": {
-    title: "밝고 긍정적인 에너지 뿜뿜!",
-    description: "당신은 주변 사람들에게 활력을 주는 긍정 에너지의 소유자예요! 어떤 상황에서도 밝은 면을 찾아내고, 다른 사람들을 격려하는 재능이 있어요. 당신과 함께 있으면 모두가 즐거워집니다.",
-    image: positiveResult,
-    participantCount: 1234,
-    category: "성격 유형"
-  },
-  "2": {
-    title: "차분하고 사려 깊은 사색가",
-    description: "당신은 깊이 있는 생각과 통찰력을 가진 사람이에요. 급하게 판단하기보다는 여러 관점에서 신중하게 고민하며, 의미 있는 대화를 즐깁니다. 당신의 조언은 항상 가치가 있어요.",
-    image: neutralResult,
-    participantCount: 2156,
-    category: "성격 유형"
-  },
-  "kvibe": {
-    title: "김치찌개 (Kimchi Jjigae) 🌶️",
-    description: "당신은 김치찌개처럼 강렬하고 정이 많은 사람이에요! 활발하고 열정적이며, 주변 사람들과의 관계를 소중히 여깁니다. K-Vibe 일치율: 95%",
-    image: positiveResult,
-    participantCount: 3847,
-    category: "K-VIBE"
+function calculateResult(quizData: any, answers: string[]) {
+  if (quizData.id === "kvibe") {
+    const dimensions: Record<string, number> = { E: 0, S: 0, T: 0, J: 0, A: 0 };
+    
+    answers.forEach((answerId, index) => {
+      const question = quizData.questions[index];
+      const answer = question.answers.find((a: any) => a.id === answerId);
+      if (answer && typeof answer.score === 'string') {
+        dimensions[answer.score] = (dimensions[answer.score] || 0) + 1;
+      }
+    });
+
+    const mbtiType = 
+      (dimensions.E > quizData.questions.filter((q: any) => q.dimension === 'E').length / 2 ? 'E' : 'I') +
+      (dimensions.S > quizData.questions.filter((q: any) => q.dimension === 'S').length / 2 ? 'S' : 'N') +
+      (dimensions.T > quizData.questions.filter((q: any) => q.dimension === 'T').length / 2 ? 'T' : 'F') +
+      (dimensions.J > quizData.questions.filter((q: any) => q.dimension === 'J').length / 2 ? 'J' : 'P') +
+      (dimensions.A > quizData.questions.filter((q: any) => q.dimension === 'A').length / 2 ? 'A' : 'T');
+
+    return quizData.results[mbtiType] || Object.values(quizData.results)[0];
   }
-};
+
+  const totalScore = answers.reduce((sum, answerId, index) => {
+    const question = quizData.questions[index];
+    const answer = question.answers.find((a: any) => a.id === answerId);
+    return sum + (answer ? (typeof answer.score === 'number' ? answer.score : 1) : 0);
+  }, 0);
+
+  const avgScore = totalScore / answers.length;
+  const resultKey = avgScore > 1.5 ? 'neutral' : 'positive';
+  return quizData.results[resultKey] || Object.values(quizData.results)[0];
+}
 
 export default function ResultPage() {
   const [, params] = useRoute("/result/:id");
   const quizId = params?.id || "1";
+  const { language } = useLanguage();
+  const { count } = useQuizParticipants(quizId);
   
-  const result = mockResults[quizId as keyof typeof mockResults] || mockResults["1"];
+  const answersParam = new URLSearchParams(window.location.search).get('answers');
+  const answers = answersParam ? answersParam.split(',') : [];
+
+  const { data: quizData, isLoading } = useQuery({
+    queryKey: ['quiz', quizId],
+    queryFn: () => loadQuizById(quizId),
+    enabled: !!quizId,
+  });
 
   const handleBack = () => {
     window.location.href = '/';
@@ -45,6 +65,19 @@ export default function ResultPage() {
   const handleRetry = () => {
     window.location.href = `/quiz/${quizId}`;
   };
+
+  if (isLoading || !quizData) {
+    return (
+      <div className="min-h-screen bg-background flex items-center justify-center">
+        <p className="text-muted-foreground">Loading result...</p>
+      </div>
+    );
+  }
+
+  const resultData = calculateResult(quizData, answers);
+  const title = resultData.title[language] || resultData.title.ko;
+  const description = resultData.description[language] || resultData.description.ko;
+  const category = quizData.category[language] || quizData.category.ko;
 
   return (
     <div className="min-h-screen bg-background py-8 px-4">
@@ -72,17 +105,17 @@ export default function ResultPage() {
         </div>
 
         <ResultCard
-          title={result.title}
-          description={result.description}
-          image={result.image}
-          participantCount={result.participantCount}
-          category={result.category}
+          title={title}
+          description={description}
+          image={resultData.image || positiveResult}
+          participantCount={count}
+          category={category}
         />
 
         <div className="max-w-md mx-auto">
           <ShareButtons 
-            title={result.title}
-            description={result.description}
+            title={title}
+            description={description}
           />
         </div>
 
