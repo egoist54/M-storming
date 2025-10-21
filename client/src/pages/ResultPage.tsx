@@ -68,13 +68,17 @@ function calculateResult(quizData: any, answers: string[]) {
 
 export default function ResultPage() {
   const [, params] = useRoute("/result/:id");
-  const [location, navigate] = useLocation();
+  const [, navigate] = useLocation();
   const quizId = params?.id || "1";
   const { language } = useLanguage();
   
-  const answersParam = new URLSearchParams(location.split('?')[1] || '').get('answers');
+  // wouter의 location은 쿼리 파라미터를 포함하지 않으므로 window.location.search 사용
+  const answersParam = new URLSearchParams(window.location.search).get('answers');
   const answers = answersParam ? answersParam.split(',') : [];
   const username = sessionStorage.getItem('quiz-username') || "";
+  
+  console.log('[DEBUG] Answers from URL:', answers);
+  console.log('[DEBUG] Query string:', window.location.search);
 
   const { data: quizData, isLoading } = useQuery({
     queryKey: ['quiz', quizId],
