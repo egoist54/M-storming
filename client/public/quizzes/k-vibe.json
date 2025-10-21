@@ -706,7 +706,7 @@
           "Sensível"
         ]
       },
-      "image": "/images/korean_fried_chicken_9646dd92.jpg"
+      "image": "/images/chicken.png"
     },
     {
       "type": "ESFJ-A",
@@ -808,7 +808,7 @@
           "Harmonioso"
         ]
       },
-      "image": "/images/korean_japchae_glass_b1839b88.jpg"
+      "image": "/images/japchae.png"
     },
     {
       "type": "ENFP-A",
@@ -1165,7 +1165,7 @@
           "Estável"
         ]
       },
-      "image": "/images/korean_baekban_home__c7240ac7.jpg"
+      "image": "/images/baekban.png"
     },
     {
       "type": "ISTJ-T",
@@ -1267,7 +1267,7 @@
           "Solucionador"
         ]
       },
-      "image": "/images/korean_jajangmyeon_b_06397ba2.jpg"
+      "image": "/images/jajangmyeon.png"
     },
     {
       "type": "ISTP-T",
@@ -1369,7 +1369,7 @@
           "Estável"
         ]
       },
-      "image": "/images/korean_gyeranjjim_st_e2d176d6.jpg"
+      "image": "/images/gyeranjjim.png"
     },
     {
       "type": "ISFJ-T",
@@ -1420,7 +1420,7 @@
           "Emocional"
         ]
       },
-      "image": "/images/korean_miyeokguk_sea_56acd6b3.jpg"
+      "image": "/images/miyeokguk.png"
     },
     {
       "type": "INFP-A",
@@ -1483,7 +1483,7 @@
         "pt": "Hotteok"
       },
       "emoji": "🥞",
-      "image": "/images/korean_hotteok_sweet_2e0819f1.jpg",
+      "image": "/images/hotteok.png",
       "description": {
         "ko": "따뜻하고 섬세한 예술가! 당신은 호떡처럼 겉은 소박하지만 속은 달콤한 감성을 가진 사람입니다. 완벽을 추구하는 감성적 몽상가!",
         "en": "Warm and delicate artist! You're like Hotteok - simple outside but sweet emotions inside. An emotional dreamer pursuing perfection!",
@@ -1573,7 +1573,7 @@
           "Confiante"
         ]
       },
-      "image": "/images/korean_hanjeongsik_r_af5b48af.jpg"
+      "image": "/images/hanjeongsik.png"
     },
     {
       "type": "INTJ-T",
@@ -1624,7 +1624,7 @@
           "Orientado para melhoria"
         ]
       },
-      "image": "/images/korean_yukhoe_beef_t_0033351d.jpg"
+      "image": "/images/yukhoe.png"
     },
     {
       "type": "INTP-A",
@@ -1777,7 +1777,7 @@
           "Influente"
         ]
       },
-      "image": "/images/korean_jeongol_hot_p_fa44e6e1.jpg"
+      "image": "/images/jeongol.png"
     },
     {
       "type": "ENFJ-T",
@@ -1828,7 +1828,7 @@
           "Emocional"
         ]
       },
-      "image": "/images/korean_budae_jjigae__f9cbef05.jpg"
+      "image": "/images/budae_jjigae.png"
     },
     {
       "type": "INFJ-A",
@@ -1879,7 +1879,7 @@
           "Visionário"
         ]
       },
-      "image": "/images/korean_royal_tteokbo_78f1f388.jpg"
+      "image": "/images/royal_tteokbokki.png"
     },
     {
       "type": "INFJ-T",
@@ -1930,7 +1930,7 @@
           "Introvertido"
         ]
       },
-      "image": "/images/korean_yakshik_sweet_f8da4173.jpg"
+      "image": "/images/yakshik.png"
     },
     {
       "type": "ESFP-A",
@@ -1993,7 +1993,7 @@
         "pt": "Sundae (Linguiça de Sangue)"
       },
       "emoji": "🌭",
-      "image": "/images/korean_sundae_blood__80a772e2.jpg",
+      "image": "/images/sundae.png",
       "description": {
         "ko": "독특한 매력쟁이! 당신은 순대처럼 개성 넘치면서도 대중적인 사람입니다. 완벽을 추구하며 모두를 즐겁게 하는 성격!",
         "en": "Unique charmer! You're like Sundae - uniquely appealing yet popular. Personality pursuing perfection while making everyone happy!",
@@ -2083,7 +2083,7 @@
           "Pacífico"
         ]
       },
-      "image": "/images/korean_sujeonggwa_ci_30f6900f.jpg"
+      "image": "/images/sujeonggwa.png"
     },
     {
       "type": "ISFP-T",
@@ -2134,7 +2134,7 @@
           "Introvertido"
         ]
       },
-      "image": "/images/korean_sikhye_sweet__3077ee90.jpg"
+      "image": "/images/sikhye.png"
     }
   ]
 }
