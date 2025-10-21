@@ -49,12 +49,15 @@ VITE_FIREBASE_APP_ID=your_app_id
 
 ```bash
 # A. User/Organization 페이지 (username.github.io)의 경우:
-npm run build -- --base="/"
+npx vite build --base="/"
 
 # B. Project 페이지 (username.github.io/repository-name)의 경우:
-npm run build -- --base="/repository-name/"
+npx vite build --base="/repository-name/"
 
 # 이후 공통 단계:
+# 1. 서버 빌드
+npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+
 # 2. docs 폴더 생성 및 파일 복사
 rm -rf docs
 mkdir -p docs
@@ -104,16 +107,22 @@ git push origin main
 배포 전 로컬에서 프로덕션 빌드를 테스트하려면:
 
 ```bash
-# Repository 이름에 맞게 base path 설정하여 빌드
-npm run build -- --base="/repository-name/"
+# 배포 스크립트 실행 (자동으로 올바른 base path로 빌드)
+./deploy-gh-pages.sh
+
+# 또는 수동으로:
+# Project 페이지의 경우
+npx vite build --base="/repository-name/"
+# User/Organization 페이지의 경우
+npx vite build --base="/"
 
 # 미리보기 서버 실행
 npx vite preview --outDir dist/public
 ```
 
-브라우저에서 `http://localhost:4173/repository-name/`을 열어 테스트하세요.
-
-> **참고**: User/Organization 페이지(`username.github.io`)인 경우 `--base="/"`를 사용하고 `http://localhost:4173/`에 접속하세요.
+브라우저에서 다음 URL로 접속:
+- Project 페이지: `http://localhost:4173/repository-name/`
+- User/Organization 페이지: `http://localhost:4173/`
 
 ## 업데이트 배포
 

@@ -31,7 +31,10 @@ fi
 
 echo ""
 echo "🔨 Building application with base path: $BASE_PATH"
-npm run build -- --base="$BASE_PATH"
+echo "   Building client..."
+npx vite build --base="$BASE_PATH"
+echo "   Building server..."
+npx esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
 
 echo ""
 echo "📦 Preparing docs directory for GitHub Pages..."

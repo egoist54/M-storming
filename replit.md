@@ -110,8 +110,14 @@ Preferred communication style: Simple, everyday language.
 
 **GitHub Pages**:
 - **Purpose**: Static site hosting
-- **Deployment**: GitHub Actions workflow (`.github/workflows/deploy.yml`)
-- **Build Process**: Vite builds to `dist/public`, includes environment variable injection
+- **Deployment**: Deploy from branch mode (main/docs)
+- **Build Process**: 
+  - `deploy-gh-pages.sh` 스크립트로 자동 빌드
+  - Git remote에서 repository 이름 자동 감지
+  - User/Organization vs Project 페이지 자동 구분
+  - 올바른 base path로 Vite 빌드
+  - docs 폴더로 빌드 출력 복사
+  - .nojekyll 파일 자동 생성
 
 ### Key NPM Dependencies
 
