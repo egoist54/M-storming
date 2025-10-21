@@ -14,7 +14,7 @@ export default function QuizPage() {
   const [, params] = useRoute("/quiz/:id");
   const [, navigate] = useLocation();
   const quizId = params?.id || "";
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [answers, setAnswers] = useState<string[]>([]);
@@ -86,7 +86,7 @@ export default function QuizPage() {
               data-testid="button-back"
             >
               <ArrowLeft className="w-4 h-4" />
-              목록으로
+              {t.common.backToList}
             </Button>
           </div>
 
@@ -96,14 +96,14 @@ export default function QuizPage() {
                 {quiz.title[language] || quiz.title.ko}
               </h2>
               <p className="text-muted-foreground">
-                테스트를 시작하기 전에 이름을 입력해주세요
+                {t.common.enterName}
               </p>
             </div>
 
             <div className="space-y-4">
               <Input
                 type="text"
-                placeholder="이름 입력"
+                placeholder={t.common.namePlaceholder}
                 value={inputValue}
                 onChange={(e) => setInputValue(e.target.value)}
                 onKeyPress={(e) => e.key === 'Enter' && handleNameSubmit()}
@@ -118,7 +118,7 @@ export default function QuizPage() {
                 size="lg"
                 data-testid="button-start-quiz"
               >
-                시작하기
+                {t.common.start}
               </Button>
             </div>
           </Card>

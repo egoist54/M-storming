@@ -2,21 +2,33 @@ import { Button } from "@/components/ui/button";
 import { Share2, Link2, MessageCircle } from "lucide-react";
 import { SiKakaotalk, SiFacebook, SiX } from "react-icons/si";
 import { useToast } from "@/hooks/use-toast";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface ShareButtonsProps {
   title: string;
   description?: string;
+  quizId: string;
+  resultImage?: string;
 }
 
-export default function ShareButtons({ title, description }: ShareButtonsProps) {
+export default function ShareButtons({ title, description, quizId, resultImage }: ShareButtonsProps) {
   const { toast } = useToast();
+  const { t } = useLanguage();
+  
+  // 공유 링크는 퀴즈 시작 페이지로 설정 (결과 페이지가 아님)
+  const shareUrl = `${window.location.origin}${import.meta.env.BASE_URL}quiz/${quizId}`;
+  
+  // 결과 이미지 절대 URL (Open Graph용)
+  const imageUrl = resultImage 
+    ? (resultImage.startsWith('http') ? resultImage : `${window.location.origin}${resultImage}`)
+    : '';
 
   const handleCopyLink = async () => {
     try {
-      await navigator.clipboard.writeText(window.location.href);
+      await navigator.clipboard.writeText(shareUrl);
       toast({
-        title: "링크 복사 완료!",
-        description: "친구들에게 공유해보세요 🎉",
+        title: t.share.copied,
+        description: t.share.copiedDesc,
       });
     } catch (err) {
       console.error('Failed to copy:', err);
@@ -26,25 +38,25 @@ export default function ShareButtons({ title, description }: ShareButtonsProps) 
   const handleKakaoShare = () => {
     console.log('Kakao share triggered');
     toast({
-      title: "카카오톡 공유",
+      title: t.share.kakao,
       description: "카카오톡으로 공유 기능은 곧 추가될 예정입니다.",
     });
   };
 
   const handleFacebookShare = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(shareUrl);
     window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank');
   };
 
   const handleTwitterShare = () => {
-    const url = encodeURIComponent(window.location.href);
+    const url = encodeURIComponent(shareUrl);
     const text = encodeURIComponent(title);
     window.open(`https://twitter.com/intent/tweet?url=${url}&text=${text}`, '_blank');
   };
 
   return (
     <div className="space-y-4">
-      <h3 className="text-lg font-semibold text-center">결과 공유하기</h3>
+      <h3 className="text-lg font-semibold text-center">{t.common.share}</h3>
       
       <div className="grid grid-cols-2 gap-3">
         <Button
@@ -53,7 +65,7 @@ export default function ShareButtons({ title, description }: ShareButtonsProps) 
           data-testid="button-share-kakao"
         >
           <SiKakaotalk className="w-5 h-5" />
-          카카오톡
+          {t.share.kakao}
         </Button>
 
         <Button
@@ -62,7 +74,7 @@ export default function ShareButtons({ title, description }: ShareButtonsProps) 
           data-testid="button-share-facebook"
         >
           <SiFacebook className="w-5 h-5" />
-          페이스북
+          {t.share.facebook}
         </Button>
 
         <Button
@@ -72,7 +84,7 @@ export default function ShareButtons({ title, description }: ShareButtonsProps) 
           data-testid="button-share-twitter"
         >
           <SiX className="w-5 h-5" />
-          트위터
+          {t.share.twitter}
         </Button>
 
         <Button
@@ -82,7 +94,7 @@ export default function ShareButtons({ title, description }: ShareButtonsProps) 
           data-testid="button-copy-link"
         >
           <Link2 className="w-5 h-5" />
-          링크 복사
+          {t.share.copyLink}
         </Button>
       </div>
     </div>

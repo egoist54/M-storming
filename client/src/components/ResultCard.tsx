@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface ResultCardProps {
   title: string;
@@ -19,6 +20,7 @@ export default function ResultCard({
   matchRate,
   username
 }: ResultCardProps) {
+  const { t } = useLanguage();
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -44,7 +46,7 @@ export default function ResultCard({
 
           {username && (
             <p className="text-lg text-muted-foreground" data-testid="text-username">
-              {username}님의 결과는
+              {username}{t.common.yourResult}
             </p>
           )}
 
@@ -61,7 +63,7 @@ export default function ResultCard({
           {matchRate !== undefined && (
             <div className="flex items-center justify-center py-6">
               <div className="text-center space-y-2">
-                <p className="text-base font-medium text-foreground">한국생활 적합성</p>
+                <p className="text-base font-medium text-foreground">{t.common.koreanLifeMatch}</p>
                 <div className="flex items-baseline gap-1">
                   <span className="text-5xl font-bold text-primary" data-testid="text-match-rate">
                     {matchRate}

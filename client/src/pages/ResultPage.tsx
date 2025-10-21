@@ -70,7 +70,7 @@ export default function ResultPage() {
   const [, params] = useRoute("/result/:id");
   const [, navigate] = useLocation();
   const quizId = params?.id || "1";
-  const { language } = useLanguage();
+  const { language, t } = useLanguage();
   
   // wouter의 location은 쿼리 파라미터를 포함하지 않으므로 window.location.search 사용
   const answersParam = new URLSearchParams(window.location.search).get('answers');
@@ -124,7 +124,7 @@ export default function ResultPage() {
             data-testid="button-back"
           >
             <ArrowLeft className="w-4 h-4" />
-            목록으로
+            {t.common.backToList}
           </Button>
 
           <Button
@@ -134,7 +134,7 @@ export default function ResultPage() {
             data-testid="button-retry"
           >
             <RotateCcw className="w-4 h-4" />
-            다시 하기
+            {t.common.retry}
           </Button>
         </div>
 
@@ -151,6 +151,8 @@ export default function ResultPage() {
           <ShareButtons 
             title={title}
             description={description}
+            quizId={quizId}
+            resultImage={imagePath}
           />
         </div>
 
@@ -163,7 +165,7 @@ export default function ResultPage() {
             onClick={handleBack}
             data-testid="button-other-quizzes"
           >
-            다른 퀴즈 보기
+            {t.common.otherQuizzes}
           </Button>
         </div>
       </div>
