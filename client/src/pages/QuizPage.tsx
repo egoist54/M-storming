@@ -3,6 +3,7 @@ import { useRoute, useLocation } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import QuizProgress from "@/components/QuizProgress";
 import QuestionCard from "@/components/QuestionCard";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card } from "@/components/ui/card";
@@ -77,6 +78,10 @@ export default function QuizPage() {
   if (showNameInput) {
     return (
       <div className="min-h-screen bg-background py-8 px-4">
+        <div className="absolute top-4 right-4">
+          <LanguageSwitcher />
+        </div>
+        
         <div className="container mx-auto max-w-2xl">
           <div className="mb-8">
             <Button
@@ -137,6 +142,10 @@ export default function QuizPage() {
 
   return (
     <div className="min-h-screen bg-background py-8 px-4">
+      <div className="absolute top-4 right-4">
+        <LanguageSwitcher />
+      </div>
+      
       <div className="container mx-auto max-w-4xl">
         <div className="mb-8">
           <Button
@@ -146,7 +155,7 @@ export default function QuizPage() {
             data-testid="button-back"
           >
             <ArrowLeft className="w-4 h-4" />
-            목록으로
+            {t.common.backToList}
           </Button>
         </div>
 
