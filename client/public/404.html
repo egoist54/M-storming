@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>M-storming Quiz</title>
+  <script>
+    // GitHub Pages SPA redirect solution
+    // This script handles client-side routing for single-page applications on GitHub Pages
+    (function() {
+      var basePath = '/M-storming/';
+      var redirect = sessionStorage.getItem('redirect');
+      
+      if (redirect && redirect !== location.href) {
+        sessionStorage.removeItem('redirect');
+        history.replaceState(null, null, redirect);
+      } else {
+        // Store the full path including base
+        var path = location.pathname;
+        
+        // If this is a deep link, store it and redirect to index.html
+        if (path !== basePath && path !== basePath + 'index.html') {
+          sessionStorage.setItem('redirect', location.href);
+          location.replace(basePath);
+        }
+      }
+    })();
+  </script>
+</head>
+<body>
+  <!-- GitHub Pages will show this if JavaScript is disabled -->
+  <noscript>JavaScript를 활성화해주세요.</noscript>
+</body>
+</html>
