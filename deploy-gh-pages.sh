@@ -42,6 +42,9 @@ rm -rf docs
 mkdir -p docs
 cp -R dist/public/* docs/
 
+echo "📄 Creating 404.html for SPA routing..."
+cp docs/index.html docs/404.html
+
 echo "🚫 Creating .nojekyll file to disable Jekyll..."
 touch docs/.nojekyll
 
