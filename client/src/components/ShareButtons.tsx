@@ -15,8 +15,8 @@ export default function ShareButtons({ title, description, quizId, resultImage }
   const { toast } = useToast();
   const { t } = useLanguage();
   
-  // 공유 링크는 퀴즈 시작 페이지로 설정 (결과 페이지가 아님)
-  const shareUrl = `${window.location.origin}${import.meta.env.BASE_URL}quiz/${quizId}`;
+  // 공유 링크는 홈페이지 + 퀴즈 파라미터로 설정 (GitHub Pages 404 방지)
+  const shareUrl = `${window.location.origin}${import.meta.env.BASE_URL}?quiz=${quizId}`;
   
   // 결과 이미지 절대 URL (Open Graph용)
   const imageUrl = resultImage 

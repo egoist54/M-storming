@@ -1,5 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useLocation } from "wouter";
+import { useEffect } from "react";
 import QuizCard from "@/components/QuizCard";
 import AdBanner from "@/components/AdBanner";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
@@ -45,11 +46,21 @@ function QuizCardWithCount({ quiz }: { quiz: QuizData }) {
 
 export default function HomePage() {
   const { t } = useLanguage();
+  const [, navigate] = useLocation();
   
   const { data: quizzes = [], isLoading } = useQuery<QuizData[]>({
     queryKey: ['quizzes'],
     queryFn: loadAllQuizzes,
   });
+
+  // Check for quiz parameter and auto-navigate
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const quizId = params.get('quiz');
+    if (quizId) {
+      navigate(`/quiz/${quizId}`);
+    }
+  }, [navigate]);
 
   return (
     <div className="min-h-screen bg-background">
