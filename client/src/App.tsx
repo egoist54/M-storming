@@ -8,6 +8,7 @@ import HomePage from "@/pages/HomePage";
 import QuizPage from "@/pages/QuizPage";
 import ResultPage from "@/pages/ResultPage";
 import ImageCheckPage from "@/pages/ImageCheckPage";
+import ResultsGalleryPage from "@/pages/ResultsGalleryPage";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -20,6 +21,7 @@ function Router() {
         <Route path="/quiz/:id" component={QuizPage} />
         <Route path="/result/:id" component={ResultPage} />
         <Route path="/image-check" component={ImageCheckPage} />
+        <Route path="/results-gallery" component={ResultsGalleryPage} />
         <Route component={NotFound} />
       </Switch>
     </WouterRouter>
