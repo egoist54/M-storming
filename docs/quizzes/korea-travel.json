@@ -1,0 +1,1219 @@
+{
+  "id": "korea-travel",
+  "title": {
+    "ko": "🗺️ 당신에게 어울리는 한국 여행지는?",
+    "en": "🗺️ Which Korean Destination Suits You?",
+    "ja": "🗺️ あなたに合う韓国旅行先は？",
+    "es": "🗺️ ¿Qué destino coreano te conviene?"
+  },
+  "description": {
+    "ko": "18가지 질문으로 알아보는 나와 가장 잘 맞는 한국 여행지! MBTI-AT 5개 축을 측정하여 32가지 여행지 중 당신의 완벽한 여행 스타일을 찾아드립니다.",
+    "en": "Discover your perfect Korean travel destination through 18 questions! We measure 5 MBTI-AT dimensions to find your ideal travel style among 32 destinations.",
+    "ja": "18の質問であなたにぴったりの韓国旅行先を見つけよう！MBTI-ATの5つの軸を測定し、32の旅行先からあなたの完璧な旅行スタイルを見つけます。",
+    "es": "¡Descubre tu destino de viaje coreano perfecto a través de 18 preguntas! Medimos 5 dimensiones MBTI-AT para encontrar tu estilo de viaje ideal entre 32 destinos."
+  },
+  "category": {
+    "ko": "여행 성향",
+    "en": "Travel Style",
+    "ja": "旅行スタイル",
+    "es": "Estilo de viaje"
+  },
+  "questions": [
+    {
+      "id": 1,
+      "text": {
+        "ko": "여행 계획을 세울 때, 나는?",
+        "en": "When planning a trip, I:",
+        "ja": "旅行計画を立てるとき、私は：",
+        "es": "Al planear un viaje, yo:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "친구들과 함께 일정을 짜며 즐겁게 이야기한다",
+            "en": "Enjoy discussing the itinerary with friends",
+            "ja": "友達と一緒に楽しく計画を立てる",
+            "es": "Disfruto discutir el itinerario con amigos"
+          },
+          "dimension": "E"
+        },
+        {
+          "text": {
+            "ko": "혼자 조용히 여행 정보를 찾아본다",
+            "en": "Quietly research travel information alone",
+            "ja": "一人で静かに旅行情報を調べる",
+            "es": "Investigo información de viaje solo en silencio"
+          },
+          "dimension": "I"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": {
+        "ko": "낯선 도시에 도착했을 때, 나는?",
+        "en": "When arriving in an unfamiliar city, I:",
+        "ja": "知らない都市に着いたとき、私は：",
+        "es": "Al llegar a una ciudad desconocida, yo:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "현지인에게 맛집이나 명소를 적극적으로 물어본다",
+            "en": "Actively ask locals about restaurants and attractions",
+            "ja": "地元の人に積極的に情報を聞く",
+            "es": "Pregunto activamente a los locales sobre restaurantes y atracciones"
+          },
+          "dimension": "E"
+        },
+        {
+          "text": {
+            "ko": "지도를 보며 혼자 조용히 둘러본다",
+            "en": "Explore quietly on my own with a map",
+            "ja": "地図を見ながら一人で探索する",
+            "es": "Exploro tranquilamente por mi cuenta con un mapa"
+          },
+          "dimension": "I"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": {
+        "ko": "여행지에서 사람들을 만날 때, 나는?",
+        "en": "When meeting people while traveling, I:",
+        "ja": "旅行先で人に会うとき、私は：",
+        "es": "Al conocer gente mientras viajo, yo:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "먼저 말을 걸고 친해지려 노력한다",
+            "en": "Start conversations and try to make friends",
+            "ja": "自分から話しかけて仲良くなろうとする",
+            "es": "Inicio conversaciones e intento hacer amigos"
+          },
+          "dimension": "E"
+        },
+        {
+          "text": {
+            "ko": "상대방이 먼저 말을 걸면 대화한다",
+            "en": "Talk when others approach me first",
+            "ja": "相手から話しかけてくれたら話す",
+            "es": "Hablo cuando otros se acercan primero"
+          },
+          "dimension": "I"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": {
+        "ko": "여행에서 가장 중요한 것은?",
+        "en": "The most important thing in travel is:",
+        "ja": "旅行で最も重要なことは：",
+        "es": "Lo más importante en un viaje es:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "함께하는 사람들과의 추억",
+            "en": "Memories with the people I'm with",
+            "ja": "一緒にいる人たちとの思い出",
+            "es": "Recuerdos con las personas con las que estoy"
+          },
+          "dimension": "E"
+        },
+        {
+          "text": {
+            "ko": "나만의 시간과 휴식",
+            "en": "My own time and relaxation",
+            "ja": "自分だけの時間と休息",
+            "es": "Mi propio tiempo y relajación"
+          },
+          "dimension": "I"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": {
+        "ko": "여행지를 선택할 때, 나는?",
+        "en": "When choosing a destination, I:",
+        "ja": "旅行先を選ぶとき、私は：",
+        "es": "Al elegir un destino, yo:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "현재 유명한 곳이나 검증된 명소를 선택한다",
+            "en": "Choose currently popular or well-known places",
+            "ja": "今人気のある場所や有名な観光地を選ぶ",
+            "es": "Elijo lugares populares o conocidos"
+          },
+          "dimension": "S"
+        },
+        {
+          "text": {
+            "ko": "아직 많이 알려지지 않은 숨겨진 명소를 찾는다",
+            "en": "Look for hidden gems not yet well-known",
+            "ja": "まだあまり知られていない穴場を探す",
+            "es": "Busco joyas escondidas aún poco conocidas"
+          },
+          "dimension": "N"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": {
+        "ko": "여행 사진을 찍을 때, 나는?",
+        "en": "When taking travel photos, I:",
+        "ja": "旅行写真を撮るとき、私は：",
+        "es": "Al tomar fotos de viaje, yo:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "실제 풍경을 있는 그대로 담는다",
+            "en": "Capture the scenery as it really is",
+            "ja": "実際の風景をそのまま撮る",
+            "es": "Capturo el paisaje tal como es"
+          },
+          "dimension": "S"
+        },
+        {
+          "text": {
+            "ko": "독특한 구도와 감성을 담으려 노력한다",
+            "en": "Try to capture unique angles and emotions",
+            "ja": "独特な構図と感性を込めようとする",
+            "es": "Intento capturar ángulos únicos y emociones"
+          },
+          "dimension": "N"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": {
+        "ko": "여행 중 맛집을 찾을 때, 나는?",
+        "en": "When looking for restaurants while traveling, I:",
+        "ja": "旅行中にレストランを探すとき、私は：",
+        "es": "Al buscar restaurantes mientras viajo, yo:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "평점과 리뷰를 보고 검증된 곳을 간다",
+            "en": "Check ratings and reviews for verified places",
+            "ja": "評価とレビューを見て確認された場所に行く",
+            "es": "Reviso calificaciones y reseñas de lugares verificados"
+          },
+          "dimension": "S"
+        },
+        {
+          "text": {
+            "ko": "직감으로 '여기다!' 싶은 곳을 선택한다",
+            "en": "Follow my intuition to choose 'this is it!' places",
+            "ja": "直感で「ここだ！」と思う場所を選ぶ",
+            "es": "Sigo mi intuición para elegir lugares '¡este es!'"
+          },
+          "dimension": "N"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": {
+        "ko": "여행 일정을 짤 때, 나는?",
+        "en": "When creating a travel itinerary, I:",
+        "ja": "旅行スケジュールを立てるとき、私は：",
+        "es": "Al crear un itinerario de viaje, yo:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "교통편, 입장료 등 실용적인 정보를 꼼꼼히 확인한다",
+            "en": "Carefully check practical info like transport and admission",
+            "ja": "交通、入場料など実用的な情報を細かく確認する",
+            "es": "Reviso cuidadosamente información práctica como transporte y entrada"
+          },
+          "dimension": "S"
+        },
+        {
+          "text": {
+            "ko": "전체적인 분위기와 느낌을 상상하며 계획한다",
+            "en": "Plan while imagining the overall mood and feeling",
+            "ja": "全体的な雰囲気を想像しながら計画する",
+            "es": "Planeo imaginando el ambiente y sentimiento general"
+          },
+          "dimension": "N"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": {
+        "ko": "여행 중 예상치 못한 상황이 생기면?",
+        "en": "When unexpected situations arise during travel:",
+        "ja": "旅行中に予期しない状況が発生したら：",
+        "es": "Cuando surgen situaciones inesperadas durante el viaje:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "논리적으로 해결 방법을 찾는다",
+            "en": "I logically find a solution",
+            "ja": "論理的に解決策を見つける",
+            "es": "Encuentro una solución de manera lógica"
+          },
+          "dimension": "T"
+        },
+        {
+          "text": {
+            "ko": "일단 같이 있는 사람들을 배려한다",
+            "en": "I first consider the people I'm with",
+            "ja": "まず一緒にいる人たちを配慮する",
+            "es": "Primero considero a las personas con las que estoy"
+          },
+          "dimension": "F"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": {
+        "ko": "여행지에서 가이드를 만났을 때?",
+        "en": "When meeting a tour guide at a destination:",
+        "ja": "旅行先でガイドに会ったとき：",
+        "es": "Al conocer a un guía turístico en un destino:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "사실과 정보 위주로 설명해주길 바란다",
+            "en": "I prefer fact and information-based explanations",
+            "ja": "事実と情報中心の説明を望む",
+            "es": "Prefiero explicaciones basadas en hechos e información"
+          },
+          "dimension": "T"
+        },
+        {
+          "text": {
+            "ko": "재미있는 이야기와 감동적인 에피소드를 듣고 싶다",
+            "en": "I want to hear fun stories and touching episodes",
+            "ja": "面白い話や感動的なエピソードを聞きたい",
+            "es": "Quiero escuchar historias divertidas y episodios conmovedores"
+          },
+          "dimension": "F"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": {
+        "ko": "여행 친구가 힘들어할 때?",
+        "en": "When a travel friend is having a hard time:",
+        "ja": "旅行の友達が大変そうなとき：",
+        "es": "Cuando un amigo de viaje lo está pasando mal:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"이렇게 하면 해결될 거야\" 해결책을 제시한다",
+            "en": "I suggest solutions like 'try doing this'",
+            "ja": "「こうすれば解決するよ」と解決策を提示する",
+            "es": "Sugiero soluciones como 'intenta hacer esto'"
+          },
+          "dimension": "T"
+        },
+        {
+          "text": {
+            "ko": "\"많이 힘들지?\" 공감하며 위로한다",
+            "en": "I empathize and comfort saying 'that must be tough'",
+            "ja": "「大変だよね」と共感して慰める",
+            "es": "Empatizo y consuelo diciendo 'debe ser difícil'"
+          },
+          "dimension": "F"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": {
+        "ko": "여행 후기를 쓸 때?",
+        "en": "When writing a travel review:",
+        "ja": "旅行レビューを書くとき：",
+        "es": "Al escribir una reseña de viaje:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "객관적인 평가와 정보를 중심으로 쓴다",
+            "en": "I write focusing on objective evaluation and information",
+            "ja": "客観的な評価と情報を中心に書く",
+            "es": "Escribo centrándome en evaluación objetiva e información"
+          },
+          "dimension": "T"
+        },
+        {
+          "text": {
+            "ko": "내가 느낀 감정과 분위기를 중심으로 쓴다",
+            "en": "I write focusing on emotions and atmosphere I felt",
+            "ja": "自分が感じた感情と雰囲気を中心に書く",
+            "es": "Escribo centrándome en emociones y ambiente que sentí"
+          },
+          "dimension": "F"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": {
+        "ko": "여행 준비를 할 때, 나는?",
+        "en": "When preparing for a trip, I:",
+        "ja": "旅行の準備をするとき、私は：",
+        "es": "Al preparar un viaje, yo:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "미리미리 체크리스트를 만들어 준비한다",
+            "en": "Create a checklist well in advance",
+            "ja": "事前にチェックリストを作って準備する",
+            "es": "Creo una lista de verificación con anticipación"
+          },
+          "dimension": "J"
+        },
+        {
+          "text": {
+            "ko": "출발 직전에 필요한 것들을 챙긴다",
+            "en": "Pack necessary items right before departure",
+            "ja": "出発直前に必要なものを準備する",
+            "es": "Empaco las cosas necesarias justo antes de partir"
+          },
+          "dimension": "P"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": {
+        "ko": "하루 여행 일정은?",
+        "en": "For a day's travel schedule:",
+        "ja": "1日の旅行スケジュールは：",
+        "es": "Para el itinerario de un día:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "시간별로 계획을 세워서 움직인다",
+            "en": "I plan and move according to a timetable",
+            "ja": "時間ごとに計画を立てて動く",
+            "es": "Planeo y me muevo según un horario"
+          },
+          "dimension": "J"
+        },
+        {
+          "text": {
+            "ko": "그때그때 기분에 따라 자유롭게 움직인다",
+            "en": "I move freely according to my mood at the moment",
+            "ja": "その時の気分に応じて自由に動く",
+            "es": "Me muevo libremente según mi estado de ánimo del momento"
+          },
+          "dimension": "P"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": {
+        "ko": "여행지에서 숙소를 정할 때?",
+        "en": "When choosing accommodation at a destination:",
+        "ja": "旅行先で宿泊施設を選ぶとき：",
+        "es": "Al elegir alojamiento en un destino:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "미리 예약하고 확정된 곳에 머문다",
+            "en": "I book in advance and stay at confirmed places",
+            "ja": "事前に予約して確定した場所に泊まる",
+            "es": "Reservo con anticipación y me quedo en lugares confirmados"
+          },
+          "dimension": "J"
+        },
+        {
+          "text": {
+            "ko": "현지에서 마음에 드는 곳을 찾아본다",
+            "en": "I look for places I like when I get there",
+            "ja": "現地で気に入った場所を探す",
+            "es": "Busco lugares que me gusten cuando llego"
+          },
+          "dimension": "P"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": {
+        "ko": "여행 중 계획이 틀어지면?",
+        "en": "When travel plans go wrong:",
+        "ja": "旅行中に計画が狂ったら：",
+        "es": "Cuando los planes de viaje salen mal:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "스트레스 받고 다시 계획을 세운다",
+            "en": "I get stressed and replan",
+            "ja": "ストレスを感じて再計画する",
+            "es": "Me estreso y vuelvo a planificar"
+          },
+          "dimension": "J"
+        },
+        {
+          "text": {
+            "ko": "\"뭐 어때\" 하며 즉흥적으로 즐긴다",
+            "en": "I enjoy it spontaneously thinking 'whatever'",
+            "ja": "「まあいいか」と即興的に楽しむ",
+            "es": "Lo disfruto espontáneamente pensando 'qué importa'"
+          },
+          "dimension": "P"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": {
+        "ko": "여행에서 힘든 일이 생겼을 때?",
+        "en": "When facing difficulties during travel:",
+        "ja": "旅行中に困難なことがあったとき：",
+        "es": "Al enfrentar dificultades durante el viaje:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"이 정도는 괜찮아!\" 자신감 있게 해결한다",
+            "en": "I confidently solve it thinking 'this is manageable!'",
+            "ja": "「この程度は大丈夫！」と自信を持って解決する",
+            "es": "Lo resuelvo con confianza pensando '¡esto es manejable!'"
+          },
+          "dimension": "A"
+        },
+        {
+          "text": {
+            "ko": "\"혹시 더 큰 문제가...\" 걱정하며 신중하게 대처한다",
+            "en": "I carefully handle it worrying 'what if there's a bigger problem...'",
+            "ja": "「もっと大きな問題が...」と心配しながら慎重に対処する",
+            "es": "Lo manejo con cuidado preocupándome '¿y si hay un problema mayor...?'"
+          },
+          "dimension": "T"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": {
+        "ko": "여행을 떠나기 전 나의 기분은?",
+        "en": "My feeling before leaving for a trip:",
+        "ja": "旅行に出発する前の私の気分は：",
+        "es": "Mi sentimiento antes de salir de viaje:"
+      },
+      "options": [
+        {
+          "text": {
+            "ko": "\"다 잘 될 거야!\" 설레고 기대된다",
+            "en": "I'm excited and looking forward thinking 'it'll all work out!'",
+            "ja": "「きっとうまくいく！」とワクワクして期待する",
+            "es": "Estoy emocionado y esperando pensando '¡todo saldrá bien!'"
+          },
+          "dimension": "A"
+        },
+        {
+          "text": {
+            "ko": "\"문제는 없을까?\" 약간 불안하고 긴장된다",
+            "en": "I'm slightly anxious and nervous thinking 'will there be any problems?'",
+            "ja": "「問題はないかな？」と少し不安で緊張する",
+            "es": "Estoy ligeramente ansioso y nervioso pensando '¿habrá algún problema?'"
+          },
+          "dimension": "T"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "ESTJ-A": {
+      "destination": {
+        "ko": "부산 해운대 비즈니스 지구",
+        "en": "Seoul",
+        "ja": "ソウル",
+        "es": "Seúl"
+      },
+      "title": {
+        "ko": "성공적인 프로젝트를 위한 효율적 휴식",
+        "en": "Systematic and Active City Explorer",
+        "ja": "体系的で活動的な都市探検家",
+        "es": "Explorador Urbano Sistemático y Activo"
+      },
+      "description": {
+        "ko": "당신은 확고한 집행자(ESTJ-A)입니다. 복잡한 상황에서도 현실적이고 효율적인 해결책을 찾는 능력이 탁월하며, 휴식조차도 체계적인 목표가 필요합니다. 부산의 현대적인 마천루와 깔끔하게 정돈된 해변은 당신의 활동적 에너지(E)와 논리적 계획성(J/T)을 동시에 만족시켜 줍니다. 잘 짜인 일정 속에서 최고급 시설을 이용하며, 다음 목표를 위한 에너지를 완벽하게 재충전할 수 있습니다.",
+        "en": "You gain energy exploring Seoul's landmarks where modernity meets tradition. You prefer trips with clear schedules and goals, enjoying interactions with new people.",
+        "ja": "現代と伝統が共存するソウルで、計画的に名所を探訪してエネルギーを得ます。明確なスケジュールと目標のある旅行を好み、新しい人々との交流を楽しみます。",
+        "es": "Obtienes energía explorando los lugares emblemáticos de Seúl donde la modernidad se encuentra con la tradición. Prefieres viajes con horarios y objetivos claros, disfrutando de las interacciones con nuevas personas."
+      },
+      "image": "quizzes/generated_images/Busan_Haeundae_Business_District_93b854dd.png"
+    },
+    "ESTJ-T": {
+      "destination": {
+        "ko": "서울 여의도 금융가 & 63빌딩",
+        "en": "Busan",
+        "ja": "釜山",
+        "es": "Busán"
+      },
+      "title": {
+        "ko": "미래 전략을 설계하는 고층 오피스 뷰",
+        "en": "Practical and Social Beach Traveler",
+        "ja": "現実的で社交的なビーチ旅行者",
+        "es": "Viajero Playero Práctico y Social"
+      },
+      "description": {
+        "ko": "신중한 통솔자(ESTJ-T)인 당신은 모든 일에 있어 완벽과 책임감을 추구합니다. 여행 역시 단순한 유흥이 아닌, 재충전과 미래를 위한 분석의 시간입니다. 여의도의 고층 빌딩 숲은 당신의 현실적인 통찰(S/T)을 극대화합니다. 한강이 내려다보이는 뷰에서 체계적으로 자료를 검토하고, 신중하게(T) 다음 분기의 목표를 세우는 것이 당신에게 가장 어울리는 휴식입니다.",
+        "en": "You enjoy traveling while interacting with people at Busan's vibrant beaches and markets. You visit verified restaurants and attractions, quickly finding alternatives when plans change.",
+        "ja": "釜山の活気あるビーチと市場で人々と交流しながら旅行を楽しみます。検証された飲食店や観光地を訪れ、計画に支障が出たら素早く代案を見つけます。",
+        "es": "Disfrutas viajando mientras interactúas con personas en las vibrantes playas y mercados de Busán. Visitas restaurantes y atracciones verificados, encontrando rápidamente alternativas cuando los planes cambian."
+      },
+      "image": "quizzes/generated_images/Seoul_Yeouido_Financial_District_ed8d7608.png"
+    },
+    "ESTP-A": {
+      "destination": {
+        "ko": "제주도 동부 해안도로",
+        "en": "Gangneung",
+        "ja": "江陵",
+        "es": "Gangneung"
+      },
+      "title": {
+        "ko": "즉흥 드라이브와 짜릿한 해양 액티비티",
+        "en": "Adventurous and Spontaneous Surfer",
+        "ja": "冒険的で即興的なサーファー",
+        "es": "Surfista Aventurero y Espontáneo"
+      },
+      "description": {
+        "ko": "당신은 대담한 모험가(ESTP-A)입니다. 즉각적인 행동(P)과 현실적인 경험(S)을 중시하며, 예측 가능한 계획은 지루함을 안겨줍니다. 제주도의 자유로운 해안도로는 당신의 외향적 에너지(E)를 폭발시키는 최적의 장소입니다. 미리 짠 계획 없이 차에 올라 즉흥적으로 멈추고, 스쿠버 다이빙이나 서핑 같은 짜릿한 액티비티에 확고하게(A) 뛰어드는 것이 당신의 진정한 힐링입니다.",
+        "en": "You enjoy spontaneous travel at Gangneung's beaches and cafe streets. You try new activities and easily befriend locals, valuing momentary joy over planning.",
+        "ja": "江陵の海とカフェ通りで即興的に旅行を楽しみます。新しいアクティビティに挑戦し、地元の人々とすぐに親しくなります。計画よりも瞬間の楽しさを大切にします。",
+        "es": "Disfrutas de viajes espontáneos en las playas y calles de cafeterías de Gangneung. Pruebas nuevas actividades y haces amigos fácilmente con locales, valorando la alegría momentánea sobre la planificación."
+      },
+      "image": "quizzes/generated_images/Jeju_East_Coast_Road_35fbf668.png"
+    },
+    "ESTP-T": {
+      "destination": {
+        "ko": "인천 월미도 & 차이나타운",
+        "en": "Sokcho",
+        "ja": "束草",
+        "es": "Sokcho"
+      },
+      "title": {
+        "ko": "역동적인 에너지와 다채로운 미식 체험",
+        "en": "Active and Flexible Hiker",
+        "ja": "活動的で柔軟な登山客",
+        "es": "Excursionista Activo y Flexible"
+      },
+      "description": {
+        "ko": "활력 넘치는 관찰자(ESTP-T)인 당신은 주변의 모든 자극을(S) 즐기며, 새로운 환경에 대한 호기심(T)이 넘칩니다. 인천 월미도의 역동적인 테마파크와 차이나타운의 복잡다단한 미식 거리는 당신의 현실적인 감각(S)을 자극합니다. 사람들의 활기찬 에너지 속에서 즉흥적으로(P) 맛있는 음식을 탐험하고, 복잡한 군중 속에서도 스트레스 대신 활력을 얻는 것이 당신의 여행 스타일입니다.",
+        "en": "You enjoy activities moving between mountains and sea in Sokcho. You flexibly change plans according to weather and situations, intuitively finding local restaurants.",
+        "ja": "束草で山と海を行き来しながらアクティビティを楽しみます。天気や状況に応じて柔軟に計画を変え、地元の飲食店を直感的に見つけます。",
+        "es": "Disfrutas de actividades moviéndote entre montañas y mar en Sokcho. Cambias planes flexiblemente según el clima y las situaciones, encontrando restaurantes locales intuitivamente."
+      },
+      "image": "quizzes/generated_images/Incheon_Wolmido_Chinatown_7c700b72.png"
+    },
+    "ESFJ-A": {
+      "destination": {
+        "ko": "경주 황리단길 & 한옥마을",
+        "en": "Jeonju",
+        "ja": "全州",
+        "es": "Jeonju"
+      },
+      "title": {
+        "ko": "따뜻한 정을 나누는 감성 한옥 스테이",
+        "en": "Warm Traditional Food Lover",
+        "ja": "温かく伝統を愛するグルメ",
+        "es": "Amante de la Comida Tradicional Cálido"
+      },
+      "description": {
+        "ko": "당신은 자신감 넘치는 사교가(ESFJ-A)입니다. 사람들에게 따뜻한 관심(F)을 베풀고 공동체의 조화를 추구하며, 여행지에서도 정(E)을 나누는 것을 중요하게 생각합니다. 경주의 고풍스러운 한옥마을은 당신의 친밀함(A)을 발휘하기 좋습니다. 정갈한 한옥 스테이에서 소중한 사람들과 깊은 대화를 나누고, 황리단길에서 함께 공감할 만한 추억을 주도적으로(A) 만들어가는 것이 당신의 완벽한 휴식입니다.",
+        "en": "You create memories experiencing traditional food and culture at Jeonju Hanok Village. You enjoy finding restaurants to share with friends, valuing warm atmosphere.",
+        "ja": "全州韓屋村で伝統的な食べ物と文化を体験しながら人々と思い出を作ります。飲食店を見つけて友達と共有することを楽しみ、温かい雰囲気を大切にします。",
+        "es": "Creas recuerdos experimentando comida y cultura tradicional en Jeonju Hanok Village. Disfrutas encontrar restaurantes para compartir con amigos, valorando un ambiente cálido."
+      },
+      "image": "quizzes/generated_images/Gyeongju_Hanok_Village_0be3a69c.png"
+    },
+    "ESFJ-T": {
+      "destination": {
+        "ko": "전주 한옥마을 & 경기전",
+        "en": "Yeosu",
+        "ja": "麗水",
+        "es": "Yeosu"
+      },
+      "title": {
+        "ko": "선한 영향력을 위한 전통 문화 체험",
+        "en": "Caring Romantic Traveler",
+        "ja": "思いやりのあるロマンチック旅行者",
+        "es": "Viajero Romántico Cuidadoso"
+      },
+      "description": {
+        "ko": "섬세한 봉사자(ESFJ-T)인 당신은 주변 사람들과 세상에 선한 영향력(F)을 주고 싶어 하는 신중한(T) 유형입니다. 전주 한옥마을의 잘 보존된 전통과 경기전의 역사적 의미는 당신의 계획적 헌신(J)을 위한 영감을 줍니다. 깔끔하게 정돈된 공간에서 전통 문화를 배우고, 세밀한 감정(T)으로 역사의 깊이를 느끼는 것이 당신에게 가장 의미 있는 여행입니다.",
+        "en": "You travel considering your companions at Yeosu's romantic port. You enjoy night views and seafood while working to create schedules everyone can enjoy.",
+        "ja": "麗水のロマンチックな港で一緒にいる人々を配慮しながら旅行します。夜景と海鮮料理を楽しみながら、みんなが満足できるスケジュールを作ろうと努力します。",
+        "es": "Viajas considerando a tus compañeros en el puerto romántico de Yeosu. Disfrutas de las vistas nocturnas y mariscos mientras trabajas para crear horarios que todos puedan disfrutar."
+      },
+      "image": "quizzes/generated_images/Jeonju_Hanok_Village_452b0057.png"
+    },
+    "ESFP-A": {
+      "destination": {
+        "ko": "서울 홍대 힙합 클럽 & 팝업 스토어",
+        "en": "Hongdae",
+        "ja": "弘大",
+        "es": "Hongdae"
+      },
+      "title": {
+        "ko": "나를 표현하는 자유로운 영혼의 무대",
+        "en": "Free-Spirited Party Person",
+        "ja": "自由な魂のパーティーピープル",
+        "es": "Persona de Fiesta de Espíritu Libre"
+      },
+      "description": {
+        "ko": "당신은 낙천적인 연예인(ESFP-A)입니다. 현재의 즐거움(P)을 최우선으로 여기며, 어디서든 주목받고 싶어 하는 외향적(E)인 사람입니다. 서울 홍대의 팝업 스토어와 클럽 거리는 당신의 화려한 개성(A)을 마음껏 분출할 수 있는 무대입니다. 트렌디한 패션으로 자신을 표현하고, 자유롭게 사람들과 어울리며 에너지를 발산하는 것이 당신의 최고의 재충전 방식입니다.",
+        "en": "You enjoy Hongdae's youthful energy and culture with spontaneous travel. You watch street performances, easily make friends, and savor every moment.",
+        "ja": "弘大の若いエネルギーと文化を楽しみながら即興的に旅行します。ストリートパフォーマンスを見て、新しい人々とすぐに親しくなり、瞬間瞬間を満喫します。",
+        "es": "Disfrutas de la energía juvenil y la cultura de Hongdae con viajes espontáneos. Ves actuaciones callejeras, haces amigos fácilmente y saboreas cada momento."
+      },
+      "image": "quizzes/generated_images/Seoul_Hongdae_Street_615ae3d2.png"
+    },
+    "ESFP-T": {
+      "destination": {
+        "ko": "여수 밤바다 & 낭만 포장마차 거리",
+        "en": "Myeongdong",
+        "ja": "明洞",
+        "es": "Myeongdong"
+      },
+      "title": {
+        "ko": "순간의 낭만에 집중하는 감성 여행",
+        "en": "Trendy Shopping Enthusiast",
+        "ja": "トレンディなショッピング愛好家",
+        "es": "Entusiasta de Compras Moderno"
+      },
+      "description": {
+        "ko": "감성적인 유쾌함(ESFP-T)을 지닌 당신은 순간의 낭만(F)과 감각적인 즐거움(S)에 깊이 몰입합니다. 여수의 밤바다가 선사하는 은은한 빛과 포장마차의 활기찬 분위기는 당신의 섬세한 감각(T)을 만족시킵니다. 거창한 계획 대신 발길 닿는 대로 움직이며, 그 순간의 분위기와 감정에 온전히 집중하는 것이 당신의 진정한 힐링입니다.",
+        "en": "You shop following latest trends and enjoy street food in Myeongdong. You hang out with friends making spontaneous decisions, though sometimes struggling with choices.",
+        "ja": "明洞で最新トレンドに従ってショッピングし、食べ物を楽しみます。友達と一緒に回りながら即興的に決定しますが、時には選択に悩むこともあります。",
+        "es": "Compras siguiendo las últimas tendencias y disfrutas de comida callejera en Myeongdong. Pasas tiempo con amigos tomando decisiones espontáneas, aunque a veces luchas con las elecciones."
+      },
+      "image": "quizzes/generated_images/Yeosu_Night_Sea_bb2c0d93.png"
+    },
+    "ENTJ-A": {
+      "destination": {
+        "ko": "서울 강남 테헤란로",
+        "en": "Incheon",
+        "ja": "仁川",
+        "es": "Incheon"
+      },
+      "title": {
+        "ko": "대한민국 미래를 논하는 전략적 미팅 공간",
+        "en": "Strategic International Business Traveler",
+        "ja": "戦略的な国際ビジネス旅行者",
+        "es": "Viajero de Negocios Internacional Estratégico"
+      },
+      "description": {
+        "ko": "당신은 확신에 찬 통솔자(ENTJ-A)입니다. 논리와 비전(N/T)으로 가득 차 있으며, 휴식마저도 미래를 위한 전략적 투자로 여깁니다. 강남 테헤란로의 첨단 빌딩 숲은 당신의 야망(A)을 자극합니다. 고급 비즈니스 공간에서 지적인 교류를 나누고, 다음 세대의 혁신을 설계하는 것이 당신에게 가장 효율적이고 만족스러운 여행입니다.",
+        "en": "You efficiently manage your schedule in Incheon's international atmosphere. You strategically explore Songdo and Chinatown, leading travel with clear goals.",
+        "ja": "仁川の国際的な雰囲気で効率的にスケジュールをこなします。松島とチャイナタウンを戦略的に探訪し、明確な目標を持って旅行を導きます。",
+        "es": "Manejas eficientemente tu horario en la atmósfera internacional de Incheon. Exploras estratégicamente Songdo y Chinatown, liderando viajes con objetivos claros."
+      },
+      "image": "quizzes/generated_images/Seoul_Gangnam_Teheran-ro_b8c949a5.png"
+    },
+    "ENTJ-T": {
+      "destination": {
+        "ko": "세종 정부 청사 주변",
+        "en": "Daegu",
+        "ja": "大邱",
+        "es": "Daegu"
+      },
+      "title": {
+        "ko": "새로운 혁신을 위한 체계적인 계획 도시",
+        "en": "Goal-Oriented City Explorer",
+        "ja": "目標志向の都市探検家",
+        "es": "Explorador Urbano Orientado a Objetivos"
+      },
+      "description": {
+        "ko": "신중한 전략가(ENTJ-T)인 당신은 체계적인(J) 계획을 통해 비전을 현실로 만듭니다. 세종시의 정돈된 계획 도시 구조는 당신의 논리적 사고(T)에 완벽하게 부합합니다. 새로운 행정 시스템과 도시의 설계를 관찰하며, 완벽한 재충전과 동시에 도전적 목표(T)에 대한 영감을 얻는 것이 당신에게 가장 의미 있는 활동입니다.",
+        "en": "You systematically explore Daegu's modern alley and night view spots. You plan efficient routes but flexibly handle unexpected situations.",
+        "ja": "大邱の近代路地と夜景スポットを体系的に探訪します。効率的な動線を計画しますが、予期しない状況には柔軟に対処します。",
+        "es": "Exploras sistemáticamente los callejones modernos y lugares con vistas nocturnas de Daegu. Planeas rutas eficientes pero manejas situaciones inesperadas con flexibilidad."
+      },
+      "image": "quizzes/generated_images/Sejong_Government_Complex_8f749017.png"
+    },
+    "ENTP-A": {
+      "destination": {
+        "ko": "부산 국제영화제 거리 & 센텀시티",
+        "en": "Gapyeong",
+        "ja": "加平",
+        "es": "Gapyeong"
+      },
+      "title": {
+        "ko": "아이디어를 토론하는 열린 광장",
+        "en": "Creative Theme Park Adventurer",
+        "ja": "創造的なテーマパーク冒険家",
+        "es": "Aventurero Creativo de Parques Temáticos"
+      },
+      "description": {
+        "ko": "도발적인 변론가(ENTP-A)인 당신은 창의적인 아이디어(N)와 논리적 토론(T)을 즐깁니다. 부산 센텀시티와 영화의 전당은 당신의 자유로운 사고(P)를 펼칠 최적의 공간입니다. 경계 없는 예술과 기술이 만나는 장소에서 새로운 가능성을 탐구하고, 다양한 사람들과 자신감 있게(A) 의견을 나누는 것이 당신의 에너지를 충전하는 방식입니다.",
+        "en": "You seek unique experiences at Gapyeong's Petite France and Nami Island. You travel thinking of new ideas and enjoy unexpected discoveries.",
+        "ja": "加平のプチフランスとナミ島でユニークな体験を探します。新しいアイデアを思い浮かべながら旅行し、予期しない発見を楽しみます。",
+        "es": "Buscas experiencias únicas en Petite France y Nami Island de Gapyeong. Viajas pensando en nuevas ideas y disfrutas de descubrimientos inesperados."
+      },
+      "image": "quizzes/generated_images/Busan_Centum_City_19801ace.png"
+    },
+    "ENTP-T": {
+      "destination": {
+        "ko": "대전 대덕 연구단지",
+        "en": "Chuncheon",
+        "ja": "春川",
+        "es": "Chuncheon"
+      },
+      "title": {
+        "ko": "미지의 영역을 탐구하는 지식의 놀이터",
+        "en": "Curious Lake Explorer",
+        "ja": "好奇心旺盛な湖探検家",
+        "es": "Explorador Curioso de Lagos"
+      },
+      "description": {
+        "ko": "호기심 많은 탐험가(ENTP-T)인 당신에게 여행은 지적인 실험(N/T)입니다. 대전 대덕 연구단지의 전문적이고 지적인 환경은 당신의 끊임없는 질문(T)을 해소시켜 줍니다. 최첨단 과학 기술을 관찰하며 미지의 영역에 대한 지적 호기심(T)을 충족시키고, 새로운 아이디어를 끊임없이 실험하는 것이 당신의 최고의 휴가입니다.",
+        "en": "You explore Chuncheon's lakes and dakgalbi alley trying new things. You're spontaneous but pursue perfection, considering various possibilities.",
+        "ja": "春川の湖とタッカルビ路地を探検しながら新しいことを試します。即興的ですが完璧を追求し、様々な可能性を考えます。",
+        "es": "Exploras los lagos y callejón dakgalbi de Chuncheon probando cosas nuevas. Eres espontáneo pero buscas la perfección, considerando varias posibilidades."
+      },
+      "image": "quizzes/generated_images/Daejeon_Research_Complex_d569e3d5.png"
+    },
+    "ENFJ-A": {
+      "destination": {
+        "ko": "DMZ 평화공원",
+        "en": "Gyeongju",
+        "ja": "慶州",
+        "es": "Gyeongju"
+      },
+      "title": {
+        "ko": "통일 비전을 제시하는 희망의 땅",
+        "en": "Inspiring History Guide",
+        "ja": "インスピレーションを与える歴史ガイド",
+        "es": "Guía de Historia Inspirador"
+      },
+      "description": {
+        "ko": "당신은 확고한 선도자(ENFJ-A)입니다. 높은 이상(N)과 강력한 공감 능력(F)으로 사람들을 이끄는 리더입니다. DMZ 평화공원은 당신의 통찰력(N)으로 더 나은 미래에 대한 비전(E/A)을 제시할 수 있는 성스러운 공간입니다. 분단의 아픔을 공감하고, 평화의 메시지를 확고한 신념(A)으로 전달하며 진정한 의미의 재충전을 얻습니다.",
+        "en": "You discover deep meaning at Gyeongju's historical sites and share with others. You enjoy sharing stories of cultural assets and moving others.",
+        "ja": "慶州の歴史遺跡で深い意味を発見し、他の人々と共有します。文化財の物語を共有し、共に感動を分かち合うことを楽しみます。",
+        "es": "Descubres significado profundo en los sitios históricos de Gyeongju y compartes con otros. Disfrutas compartir historias de activos culturales y conmover a otros."
+      },
+      "image": "quizzes/generated_images/DMZ_Peace_Park_96fe300b.png"
+    },
+    "ENFJ-T": {
+      "destination": {
+        "ko": "서울 인사동 쌈지길",
+        "en": "Andong",
+        "ja": "安東",
+        "es": "Andong"
+      },
+      "title": {
+        "ko": "사람들의 이야기를 듣고 영감을 얻는 예술 공간",
+        "en": "Empathetic Traditional Culture Explorer",
+        "ja": "共感する伝統文化探検家",
+        "es": "Explorador Empático de Cultura Tradicional"
+      },
+      "description": {
+        "ko": "열정적인 옹호자(ENFJ-T)인 당신은 사람들과의 관계(F)와 깊은 공감(T)을 통해 영감을 얻습니다. 인사동 쌈지길의 따뜻하고 감성적인 분위기는 당신의 계획적(J)인 교류를 돕습니다. 다양한 예술가와 방문객들의 이야기를 들으며 섬세한 감정(T)으로 그들의 삶을 이해하고, 자신의 사명감(F)을 재확인하는 것이 가장 가치 있는 여행입니다.",
+        "en": "You feel traditional values at Andong Hahoe Village and share with others. You feel happy seeing companions enjoy, caring for everyone.",
+        "ja": "安東河回村で伝統の価値を感じ、人々と共有します。一緒にいる人々が楽しむ姿を見て幸せを感じ、皆を配慮します。",
+        "es": "Sientes los valores tradicionales en Andong Hahoe Village y compartes con otros. Te sientes feliz viendo disfrutar a los compañeros, cuidando de todos."
+      },
+      "image": "quizzes/generated_images/Seoul_Insadong_Ssamziegil_bcb767a4.png"
+    },
+    "ENFP-A": {
+      "destination": {
+        "ko": "강릉 안목해변 커피거리",
+        "en": "Jeju Island",
+        "ja": "済州島",
+        "es": "Isla Jeju"
+      },
+      "title": {
+        "ko": "무한한 상상력을 충전하는 바닷가 카페",
+        "en": "Free-Spirited Island Traveler",
+        "ja": "自由な魂の島旅行者",
+        "es": "Viajero Isleño de Espíritu Libre"
+      },
+      "description": {
+        "ko": "당신은 낙관적인 활동가(ENFP-A)입니다. 새로운 가능성(N)에 대한 무한한 열정을 가지고 있으며, 자유롭고(P) 영감을 주는 환경을 갈망합니다. 강릉 안목해변 커피거리의 탁 트인 바다와 활기찬 카페 문화는 당신의 긍정적 에너지(A)를 폭발시킵니다. 커피 한 잔과 함께 자유롭게 상상하고, 새로운 만남을 통해 무한한 아이디어(N)를 충전하는 것이 당신의 가장 즐거운 휴식입니다.",
+        "en": "You travel freely inspired by Jeju's nature. You find hidden cafes and spots, creating special moments with people.",
+        "ja": "済州島の自然からインスピレーションを受けて自由に旅行します。隠れたカフェとスポットを見つけ、人々との特別な瞬間を作ります。",
+        "es": "Viajas libremente inspirado por la naturaleza de Jeju. Encuentras cafés y lugares ocultos, creando momentos especiales con personas."
+      },
+      "image": "quizzes/generated_images/Gangneung_Coffee_Street_7be4eae7.png"
+    },
+    "ENFP-T": {
+      "destination": {
+        "ko": "순천만 습지",
+        "en": "Damyang",
+        "ja": "潭陽",
+        "es": "Damyang"
+      },
+      "title": {
+        "ko": "복잡한 생각들을 정리하는 고요한 자연 속 명소",
+        "en": "Emotional Nature Healing Traveler",
+        "ja": "感性的な自然ヒーリング旅行者",
+        "es": "Viajero Emocional de Sanación Natural"
+      },
+      "description": {
+        "ko": "민감한 중재자(ENFP-T)인 당신은 내면의 감정(T)과 이상(N)이 충돌할 때 깊은 성찰의 시간이 필요합니다. 순천만 습지의 고요하고 광활한 자연은 당신의 복잡한 생각들을 정리하기에 완벽한 장소입니다. 인간의 손길이 닿지 않은 자연의 섭리(N)를 관찰하며 감성적인 평화(F)를 찾고, 섬세한 내면(T)을 다독이는 것이 당신에게 가장 중요한 재충전입니다.",
+        "en": "You travel finding peace in Damyang's bamboo forest. You gain inspiration in nature and enjoy deep conversations with people.",
+        "ja": "潭陽の竹林で平和を見つけながら旅行します。自然の中でインスピレーションを得て、人々と深い会話をすることを好みます。",
+        "es": "Viajas encontrando paz en el bosque de bambú de Damyang. Obtienes inspiración en la naturaleza y disfrutas de conversaciones profundas con personas."
+      },
+      "image": "quizzes/generated_images/Suncheon_Bay_Wetlands_41c9ed9f.png"
+    },
+    "ISTJ-A": {
+      "destination": {
+        "ko": "안동 하회마을 & 도산서원",
+        "en": "Pohang",
+        "ja": "浦項",
+        "es": "Pohang"
+      },
+      "title": {
+        "ko": "전통과 질서가 살아있는 근본의 공간",
+        "en": "Thorough Sunrise Viewer",
+        "ja": "徹底的な日の出観覧客",
+        "es": "Observador Minucioso del Amanecer"
+      },
+      "description": {
+        "ko": "당신은 헌신적인 분석가(ISTJ-A)입니다. 현실적인 규칙(S)과 확고한 질서(J/A)를 중요하게 생각하며, 잘 보존된 전통에서 안정감을 느낍니다. 안동 하회마을과 도산서원은 당신의 논리적 헌신(T)을 존중하는 곳입니다. 완벽하게 보존된 건축 양식과 선비 정신의 체계적인(J) 가르침을 탐구하며, 변함없는 확실성(A) 속에서 깊은 만족감을 얻습니다.",
+        "en": "You watch sunrise at Pohang Homigot with planning. You arrive at exact times, dine at verified restaurants, pursuing stable travel.",
+        "ja": "浦項虎尾岬で計画的に日の出を鑑賞します。正確な時間に合わせて到着し、検証された飲食店で食事をしながら安定した旅行を追求します。",
+        "es": "Observas el amanecer en Pohang Homigot con planificación. Llegas a horas exactas, cenas en restaurantes verificados, buscando viajes estables."
+      },
+      "image": "quizzes/generated_images/Andong_Hahoe_Village_6703d111.png"
+    },
+    "ISTJ-T": {
+      "destination": {
+        "ko": "국립중앙박물관",
+        "en": "Yeongju",
+        "ja": "栄州",
+        "es": "Yeongju"
+      },
+      "title": {
+        "ko": "체계적인 지식 습득을 위한 완벽한 아카이브",
+        "en": "Cautious Temple Visitor",
+        "ja": "慎重な寺院訪問客",
+        "es": "Visitante Cauteloso de Templos"
+      },
+      "description": {
+        "ko": "신중한 사실주의자(ISTJ-T)인 당신은 정확한 사실(S)과 디테일(T)을 갈망합니다. 국립중앙박물관은 수많은 정보가 체계적으로(J) 분류된 지식의 보고입니다. 꼼꼼한 설명을 읽으며 역사의 흐름을 논리적으로(T) 분석하고, 완벽하게 정리된 정보(T) 속에서 당신의 지적 갈증을 해소하는 것이 최고의 휴식입니다.",
+        "en": "You quietly appreciate history at Yeongju Buseoksa Temple. You travel with thorough preparation and planning, preparing for unexpected situations.",
+        "ja": "栄州浮石寺で静かに歴史を味わいます。徹底的な準備と計画で旅行し、予期しない状況に備えます。",
+        "es": "Aprecias la historia tranquilamente en el Templo Buseoksa de Yeongju. Viajas con preparación y planificación minuciosas, preparándote para situaciones inesperadas."
+      },
+      "image": "quizzes/generated_images/National_Museum_ad015ee9.png"
+    },
+    "ISTP-A": {
+      "destination": {
+        "ko": "영종도 을왕리 해수욕장",
+        "en": "Pyeongchang",
+        "ja": "平昌",
+        "es": "Pyeongchang"
+      },
+      "title": {
+        "ko": "혼자만의 공간에서 즐기는 실용적인 휴식",
+        "en": "Free-Spirited Ski Enthusiast",
+        "ja": "自由なスキーマニア",
+        "es": "Entusiasta del Esquí de Espíritu Libre"
+      },
+      "description": {
+        "ko": "당신은 실용적인 장인(ISTP-A)입니다. 내향적(I)이지만 현실적 행동(S)을 통해 기쁨을 찾으며, 간섭 없는 독립(A)을 선호합니다. 영종도 해변은 당신의 자유로운 유연성(P)을 충족시켜 줍니다. 혼자서 낚시나 캠핑 같은 실용적인 활동에 집중하거나, 바다를 바라보며 객관적인 사색(T/A)에 빠지는 것이 당신에게 가장 잘 어울리는 독립적인 힐링입니다.",
+        "en": "You travel freely enjoying skiing and nature in Pyeongchang. You enjoy alone time focusing on activities, packing only necessities.",
+        "ja": "平昌でスキーと自然を楽しみながら自由に旅行します。一人の時間を楽しみながらアクティビティに集中し、必要なものだけを準備します。",
+        "es": "Viajas libremente disfrutando del esquí y la naturaleza en Pyeongchang. Disfrutas del tiempo a solas enfocándote en actividades, empacando solo lo necesario."
+      },
+      "image": "quizzes/generated_images/Yeongjong_Island_Beach_32f28b27.png"
+    },
+    "ISTP-T": {
+      "destination": {
+        "ko": "지리산/설악산 등반로",
+        "en": "Seoraksan",
+        "ja": "雪岳山",
+        "es": "Seoraksan"
+      },
+      "title": {
+        "ko": "고요함 속에서 스스로를 분석하는 고행길",
+        "en": "Cautious Hiking Expert",
+        "ja": "慎重な登山専門家",
+        "es": "Experto en Senderismo Cauteloso"
+      },
+      "description": {
+        "ko": "분석적인 탐험가(ISTP-T)인 당신은 내향적인 관찰(I)과 물리적 도전(S)을 통해 만족을 얻습니다. 지리산이나 설악산의 고요한 등반로는 당신의 논리적 분석(T) 능력을 극대화합니다. 고독한 환경에서 스스로의 한계를 시험하고, 자연의 복잡한 시스템을 집중적으로(T) 관찰하며, 복잡한 내면을 이성적으로 정리(T)하는 것이 당신의 진정한 재충전입니다.",
+        "en": "You quietly enjoy hiking and commune with nature at Seoraksan. You prioritize safety and climb at your own pace.",
+        "ja": "雪岳山で静かに登山を楽しみながら自然と交感します。安全を最優先に考え、自分のペースで山を登ります。",
+        "es": "Disfrutas tranquilamente del senderismo y comunas con la naturaleza en Seoraksan. Priorizas la seguridad y subes a tu propio ritmo."
+      },
+      "image": "quizzes/generated_images/Mountain_Hiking_Trail_33e6d5b6.png"
+    },
+    "ISFJ-A": {
+      "destination": {
+        "ko": "양평/가평 전원생활 체험",
+        "en": "Bukchon Hanok Village",
+        "ja": "北村韓屋村",
+        "es": "Aldea Hanok de Bukchon"
+      },
+      "title": {
+        "ko": "익숙한 곳에서 소중한 사람들과의 안정적 휴가",
+        "en": "Warm Traditional Culture Guardian",
+        "ja": "温かい伝統文化の守り手",
+        "es": "Guardián Cálido de la Cultura Tradicional"
+      },
+      "description": {
+        "ko": "당신은 책임감 있는 수호자(ISFJ-A)입니다. 익숙하고 안정적인(S/A) 환경에서 소중한 사람들을 돌볼 때 가장 행복을 느낍니다. 양평/가평의 전원생활 공간은 당신의 배려심(F)을 발휘할 최적의 장소입니다. 잘 갖춰진 숙소에서 가족이나 친구들을 위해 식사를 준비하고, 계획대로(J) 편안한 휴식을 제공하는 것이 당신에게 가장 큰 만족감을 줍니다.",
+        "en": "You quietly stroll valuing tradition in Bukchon Hanok Village. You care for companions and calmly enjoy culture.",
+        "ja": "北村韓屋村で伝統を大切にしながら静かに散歩します。一緒にいる人々を配慮し、落ち着いて文化を楽しみます。",
+        "es": "Paseas tranquilamente valorando la tradición en Bukchon Hanok Village. Cuidas de los compañeros y disfrutas de la cultura con calma."
+      },
+      "image": "quizzes/generated_images/Korean_Countryside_80561396.png"
+    },
+    "ISFJ-T": {
+      "destination": {
+        "ko": "광주/대구 국립 5.18 민주묘지",
+        "en": "Suncheon",
+        "ja": "順天",
+        "es": "Suncheon"
+      },
+      "title": {
+        "ko": "숭고한 희생을 되새기는 역사적 성지",
+        "en": "Attentive Garden Appreciator",
+        "ja": "細心な庭園鑑賞家",
+        "es": "Apreciador Atento de Jardines"
+      },
+      "description": {
+        "ko": "섬세한 헌신자(ISFJ-T)인 당신은 타인의 감정(F)에 깊이 공감하고, 가치 있는 헌신(J/T)에 몰두합니다. 광주/대구의 민주묘지는 당신의 숭고한 정신(F)을 일깨우는 장소입니다. 역사의 아픔을 신중하게(T) 되새기고, 희생된 이들의 이야기를 내면 깊이(I) 받아들이며, 세상에 대한 당신의 사명감(F/J)을 재확인하는 의미 있는 여행입니다.",
+        "en": "You heal quietly appreciating nature at Suncheon Bay Garden. You carefully take photos and prioritize companions' comfort.",
+        "ja": "順天湾庭園で静かに自然を鑑賞しながらヒーリングします。写真を丁寧に撮り、一緒にいる人々の快適さを優先します。",
+        "es": "Te sanas apreciando tranquilamente la naturaleza en Suncheon Bay Garden. Tomas fotos cuidadosamente y priorizas la comodidad de los compañeros."
+      },
+      "image": "quizzes/generated_images/May_18_Memorial_4716dc5b.png"
+    },
+    "ISFP-A": {
+      "destination": {
+        "ko": "부산 감천문화마을",
+        "en": "Udo Island",
+        "ja": "牛島",
+        "es": "Isla Udo"
+      },
+      "title": {
+        "ko": "자유로운 분위기 속에서 즐기는 예술적 영감",
+        "en": "Artistic Island Wanderer",
+        "ja": "芸術的な島の放浪者",
+        "es": "Vagabundo Artístico de Islas"
+      },
+      "description": {
+        "ko": "당신은 평온한 예술가(ISFP-A)입니다. 내향적(I)이지만 자유로운 표현(P)을 추구하며, 현재의 감각(S)에 집중할 때 창의력이 샘솟습니다. 감천문화마을의 다채로운 색감과 골목길은 당신의 예술적 감성(F)을 자극합니다. 인파에 휩쓸리지 않고 조용히 거리를 거닐며 자유로운 영감(P)을 얻고, 평온하게(A) 순간의 아름다움을 만끽하는 것이 당신의 힐링입니다.",
+        "en": "You recharge emotions on Udo's quiet beaches. You freely take photos capturing artistic moments and enjoy alone time.",
+        "ja": "牛島の静かなビーチで感性を充電します。自由に写真を撮りながら芸術的な瞬間を捉え、一人の時間を楽しみます。",
+        "es": "Recargas emociones en las playas tranquilas de Udo. Tomas fotos libremente capturando momentos artísticos y disfrutas del tiempo a solas."
+      },
+      "image": "quizzes/generated_images/Gamcheon_Culture_Village_92876ea2.png"
+    },
+    "ISFP-T": {
+      "destination": {
+        "ko": "담양 죽녹원",
+        "en": "Taean",
+        "ja": "泰安",
+        "es": "Taean"
+      },
+      "title": {
+        "ko": "복잡한 감정을 정리하는 고요하고 감성적인 대나무 숲",
+        "en": "Emotional Sunset Photographer",
+        "ja": "感性的な夕日写真家",
+        "es": "Fotógrafo Emocional de Atardeceres"
+      },
+      "description": {
+        "ko": "민감한 감성주의자(ISFP-T)인 당신은 섬세한 감각(S)으로 주변 환경을 인지하며, 내면의 감정(F/T)에 깊이 빠져듭니다. 담양 죽녹원의 고요하고 신비로운 대나무 숲은 당신의 민감한 마음(T)을 진정시켜 줍니다. 혼자 조용히 걸으며 복잡한 생각(T)들을 자연의 소리와 함께 흘려보내고, 깊은 감정(F)을 성찰하는 시간이 당신에게 가장 소중한 재충전입니다.",
+        "en": "You express emotions watching sunset on Taean beaches. You quietly commune with nature, trying to capture perfect moments.",
+        "ja": "泰安のビーチで夕日を鑑賞しながら感性を表現します。静かに自然と交感し、完璧な瞬間を捉えようと努力します。",
+        "es": "Expresas emociones viendo el atardecer en las playas de Taean. Comunas tranquilamente con la naturaleza, tratando de capturar momentos perfectos."
+      },
+      "image": "quizzes/generated_images/Damyang_Bamboo_Forest_8ef70471.png"
+    },
+    "INTJ-A": {
+      "destination": {
+        "ko": "제주도 첨단과학기술단지",
+        "en": "DMZ (Demilitarized Zone)",
+        "ja": "DMZ（非武装地帯）",
+        "es": "DMZ (Zona Desmilitarizada)"
+      },
+      "title": {
+        "ko": "미래를 설계하는 지식 기반 연구단지",
+        "en": "Strategic History Analyst",
+        "ja": "戦略的な歴史分析家",
+        "es": "Analista Estratégico de Historia"
+      },
+      "description": {
+        "ko": "당신은 전략적인 설계자(INTJ-A)입니다. 논리(T)와 비전(N)으로 미래를 예측하며, 지적 통제(J/A)가 가능한 환경을 선호합니다. 제주 첨단과학기술단지는 당신의 끊임없는 지적 탐구(I/N)를 충족시켜 줍니다. 세상의 변화를 가져올 혁신 기술들을 관찰하며 확고한 전략(A)을 구상하고, 다음 단계의 인생 계획을 효율적으로(T) 설계하는 것이 당신의 이상적인 여행입니다.",
+        "en": "You travel deeply analyzing history's meaning at DMZ. You quietly contemplate alone, systematically collecting and understanding information.",
+        "ja": "DMZで歴史的意味を深く分析しながら旅行します。一人で静かに思索し、体系的に情報を収集して理解します。",
+        "es": "Viajas analizando profundamente el significado de la historia en la DMZ. Contemplas tranquilamente solo, recopilando y comprendiendo información sistemáticamente."
+      },
+      "image": "quizzes/generated_images/Jeju_Science_Park_5fb1bce6.png"
+    },
+    "INTJ-T": {
+      "destination": {
+        "ko": "해인사 팔만대장경",
+        "en": "Hallasan",
+        "ja": "漢拏山",
+        "es": "Hallasan"
+      },
+      "title": {
+        "ko": "지혜를 탐구하고 스스로를 성찰하는 곳",
+        "en": "Perfectionist Trekking Planner",
+        "ja": "完璧主義トレッキングプランナー",
+        "es": "Planificador Perfeccionista de Trekking"
+      },
+      "description": {
+        "ko": "신중한 지식인(INTJ-T)인 당신은 깊은 사색(I)과 지혜 탐구(N)를 통해 삶의 의미를 찾습니다. 해인사 팔만대장경의 방대하고 체계적인 지식의 집합체는 당신의 완벽주의적 분석(J/T)을 자극합니다. 고요한 사찰 환경에서 논리적으로(T) 우주의 이치와 인간의 지혜를 성찰하고, 스스로의 내면을 신중하게(T) 되돌아보는 것이 당신의 깊은 힐링입니다.",
+        "en": "You thoroughly plan and execute Hallasan climbing. You move toward goals alone, pursuing perfect climbing but sometimes being strict with yourself.",
+        "ja": "漢拏山登山を徹底的に計画して実行します。一人で目標に向かって進み、完璧な登山を追求しますが、時には自分に厳しいです。",
+        "es": "Planeas y ejecutas minuciosamente la escalada del Hallasan. Te mueves hacia objetivos solo, buscando escalada perfecta pero a veces siendo estricto contigo mismo."
+      },
+      "image": "quizzes/generated_images/Haeinsa_Temple_4086b2c3.png"
+    },
+    "INTP-A": {
+      "destination": {
+        "ko": "천문대 & 별 관측소",
+        "en": "Gwangjang Market",
+        "ja": "広蔵市場",
+        "es": "Mercado Gwangjang"
+      },
+      "title": {
+        "ko": "우주의 논리를 탐구하는 독립적인 공간",
+        "en": "Curious Food Explorer",
+        "ja": "好奇心旺盛なグルメ探検家",
+        "es": "Explorador Gastronómico Curioso"
+      },
+      "description": {
+        "ko": "당신은 객관적인 논리(T/A)로 세상의 원리를 이해하려는 독립적인 탐구자(INTP-A)입니다. 천문대는 당신의 창의적 사고(N)를 우주적인 규모로 확장시켜 줍니다. 사람들의 방해 없이 혼자 밤하늘의 논리와 패턴을 관찰하며 지적 호기심(P)을 해소하고, 확신에 찬(A) 태도로 우주의 진리를 파헤치는 것이 당신에게 가장 적합한 휴식입니다.",
+        "en": "You explore Gwangjang Market logically analyzing various foods. You quietly observe and imagine new flavor combinations.",
+        "ja": "広蔵市場で様々な食べ物を論理的に分析しながら探検します。静かに観察し、新しい味の組み合わせを想像します。",
+        "es": "Exploras el Mercado Gwangjang analizando lógicamente varios alimentos. Observas tranquilamente e imaginas nuevas combinaciones de sabores."
+      },
+      "image": "quizzes/generated_images/Star_Observatory_ceb7b19b.png"
+    },
+    "INTP-T": {
+      "destination": {
+        "ko": "국립과천과학관 & 서울대 도서관",
+        "en": "Tongyeong",
+        "ja": "統営",
+        "es": "Tongyeong"
+      },
+      "title": {
+        "ko": "끝없는 지적 호기심을 해소하는 지식 창고",
+        "en": "Contemplative Cable Car Rider",
+        "ja": "思索するケーブルカー搭乗者",
+        "es": "Pasajero Contemplativo de Teleférico"
+      },
+      "description": {
+        "ko": "호기심 많은 사상가(INTP-T)인 당신은 지적 탐구(T)를 멈추지 않으며, 새로운 아이디어에 대한 끝없는 질문(T)을 던집니다. 과천과학관과 서울대 도서관은 당신의 지적 에너지를 폭발시킬 수 있는 장소입니다. 방대한 지식 자료를 접하며 논리적으로(T) 아이디어를 실험하고, 신중하게(T) 사고의 가지를 확장하는 과정이야말로 당신에게 가장 큰 즐거움을 주는 여행입니다.",
+        "en": "You contemplate looking down at the sea from Tongyeong cable car. You quietly sink into thoughts alone, coming up with new ideas.",
+        "ja": "統営ケーブルカーから海を見下ろしながら思索します。一人で静かに考えに沈み、新しいアイデアを思い浮かべます。",
+        "es": "Contemplas mirando el mar desde el teleférico de Tongyeong. Te sumerges tranquilamente en pensamientos solo, ideando nuevas ideas."
+      },
+      "image": "quizzes/generated_images/Science_Museum_Library_06439a7a.png"
+    },
+    "INFJ-A": {
+      "destination": {
+        "ko": "안동 봉정사",
+        "en": "Nami Island",
+        "ja": "南怡島",
+        "es": "Isla Nami"
+      },
+      "title": {
+        "ko": "개인의 이념을 확고히 다지는 고요한 사찰",
+        "en": "Inspiring Romantic Traveler",
+        "ja": "インスピレーションを与えるロマンチック旅行者",
+        "es": "Viajero Romántico Inspirador"
+      },
+      "description": {
+        "ko": "당신은 신념에 찬 옹호자(INFJ-A)입니다. 강력한 이념(N/F)을 바탕으로 세상에 긍정적인 변화를 가져오고자 합니다. 봉정사의 고요하고 경건한 분위기는 당신의 내면적 신념(I)을 강화하는 공간입니다. 복잡한 세속을 떠나 자신감 있게(A) 이타적인 비전을 재정립하고, 확고한 의지(A/J)로 삶의 방향을 설정하는 것이 당신의 깊은 성찰 여행입니다.",
+        "en": "You find deep meaning walking Nami Island's metasequoia path. You quietly contemplate, pursuing travel that inspires others.",
+        "ja": "南怡島のメタセコイアの道を歩きながら深い意味を見つけます。静かに思索し、他の人々にインスピレーションを与える旅行を追求します。",
+        "es": "Encuentras significado profundo caminando por el sendero de metasecuoyas de la Isla Nami. Contemplas tranquilamente, buscando viajes que inspiren a otros."
+      },
+      "image": "quizzes/generated_images/Bongjeongsa_Temple_1159d268.png"
+    },
+    "INFJ-T": {
+      "destination": {
+        "ko": "수원 화성 성곽길",
+        "en": "Namhae",
+        "ja": "南海",
+        "es": "Namhae"
+      },
+      "title": {
+        "ko": "역사의 의미를 고찰하는 조용하고 사색적인 길",
+        "en": "Empathetic Exotic Village Explorer",
+        "ja": "共感する異国的な村探検家",
+        "es": "Explorador Empático de Pueblos Exóticos"
+      },
+      "description": {
+        "ko": "섬세한 통찰가(INFJ-T)인 당신은 역사적 의미(N)와 인류애적 공감(F)을 중요하게 생각합니다. 수원 화성 성곽길은 당신의 고요한 사색(I)에 최적화된 장소입니다. 선조들의 지혜와 희생을 섬세하게(T) 느끼며, 계획적인(J) 산책 속에서 인류의 보편적 가치에 대한 깊은 통찰을 얻는 것이 당신에게 가장 감동적인 휴식입니다.",
+        "en": "You quietly experience exotic culture at Namhae German Village. You travel feeling deep emotions and treasure meaningful moments.",
+        "ja": "南海ドイツ村で静かに異国的な文化を体験します。深い感情を感じながら旅行し、意味のある瞬間を大切にします。",
+        "es": "Experimentas tranquilamente la cultura exótica en el Pueblo Alemán de Namhae. Viajas sintiendo emociones profundas y atesoras momentos significativos."
+      },
+      "image": "quizzes/generated_images/Suwon_Hwaseong_Fortress_89aff3f3.png"
+    },
+    "INFP-A": {
+      "destination": {
+        "ko": "춘천 남이섬",
+        "en": "Boryeong",
+        "ja": "保寧",
+        "es": "Boryeong"
+      },
+      "title": {
+        "ko": "내면의 이상향을 만끽하는 평온한 자연 속 휴식",
+        "en": "Free Festival Participant",
+        "ja": "自由な祭り参加者",
+        "es": "Participante Libre de Festivales"
+      },
+      "description": {
+        "ko": "당신은 낙관적인 중재자(INFP-A)입니다. 내면의 이상(F)을 소중히 여기며, 자유롭고(P) 평화로운 환경에서 창의적 에너지(N)를 충전합니다. 춘천 남이섬의 몽환적이고 아름다운 자연은 당신의 평온함(A)을 지켜줍니다. 혼자 조용히 산책하며 자신만의 상상 세계(N)에 빠지고, 개성적인 영감(A)을 얻는 것이 당신에게 가장 완벽한 힐링입니다.",
+        "en": "You freely express yourself at Boryeong Mud Festival. You quietly observe but actively participate when moved, enjoying unique experiences.",
+        "ja": "保寧マッドフェスティバルで自由に自分を表現します。静かに観察していても心が動けば積極的に参加し、ユニークな体験を楽しみます。",
+        "es": "Te expresas libremente en el Festival del Barro de Boryeong. Observas tranquilamente pero participas activamente cuando te conmueves, disfrutando de experiencias únicas."
+      },
+      "image": "quizzes/generated_images/Nami_Island_3e663a62.png"
+    },
+    "INFP-T": {
+      "destination": {
+        "ko": "울릉도/독도 전망대",
+        "en": "N Seoul Tower",
+        "ja": "南山タワー",
+        "es": "Torre N de Seúl"
+      },
+      "title": {
+        "ko": "복잡한 감정을 정리하는 고요하고 감성적인 대나무 숲",
+        "en": "Emotional Night View Appreciator",
+        "ja": "感性的な夜景鑑賞者",
+        "es": "Apreciador Emocional de Vistas Nocturnas"
+      },
+      "description": {
+        "ko": "민감한 몽상가(INFP-T)인 당신은 내면의 감정(F)이 매우 풍부하고 이상(N)과 현실 사이에서 자주 고뇌합니다. 울릉도/독도의 고독하고 장엄한 풍경은 당신의 복잡한 감정(T)을 정화하는 공간입니다. 현실의 경계를 넘어선 듯한 자연 속에서 섬세한 감각(T)을 깨우고, 민감한 내면(T)을 다독이며, 진정한 자아를 발견하는 의미 있는 여정입니다.",
+        "en": "You fall into deep emotions watching night views at N Seoul Tower. You treasure alone time and wait for perfect moments.",
+        "ja": "南山タワーで夜景を見ながら深い感情に浸ります。一人の時間を大切にし、完璧な瞬間を待ちます。",
+        "es": "Te sumerges en emociones profundas viendo vistas nocturnas en la Torre N de Seúl. Atesoras el tiempo a solas y esperas momentos perfectos."
+      },
+      "image": "quizzes/generated_images/Ulleungdo_Observatory_40bb645b.png"
+    }
+  }
+}
