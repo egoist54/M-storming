@@ -20,8 +20,12 @@ REPO_NAME=$(echo "$REPO_URL" | sed -E 's/.*[:/]([^/]+)\/([^/]+)(\.git)?$/\2/' | 
 echo "📦 Repository name: $REPO_NAME"
 echo ""
 
-# Determine if this is a user/organization page (username.github.io)
-if [[ "$REPO_NAME" =~ \.github\.io$ ]]; then
+# Check for custom domain
+CUSTOM_DOMAIN="${CUSTOM_DOMAIN:-}"
+if [ -n "$CUSTOM_DOMAIN" ]; then
+  BASE_PATH="/"
+  echo "🌐 Custom domain detected: $CUSTOM_DOMAIN - using base path: /"
+elif [[ "$REPO_NAME" =~ \.github\.io$ ]]; then
   BASE_PATH="/"
   echo "🏠 Detected user/organization page - using base path: /"
 else
@@ -45,6 +49,12 @@ cp -R dist/public/* docs/
 echo "🚫 Creating .nojekyll file to disable Jekyll..."
 touch docs/.nojekyll
 
+# Create CNAME file if custom domain is set
+if [ -n "$CUSTOM_DOMAIN" ]; then
+  echo "📝 Creating CNAME file for custom domain: $CUSTOM_DOMAIN"
+  echo "$CUSTOM_DOMAIN" > docs/CNAME
+fi
+
 echo ""
 echo "✅ Deployment preparation complete!"
 echo ""
@@ -60,7 +70,9 @@ echo "4. Select branch: 'main' and folder: '/docs'"
 echo "5. Click 'Save'"
 echo ""
 
-if [[ "$REPO_NAME" =~ \.github\.io$ ]]; then
+if [ -n "$CUSTOM_DOMAIN" ]; then
+  SITE_URL="https://$CUSTOM_DOMAIN/"
+elif [[ "$REPO_NAME" =~ \.github\.io$ ]]; then
   SITE_URL="https://$REPO_NAME/"
 else
   # Extract username from repo URL
@@ -69,3 +81,10 @@ else
 fi
 
 echo "🎉 Your site will be live at: $SITE_URL"
+echo ""
+if [ -n "$CUSTOM_DOMAIN" ]; then
+  echo "💡 Custom domain deployment detected"
+  echo "   Make sure DNS is configured for: $CUSTOM_DOMAIN"
+  echo "   - Add A records to GitHub Pages IPs or"
+  echo "   - Add CNAME record pointing to <username>.github.io"
+fi
