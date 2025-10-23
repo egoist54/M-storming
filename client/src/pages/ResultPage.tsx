@@ -142,10 +142,9 @@ export default function ResultPage() {
   const resultData = calculateResult(quizData, answers);
   
   // k-vibe는 food 필드, korea-travel은 destination 필드 사용
-  const mainTitle = resultData.destination?.[language] || resultData.destination?.ko || 
-                    resultData.food?.[language] || resultData.food?.ko || "Result";
+  const title = resultData.destination?.[language] || resultData.destination?.ko || 
+                resultData.food?.[language] || resultData.food?.ko || "Result";
   const subtitle = resultData.title?.[language] || resultData.title?.ko || "";
-  const title = subtitle ? `${mainTitle} - ${subtitle}` : mainTitle;
   const description = resultData.description?.[language] || resultData.description?.ko || "";
   const category = quizData.category?.[language] || quizData.category?.ko || "Quiz";
   const matchRate = resultData.matchRate;
@@ -181,6 +180,7 @@ export default function ResultPage() {
 
         <ResultCard
           title={title}
+          subtitle={subtitle}
           description={description}
           image={imagePath}
           category={category}

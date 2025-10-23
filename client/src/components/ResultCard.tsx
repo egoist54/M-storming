@@ -5,6 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 
 interface ResultCardProps {
   title: string;
+  subtitle?: string;
   description: string;
   image: string;
   category?: string;
@@ -13,7 +14,8 @@ interface ResultCardProps {
 }
 
 export default function ResultCard({ 
-  title, 
+  title,
+  subtitle,
   description, 
   image, 
   category,
@@ -21,6 +23,8 @@ export default function ResultCard({
   username
 }: ResultCardProps) {
   const { t } = useLanguage();
+  const displayTitle = subtitle ? `${title} - ${subtitle}` : title;
+  
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
@@ -32,7 +36,7 @@ export default function ResultCard({
         <div className="aspect-square w-full max-w-md mx-auto overflow-hidden bg-muted">
           <img 
             src={image} 
-            alt={title}
+            alt={displayTitle}
             className="w-full h-full object-cover"
           />
         </div>
@@ -52,7 +56,7 @@ export default function ResultCard({
 
           <div className="space-y-4">
             <h2 className="text-3xl md:text-4xl font-bold text-primary" data-testid="text-result-title">
-              {title}
+              {displayTitle}
             </h2>
 
             <p className="text-lg leading-relaxed text-foreground" data-testid="text-result-description">
