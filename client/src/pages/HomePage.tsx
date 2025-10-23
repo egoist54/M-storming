@@ -9,6 +9,7 @@ import { Sparkles } from "lucide-react";
 import { loadAllQuizzes, QuizData } from "@/lib/quizLoader";
 import personalityThumb from '@assets/generated_images/성격_퀴즈_섬네일_이미지_c75d527d.png';
 import aiThumb from '@assets/generated_images/AI_퀴즈_섬네일_이미지_cae3c536.png';
+import travelThumb from '@assets/generated_images/Korean_travel_destination_thumbnail_64929038.png';
 
 interface QuizCardData {
   id: string;
@@ -22,6 +23,7 @@ const thumbnailMap: Record<string, string> = {
   "1": personalityThumb,
   "kvibe": personalityThumb,
   "k-vibe": personalityThumb,
+  "korea-travel": travelThumb,
   "2": aiThumb,
 };
 
