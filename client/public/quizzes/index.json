@@ -1,14 +1,6 @@
 [
   {
-    "id": "1",
-    "file": "personality.json"
-  },
-  {
-    "id": "kvibe",
-    "file": "kvibe.json"
-  },
-  {
-    "id": "k-travel",
-    "file": "k-travel.json"
+    "id": "k-vibe",
+    "file": "k-vibe.json"
   }
 ]

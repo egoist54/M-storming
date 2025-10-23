@@ -32,13 +32,11 @@ Preferred communication style: Simple, everyday language.
 
 **Quiz Data Storage**: Static JSON files served from `/public/quizzes/`
 - Quiz index at `quizzes/index.json` lists available quizzes
-- Individual quiz data files (e.g., `kvibe.json`, `k-travel.json`, `personality.json`)
+- Individual quiz data files (e.g., `kvibe.json`, `personality.json`)
 - Multi-language support with locale-keyed content objects
 
 **Quiz Types**:
-1. **MBTI-AT quizzes**: Uses 5-dimensional scoring (E/I, S/N, T/F, J/P, A/T) with 32 possible result types
-   - **K-VIBE** (Korean Food): 15 questions matching users to Korean food personalities
-   - **K-Travel** (Korean Destinations): 18 questions matching users to Korean travel destinations
+1. **MBTI-style quizzes** (K-VIBE): Uses dimensional scoring (E/I, S/N, T/F, J/P, A/T) to match users to Korean food personalities
 2. **Simple personality quizzes**: Numeric scoring leading to categorized results
 
 **Result Calculation**:
