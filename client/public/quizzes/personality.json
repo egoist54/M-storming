@@ -1,0 +1,165 @@
+{
+  "id": "1",
+  "title": {
+    "ko": "당신의 성격 유형은?",
+    "en": "What's Your Personality Type?",
+    "ja": "あなたの性格タイプは？",
+    "es": "¿Cuál es tu tipo de personalidad?",
+    "pt": "Qual é o seu tipo de personalidade?"
+  },
+  "description": {
+    "ko": "10가지 질문으로 알아보는 나의 진짜 성격! 친구들과 결과를 비교해보세요.",
+    "en": "Discover your true personality through 10 questions! Compare results with friends.",
+    "ja": "10の質問で本当の性格を知ろう！友達と結果を比較してみてください。",
+    "es": "¡Descubre tu verdadera personalidad con 10 preguntas! Compara resultados con amigos.",
+    "pt": "Descubra sua verdadeira personalidade através de 10 perguntas! Compare resultados com amigos."
+  },
+  "category": {
+    "ko": "성격",
+    "en": "Personality",
+    "ja": "性格",
+    "es": "Personalidad",
+    "pt": "Personalidade"
+  },
+  "thumbnail": "/images/personality-thumb.png",
+  "questions": [
+    {
+      "id": "q1",
+      "text": {
+        "ko": "주말에 가장 하고 싶은 활동은?",
+        "en": "What do you want to do most on weekends?",
+        "ja": "週末に最もしたい活動は？",
+        "es": "¿Qué quieres hacer más los fines de semana?",
+        "pt": "O que você mais quer fazer nos fins de semana?"
+      },
+      "answers": [
+        {
+          "id": "a1",
+          "text": {
+            "ko": "친구들과 함께 밖에 나가서 놀기",
+            "en": "Going out with friends",
+            "ja": "友達と一緒に外出する",
+            "es": "Salir con amigos",
+            "pt": "Sair com amigos"
+          },
+          "score": 1
+        },
+        {
+          "id": "a2",
+          "text": {
+            "ko": "집에서 혼자 영화 보거나 책 읽기",
+            "en": "Watching movies or reading at home alone",
+            "ja": "家で一人で映画を見たり本を読んだり",
+            "es": "Ver películas o leer en casa solo",
+            "pt": "Assistir filmes ou ler em casa sozinho"
+          },
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "text": {
+        "ko": "새로운 프로젝트를 시작할 때 당신은?",
+        "en": "When starting a new project, you:",
+        "ja": "新しいプロジェクトを始めるとき、あなたは：",
+        "es": "Al comenzar un nuevo proyecto, tú:",
+        "pt": "Ao iniciar um novo projeto, você:"
+      },
+      "answers": [
+        {
+          "id": "a1",
+          "text": {
+            "ko": "세부 계획을 먼저 철저히 세운다",
+            "en": "Make a detailed plan first",
+            "ja": "まず詳細な計画を立てる",
+            "es": "Haces un plan detallado primero",
+            "pt": "Faz um plano detalhado primeiro"
+          },
+          "score": 1
+        },
+        {
+          "id": "a2",
+          "text": {
+            "ko": "큰 그림만 보고 바로 시작한다",
+            "en": "See the big picture and start right away",
+            "ja": "全体像を見てすぐ始める",
+            "es": "Ves el panorama general y empiezas de inmediato",
+            "pt": "Vê o quadro geral e começa imediatamente"
+          },
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "text": {
+        "ko": "의사결정을 할 때 더 중요하게 생각하는 것은?",
+        "en": "What's more important when making decisions?",
+        "ja": "意思決定をするとき、より重要だと思うのは？",
+        "es": "¿Qué es más importante al tomar decisiones?",
+        "pt": "O que é mais importante ao tomar decisões?"
+      },
+      "answers": [
+        {
+          "id": "a1",
+          "text": {
+            "ko": "논리와 객관적 사실",
+            "en": "Logic and objective facts",
+            "ja": "論理と客観的事実",
+            "es": "Lógica y hechos objetivos",
+            "pt": "Lógica e fatos objetivos"
+          },
+          "score": 1
+        },
+        {
+          "id": "a2",
+          "text": {
+            "ko": "감정과 인간관계",
+            "en": "Emotions and relationships",
+            "ja": "感情と人間関係",
+            "es": "Emociones y relaciones",
+            "pt": "Emoções e relacionamentos"
+          },
+          "score": 2
+        }
+      ]
+    }
+  ],
+  "results": {
+    "positive": {
+      "title": {
+        "ko": "밝고 긍정적인 에너지 뿜뿜!",
+        "en": "Bright and Positive Energy!",
+        "ja": "明るくてポジティブなエネルギー！",
+        "es": "¡Energía brillante y positiva!",
+        "pt": "Energia brilhante e positiva!"
+      },
+      "description": {
+        "ko": "당신은 주변 사람들에게 활력을 주는 긍정 에너지의 소유자예요! 어떤 상황에서도 밝은 면을 찾아내고, 다른 사람들을 격려하는 재능이 있어요.",
+        "en": "You're full of positive energy that energizes those around you! You have a talent for finding the bright side in any situation and encouraging others.",
+        "ja": "あなたは周りの人々に活力を与えるポジティブエネルギーの持ち主です！どんな状況でも明るい面を見つけ、他の人を励ます才能があります。",
+        "es": "¡Estás lleno de energía positiva que energiza a quienes te rodean! Tienes un talento para encontrar el lado positivo en cualquier situación y animar a otros.",
+        "pt": "Você está cheio de energia positiva que energiza aqueles ao seu redor! Você tem um talento para encontrar o lado positivo em qualquer situação e encorajar os outros."
+      },
+      "image": "/images/result-positive.png"
+    },
+    "neutral": {
+      "title": {
+        "ko": "차분하고 사려 깊은 사색가",
+        "en": "Calm and Thoughtful Thinker",
+        "ja": "落ち着いて思慮深い思索家",
+        "es": "Pensador tranquilo y reflexivo",
+        "pt": "Pensador calmo e reflexivo"
+      },
+      "description": {
+        "ko": "당신은 깊이 있는 생각과 통찰력을 가진 사람이에요. 급하게 판단하기보다는 여러 관점에서 신중하게 고민하며, 의미 있는 대화를 즐깁니다.",
+        "en": "You're someone with deep thoughts and insight. Rather than rushing to judgment, you carefully consider multiple perspectives and enjoy meaningful conversations.",
+        "ja": "あなたは深い思考と洞察力を持つ人です。急いで判断するのではなく、複数の視点から慎重に考え、有意義な会話を楽しみます。",
+        "es": "Eres alguien con pensamientos profundos e intuición. En lugar de apresurarte a juzgar, consideras cuidadosamente múltiples perspectivas y disfrutas de conversaciones significativas.",
+        "pt": "Você é alguém com pensamentos profundos e insight. Em vez de se apressar em julgar, você considera cuidadosamente múltiplas perspectivas e desfruta de conversas significativas."
+      },
+      "image": "/images/result-neutral.png"
+    }
+  }
+}

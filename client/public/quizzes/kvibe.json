@@ -1,0 +1,186 @@
+{
+  "id": "kvibe",
+  "title": {
+    "ko": "나와 닮은 한국 음식 찾기 🍜",
+    "en": "Find Your K-Food Soulmate 🍜",
+    "ja": "あなたに似た韓国料理を探す 🍜",
+    "es": "Encuentra tu comida coreana gemela 🍜",
+    "pt": "Encontre sua comida coreana alma gêmea 🍜"
+  },
+  "description": {
+    "ko": "15개의 질문으로 나와 닮은 한국 음식 찾기! MBTI-AT 기반 퍼스널 푸드 매칭.",
+    "en": "Discover your matching Korean dish through 15 questions! MBTI-AT based personal food matching.",
+    "ja": "15の質問であなたに合った韓国料理を見つけよう！MBTI-ATベースのパーソナルフードマッチング。",
+    "es": "¡Descubre tu plato coreano a través de 15 preguntas! Coincidencia de comida personal basada en MBTI-AT.",
+    "pt": "Descubra seu prato coreano através de 15 perguntas! Combinação de comida pessoal baseada em MBTI-AT."
+  },
+  "category": {
+    "ko": "K-VIBE",
+    "en": "K-VIBE",
+    "ja": "K-VIBE",
+    "es": "K-VIBE",
+    "pt": "K-VIBE"
+  },
+  "thumbnail": "/images/kvibe-thumb.png",
+  "questions": [
+    {
+      "id": "q1",
+      "dimension": "E",
+      "text": {
+        "ko": "친구들과 저녁 식사 약속이 생겼어요. 당신은?",
+        "en": "You have dinner plans with friends. You:",
+        "ja": "友達との夕食の約束ができました。あなたは：",
+        "es": "Tienes planes de cena con amigos. Tú:",
+        "pt": "Você tem planos de jantar com amigos. Você:"
+      },
+      "answers": [
+        {
+          "id": "e",
+          "text": {
+            "ko": "신나! 여러 명이 함께 북적북적한 곳이 좋아",
+            "en": "Excited! I love bustling places with many people",
+            "ja": "ワクワク！大勢で賑やかな場所が好き",
+            "es": "¡Emocionado! Me encantan los lugares concurridos con mucha gente",
+            "pt": "Empolgado! Adoro lugares movimentados com muitas pessoas"
+          },
+          "score": "E"
+        },
+        {
+          "id": "i",
+          "text": {
+            "ko": "소수의 친한 친구들과 조용한 곳이 더 편해",
+            "en": "Prefer a quiet place with a few close friends",
+            "ja": "親しい少数の友達と静かな場所の方が楽",
+            "es": "Prefiero un lugar tranquilo con unos pocos amigos cercanos",
+            "pt": "Prefiro um lugar tranquilo com alguns amigos próximos"
+          },
+          "score": "I"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "dimension": "E",
+      "text": {
+        "ko": "모임에서 당신의 모습은?",
+        "en": "At a gathering, you are:",
+        "ja": "集まりでのあなたの姿は：",
+        "es": "En una reunión, tú eres:",
+        "pt": "Em uma reunião, você é:"
+      },
+      "answers": [
+        {
+          "id": "e",
+          "text": {
+            "ko": "적극적으로 대화를 이끌고 분위기를 주도해요",
+            "en": "Actively lead conversations and set the mood",
+            "ja": "積極的に会話をリードし、雰囲気を主導します",
+            "es": "Lidero activamente las conversaciones y establezco el ambiente",
+            "pt": "Lidero ativamente conversas e defino o clima"
+          },
+          "score": "E"
+        },
+        {
+          "id": "i",
+          "text": {
+            "ko": "편안하게 듣고 필요할 때만 이야기해요",
+            "en": "Listen comfortably and speak only when necessary",
+            "ja": "リラックスして聞き、必要なときだけ話します",
+            "es": "Escucho cómodamente y hablo solo cuando es necesario",
+            "pt": "Ouço confortavelmente e falo apenas quando necessário"
+          },
+          "score": "I"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "dimension": "E",
+      "text": {
+        "ko": "에너지를 충전하는 방법은?",
+        "en": "How do you recharge your energy?",
+        "ja": "エネルギーを充電する方法は？",
+        "es": "¿Cómo recargas tu energía?",
+        "pt": "Como você recarrega sua energia?"
+      },
+      "answers": [
+        {
+          "id": "e",
+          "text": {
+            "ko": "사람들을 만나고 활동하면서 충전돼요",
+            "en": "I recharge by meeting people and being active",
+            "ja": "人に会って活動しながら充電されます",
+            "es": "Me recargo conociendo gente y siendo activo",
+            "pt": "Eu recarrego conhecendo pessoas e sendo ativo"
+          },
+          "score": "E"
+        },
+        {
+          "id": "i",
+          "text": {
+            "ko": "혼자만의 시간을 가지며 충전돼요",
+            "en": "I recharge with alone time",
+            "ja": "一人の時間を持って充電されます",
+            "es": "Me recargo con tiempo a solas",
+            "pt": "Eu recarrego com tempo sozinho"
+          },
+          "score": "I"
+        }
+      ]
+    }
+  ],
+  "results": {
+    "ESTJA": {
+      "food": {
+        "ko": "김치찌개",
+        "en": "Kimchi Jjigae",
+        "ja": "キムチチゲ",
+        "es": "Kimchi Jjigae",
+        "pt": "Kimchi Jjigae"
+      },
+      "emoji": "🌶️",
+      "title": {
+        "ko": "당신은 김치찌개! 열정적이고 활발한 에너지",
+        "en": "You are Kimchi Jjigae! Passionate and vibrant energy",
+        "ja": "あなたはキムチチゲ！情熱的で活発なエネルギー",
+        "es": "¡Eres Kimchi Jjigae! Energía apasionada y vibrante",
+        "pt": "Você é Kimchi Jjigae! Energia apaixonada e vibrante"
+      },
+      "description": {
+        "ko": "김치찌개처럼 강렬하고 정이 많은 당신! 활발하고 열정적이며, 주변 사람들과의 관계를 소중히 여깁니다. 어떤 상황에서도 열정을 잃지 않는 당신의 매력이 주변을 따뜻하게 만들어요.",
+        "en": "Intense and warm like Kimchi Jjigae! You're vibrant and passionate, cherishing relationships with those around you. Your charm of never losing passion in any situation warms up your surroundings.",
+        "ja": "キムチチゲのように強烈で情が深いあなた！活発で情熱的で、周りの人々との関係を大切にします。どんな状況でも情熱を失わないあなたの魅力が周りを温かくします。",
+        "es": "¡Intenso y cálido como Kimchi Jjigae! Eres vibrante y apasionado, apreciando las relaciones con quienes te rodean. Tu encanto de nunca perder la pasión en cualquier situación calienta tu entorno.",
+        "pt": "Intenso e caloroso como Kimchi Jjigae! Você é vibrante e apaixonado, valorizando relacionamentos com aqueles ao seu redor. Seu charme de nunca perder a paixão em qualquer situação aquece seu ambiente."
+      },
+      "kvibeScore": 95,
+      "image": "/images/result-kimchi.png"
+    },
+    "ISTJA": {
+      "food": {
+        "ko": "된장찌개",
+        "en": "Doenjang Jjigae",
+        "ja": "テンジャンチゲ",
+        "es": "Doenjang Jjigae",
+        "pt": "Doenjang Jjigae"
+      },
+      "emoji": "🍲",
+      "title": {
+        "ko": "당신은 된장찌개! 깊고 진중한 맛",
+        "en": "You are Doenjang Jjigae! Deep and profound taste",
+        "ja": "あなたはテンジャンチゲ！深くて重厚な味",
+        "es": "¡Eres Doenjang Jjigae! Sabor profundo y profundo",
+        "pt": "Você é Doenjang Jjigae! Sabor profundo e profundo"
+      },
+      "description": {
+        "ko": "된장찌개처럼 깊고 진중한 당신! 차분하고 신중하며, 꾸준함으로 믿음을 주는 사람입니다. 화려하진 않지만 본질적인 가치를 중요하게 여기는 당신의 성향이 사람들에게 안정감을 줍니다.",
+        "en": "Deep and profound like Doenjang Jjigae! You're calm and prudent, giving trust through steadiness. Though not flashy, your tendency to value essential worth gives people stability.",
+        "ja": "テンジャンチゲのように深くて重厚なあなた！落ち着いて慎重で、着実さで信頼を与える人です。派手ではありませんが、本質的な価値を重要視するあなたの性向が人々に安定感を与えます。",
+        "es": "¡Profundo y profundo como Doenjang Jjigae! Eres tranquilo y prudente, dando confianza a través de la constancia. Aunque no llamativo, tu tendencia a valorar el valor esencial da estabilidad a las personas.",
+        "pt": "Profundo e profundo como Doenjang Jjigae! Você é calmo e prudente, dando confiança através da constância. Embora não chamativo, sua tendência de valorizar o valor essencial dá estabilidade às pessoas."
+      },
+      "kvibeScore": 88,
+      "image": "/images/result-doenjang.png"
+    }
+  }
+}
