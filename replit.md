@@ -111,13 +111,16 @@ Preferred communication style: Simple, everyday language.
 **GitHub Pages**:
 - **Purpose**: Static site hosting
 - **Deployment**: Deploy from branch mode (main/docs)
+- **Custom Domain**: www.m-storming.com (configured via CNAME file)
 - **Build Process**: 
   - `deploy-gh-pages.sh` 스크립트로 자동 빌드
   - Git remote에서 repository 이름 자동 감지
   - User/Organization vs Project 페이지 자동 구분
-  - 올바른 base path로 Vite 빌드
+  - 커스텀 도메인 감지 (CUSTOM_DOMAIN 환경변수)
+  - 올바른 base path로 Vite 빌드 (커스텀 도메인: `/`, 프로젝트 페이지: `/repo-name/`)
   - docs 폴더로 빌드 출력 복사
   - .nojekyll 파일 자동 생성
+  - CNAME 파일 자동 생성 (커스텀 도메인 사용 시)
 
 ### Key NPM Dependencies
 
