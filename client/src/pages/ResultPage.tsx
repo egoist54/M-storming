@@ -10,26 +10,54 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import positiveResult from '@assets/generated_images/긍정적_결과_이미지_42ed835e.png';
 
 function calculateResult(quizData: any, answers: string[]) {
-  if (quizData.id === "k-vibe") {
+  // MBTI-AT 퀴즈 계산 (k-vibe, korea-travel)
+  if (quizData.id === "k-vibe" || quizData.id === "korea-travel") {
     const eiCount = { E: 0, I: 0 };
     const snCount = { S: 0, N: 0 };
     const tfCount = { T: 0, F: 0 };
     const jpCount = { J: 0, P: 0 };
     const atCount = { A: 0, T: 0 };
     
+    // k-vibe: 15개 질문 (E/I:3, S/N:3, T/F:3, J/P:3, A/T:3)
+    // korea-travel: 18개 질문 (E/I:4, S/N:4, T/F:4, J/P:4, A/T:2)
+    const isKoreaTravel = quizData.id === "korea-travel";
+    const eiMax = isKoreaTravel ? 4 : 3;
+    const snMax = isKoreaTravel ? 8 : 6;
+    const tfMax = isKoreaTravel ? 12 : 9;
+    const jpMax = isKoreaTravel ? 16 : 12;
+    const atMax = isKoreaTravel ? 18 : 15;
+    
+    // 각 차원별 실제 답변 수 추적
+    let eiAnswered = 0, snAnswered = 0, tfAnswered = 0, jpAnswered = 0, atAnswered = 0;
+    
     answers.forEach((dimension, index) => {
       if (!dimension) return;
       
-      if (index < 3) {
-        if (dimension === 'E' || dimension === 'I') eiCount[dimension]++;
-      } else if (index < 6) {
-        if (dimension === 'S' || dimension === 'N') snCount[dimension]++;
-      } else if (index < 9) {
-        if (dimension === 'T' || dimension === 'F') tfCount[dimension]++;
-      } else if (index < 12) {
-        if (dimension === 'J' || dimension === 'P') jpCount[dimension]++;
-      } else if (index < 15) {
-        if (dimension === 'A' || dimension === 'T') atCount[dimension]++;
+      if (index < eiMax) {
+        if (dimension === 'E' || dimension === 'I') {
+          eiCount[dimension]++;
+          eiAnswered++;
+        }
+      } else if (index < snMax) {
+        if (dimension === 'S' || dimension === 'N') {
+          snCount[dimension]++;
+          snAnswered++;
+        }
+      } else if (index < tfMax) {
+        if (dimension === 'T' || dimension === 'F') {
+          tfCount[dimension]++;
+          tfAnswered++;
+        }
+      } else if (index < jpMax) {
+        if (dimension === 'J' || dimension === 'P') {
+          jpCount[dimension]++;
+          jpAnswered++;
+        }
+      } else if (index < atMax) {
+        if (dimension === 'A' || dimension === 'T') {
+          atCount[dimension]++;
+          atAnswered++;
+        }
       }
     });
 
@@ -41,17 +69,26 @@ function calculateResult(quizData: any, answers: string[]) {
       '-' +
       (atCount.A >= atCount.T ? 'A' : 'T');
 
-    const eiStrength = Math.max(eiCount.E, eiCount.I) / 3 * 100;
-    const snStrength = Math.max(snCount.S, snCount.N) / 3 * 100;
-    const tfStrength = Math.max(tfCount.T, tfCount.F) / 3 * 100;
-    const jpStrength = Math.max(jpCount.J, jpCount.P) / 3 * 100;
-    const atStrength = Math.max(atCount.A, atCount.T) / 3 * 100;
+    // 실제 답변 수로 나눠서 정확한 강도 계산
+    const eiStrength = eiAnswered > 0 ? Math.max(eiCount.E, eiCount.I) / eiAnswered * 100 : 50;
+    const snStrength = snAnswered > 0 ? Math.max(snCount.S, snCount.N) / snAnswered * 100 : 50;
+    const tfStrength = tfAnswered > 0 ? Math.max(tfCount.T, tfCount.F) / tfAnswered * 100 : 50;
+    const jpStrength = jpAnswered > 0 ? Math.max(jpCount.J, jpCount.P) / jpAnswered * 100 : 50;
+    const atStrength = atAnswered > 0 ? Math.max(atCount.A, atCount.T) / atAnswered * 100 : 50;
     
     const matchRate = Math.round((eiStrength + snStrength + tfStrength + jpStrength + atStrength) / 5);
 
-    const result = quizData.results.find((r: any) => r.type === mbtiType);
+    // k-vibe는 배열, korea-travel은 객체
+    let result;
+    if (quizData.id === "k-vibe") {
+      result = quizData.results.find((r: any) => r.type === mbtiType);
+      if (!result) result = quizData.results[0];
+    } else {
+      result = quizData.results[mbtiType];
+      if (!result) result = quizData.results["ESTJ-A"]; // 기본값
+    }
     
-    return result ? { ...result, matchRate } : { ...quizData.results[0], matchRate };
+    return { ...result, matchRate, type: mbtiType };
   }
 
   const totalScore = answers.reduce((sum, answerId, index) => {
@@ -104,8 +141,12 @@ export default function ResultPage() {
 
   const resultData = calculateResult(quizData, answers);
   
-  const title = resultData.food?.[language] || resultData.food?.ko || resultData.title?.[language] || resultData.title?.ko || "Result";
-  const description = resultData.description[language] || resultData.description.ko;
+  // k-vibe는 food 필드, korea-travel은 destination 필드 사용
+  const mainTitle = resultData.destination?.[language] || resultData.destination?.ko || 
+                    resultData.food?.[language] || resultData.food?.ko || "Result";
+  const subtitle = resultData.title?.[language] || resultData.title?.ko || "";
+  const title = subtitle ? `${mainTitle} - ${subtitle}` : mainTitle;
+  const description = resultData.description?.[language] || resultData.description?.ko || "";
   const category = quizData.category?.[language] || quizData.category?.ko || "Quiz";
   const matchRate = resultData.matchRate;
   
