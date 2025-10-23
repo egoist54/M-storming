@@ -43,7 +43,7 @@ export default function ResultsGalleryPage() {
     <div className="min-h-screen bg-background">
       {/* Header */}
       <div className="border-b bg-card sticky top-0 z-10">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between gap-4">
           <Link href="/">
             <Button variant="ghost" size="icon" data-testid="button-back">
               <ArrowLeft className="w-5 h-5" />
@@ -75,7 +75,7 @@ export default function ResultsGalleryPage() {
               <div className="aspect-[4/3] bg-muted overflow-hidden">
                 {result.image ? (
                   <img
-                    src={`/quizzes/${result.image}`}
+                    src={`${import.meta.env.BASE_URL}${result.image.replace(/^\//, '')}`}
                     alt={result.destination}
                     className="w-full h-full object-cover"
                     onError={(e) => {
