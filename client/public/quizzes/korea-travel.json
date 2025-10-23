@@ -562,7 +562,7 @@
         "ja": "現代と伝統が共存するソウルで、計画的に名所を探訪してエネルギーを得ます。明確なスケジュールと目標のある旅行を好み、新しい人々との交流を楽しみます。",
         "es": "Obtienes energía explorando los lugares emblemáticos de Seúl donde la modernidad se encuentra con la tradición. Prefieres viajes con horarios y objetivos claros, disfrutando de las interacciones con nuevas personas."
       },
-      "image": "seoul.jpg"
+      "image": "generated_images/Busan_Haeundae_Business_District_93b854dd.png"
     },
     "ESTJ-T": {
       "destination": {
@@ -583,7 +583,7 @@
         "ja": "釜山の活気あるビーチと市場で人々と交流しながら旅行を楽しみます。検証された飲食店や観光地を訪れ、計画に支障が出たら素早く代案を見つけます。",
         "es": "Disfrutas viajando mientras interactúas con personas en las vibrantes playas y mercados de Busán. Visitas restaurantes y atracciones verificados, encontrando rápidamente alternativas cuando los planes cambian."
       },
-      "image": "busan.jpg"
+      "image": "generated_images/Seoul_Yeouido_Financial_District_ed8d7608.png"
     },
     "ESTP-A": {
       "destination": {
@@ -604,7 +604,7 @@
         "ja": "江陵の海とカフェ通りで即興的に旅行を楽しみます。新しいアクティビティに挑戦し、地元の人々とすぐに親しくなります。計画よりも瞬間の楽しさを大切にします。",
         "es": "Disfrutas de viajes espontáneos en las playas y calles de cafeterías de Gangneung. Pruebas nuevas actividades y haces amigos fácilmente con locales, valorando la alegría momentánea sobre la planificación."
       },
-      "image": "gangneung.jpg"
+      "image": "generated_images/Jeju_East_Coast_Road_35fbf668.png"
     },
     "ESTP-T": {
       "destination": {
@@ -625,7 +625,7 @@
         "ja": "束草で山と海を行き来しながらアクティビティを楽しみます。天気や状況に応じて柔軟に計画を変え、地元の飲食店を直感的に見つけます。",
         "es": "Disfrutas de actividades moviéndote entre montañas y mar en Sokcho. Cambias planes flexiblemente según el clima y las situaciones, encontrando restaurantes locales intuitivamente."
       },
-      "image": "sokcho.jpg"
+      "image": "generated_images/Incheon_Wolmido_Chinatown_7c700b72.png"
     },
     "ESFJ-A": {
       "destination": {
@@ -646,7 +646,7 @@
         "ja": "全州韓屋村で伝統的な食べ物と文化を体験しながら人々と思い出を作ります。飲食店を見つけて友達と共有することを楽しみ、温かい雰囲気を大切にします。",
         "es": "Creas recuerdos experimentando comida y cultura tradicional en Jeonju Hanok Village. Disfrutas encontrar restaurantes para compartir con amigos, valorando un ambiente cálido."
       },
-      "image": "jeonju.jpg"
+      "image": "generated_images/Gyeongju_Hanok_Village_0be3a69c.png"
     },
     "ESFJ-T": {
       "destination": {
@@ -667,7 +667,7 @@
         "ja": "麗水のロマンチックな港で一緒にいる人々を配慮しながら旅行します。夜景と海鮮料理を楽しみながら、みんなが満足できるスケジュールを作ろうと努力します。",
         "es": "Viajas considerando a tus compañeros en el puerto romántico de Yeosu. Disfrutas de las vistas nocturnas y mariscos mientras trabajas para crear horarios que todos puedan disfrutar."
       },
-      "image": "yeosu.jpg"
+      "image": "generated_images/Jeonju_Hanok_Village_452b0057.png"
     },
     "ESFP-A": {
       "destination": {
@@ -688,7 +688,7 @@
         "ja": "弘大の若いエネルギーと文化を楽しみながら即興的に旅行します。ストリートパフォーマンスを見て、新しい人々とすぐに親しくなり、瞬間瞬間を満喫します。",
         "es": "Disfrutas de la energía juvenil y la cultura de Hongdae con viajes espontáneos. Ves actuaciones callejeras, haces amigos fácilmente y saboreas cada momento."
       },
-      "image": "hongdae.jpg"
+      "image": "generated_images/Seoul_Hongdae_Street_615ae3d2.png"
     },
     "ESFP-T": {
       "destination": {
@@ -709,7 +709,7 @@
         "ja": "明洞で最新トレンドに従ってショッピングし、食べ物を楽しみます。友達と一緒に回りながら即興的に決定しますが、時には選択に悩むこともあります。",
         "es": "Compras siguiendo las últimas tendencias y disfrutas de comida callejera en Myeongdong. Pasas tiempo con amigos tomando decisiones espontáneas, aunque a veces luchas con las elecciones."
       },
-      "image": "myeongdong.jpg"
+      "image": "generated_images/Yeosu_Night_Sea_bb2c0d93.png"
     },
     "ENTJ-A": {
       "destination": {
@@ -730,7 +730,7 @@
         "ja": "仁川の国際的な雰囲気で効率的にスケジュールをこなします。松島とチャイナタウンを戦略的に探訪し、明確な目標を持って旅行を導きます。",
         "es": "Manejas eficientemente tu horario en la atmósfera internacional de Incheon. Exploras estratégicamente Songdo y Chinatown, liderando viajes con objetivos claros."
       },
-      "image": "incheon.jpg"
+      "image": "generated_images/Seoul_Gangnam_Teheran-ro_b8c949a5.png"
     },
     "ENTJ-T": {
       "destination": {
@@ -751,7 +751,7 @@
         "ja": "大邱の近代路地と夜景スポットを体系的に探訪します。効率的な動線を計画しますが、予期しない状況には柔軟に対処します。",
         "es": "Exploras sistemáticamente los callejones modernos y lugares con vistas nocturnas de Daegu. Planeas rutas eficientes pero manejas situaciones inesperadas con flexibilidad."
       },
-      "image": "daegu.jpg"
+      "image": "generated_images/Sejong_Government_Complex_8f749017.png"
     },
     "ENTP-A": {
       "destination": {
@@ -772,7 +772,7 @@
         "ja": "加平のプチフランスとナミ島でユニークな体験を探します。新しいアイデアを思い浮かべながら旅行し、予期しない発見を楽しみます。",
         "es": "Buscas experiencias únicas en Petite France y Nami Island de Gapyeong. Viajas pensando en nuevas ideas y disfrutas de descubrimientos inesperados."
       },
-      "image": "gapyeong.jpg"
+      "image": "generated_images/Busan_Centum_City_19801ace.png"
     },
     "ENTP-T": {
       "destination": {
@@ -793,7 +793,7 @@
         "ja": "春川の湖とタッカルビ路地を探検しながら新しいことを試します。即興的ですが完璧を追求し、様々な可能性を考えます。",
         "es": "Exploras los lagos y callejón dakgalbi de Chuncheon probando cosas nuevas. Eres espontáneo pero buscas la perfección, considerando varias posibilidades."
       },
-      "image": "chuncheon.jpg"
+      "image": "generated_images/Daejeon_Research_Complex_d569e3d5.png"
     },
     "ENFJ-A": {
       "destination": {
@@ -814,7 +814,7 @@
         "ja": "慶州の歴史遺跡で深い意味を発見し、他の人々と共有します。文化財の物語を共有し、共に感動を分かち合うことを楽しみます。",
         "es": "Descubres significado profundo en los sitios históricos de Gyeongju y compartes con otros. Disfrutas compartir historias de activos culturales y conmover a otros."
       },
-      "image": "gyeongju.jpg"
+      "image": "generated_images/DMZ_Peace_Park_96fe300b.png"
     },
     "ENFJ-T": {
       "destination": {
@@ -835,7 +835,7 @@
         "ja": "安東河回村で伝統の価値を感じ、人々と共有します。一緒にいる人々が楽しむ姿を見て幸せを感じ、皆を配慮します。",
         "es": "Sientes los valores tradicionales en Andong Hahoe Village y compartes con otros. Te sientes feliz viendo disfrutar a los compañeros, cuidando de todos."
       },
-      "image": "andong.jpg"
+      "image": "generated_images/Seoul_Insadong_Ssamziegil_bcb767a4.png"
     },
     "ENFP-A": {
       "destination": {
@@ -856,7 +856,7 @@
         "ja": "済州島の自然からインスピレーションを受けて自由に旅行します。隠れたカフェとスポットを見つけ、人々との特別な瞬間を作ります。",
         "es": "Viajas libremente inspirado por la naturaleza de Jeju. Encuentras cafés y lugares ocultos, creando momentos especiales con personas."
       },
-      "image": "jeju.jpg"
+      "image": "generated_images/Gangneung_Coffee_Street_7be4eae7.png"
     },
     "ENFP-T": {
       "destination": {
@@ -877,7 +877,7 @@
         "ja": "潭陽の竹林で平和を見つけながら旅行します。自然の中でインスピレーションを得て、人々と深い会話をすることを好みます。",
         "es": "Viajas encontrando paz en el bosque de bambú de Damyang. Obtienes inspiración en la naturaleza y disfrutas de conversaciones profundas con personas."
       },
-      "image": "damyang.jpg"
+      "image": "generated_images/Suncheon_Bay_Wetlands_41c9ed9f.png"
     },
     "ISTJ-A": {
       "destination": {
@@ -898,7 +898,7 @@
         "ja": "浦項虎尾岬で計画的に日の出を鑑賞します。正確な時間に合わせて到着し、検証された飲食店で食事をしながら安定した旅行を追求します。",
         "es": "Observas el amanecer en Pohang Homigot con planificación. Llegas a horas exactas, cenas en restaurantes verificados, buscando viajes estables."
       },
-      "image": "pohang.jpg"
+      "image": "generated_images/Andong_Hahoe_Village_6703d111.png"
     },
     "ISTJ-T": {
       "destination": {
@@ -919,7 +919,7 @@
         "ja": "栄州浮石寺で静かに歴史を味わいます。徹底的な準備と計画で旅行し、予期しない状況に備えます。",
         "es": "Aprecias la historia tranquilamente en el Templo Buseoksa de Yeongju. Viajas con preparación y planificación minuciosas, preparándote para situaciones inesperadas."
       },
-      "image": "yeongju.jpg"
+      "image": "generated_images/National_Museum_ad015ee9.png"
     },
     "ISTP-A": {
       "destination": {
@@ -940,7 +940,7 @@
         "ja": "平昌でスキーと自然を楽しみながら自由に旅行します。一人の時間を楽しみながらアクティビティに集中し、必要なものだけを準備します。",
         "es": "Viajas libremente disfrutando del esquí y la naturaleza en Pyeongchang. Disfrutas del tiempo a solas enfocándote en actividades, empacando solo lo necesario."
       },
-      "image": "pyeongchang.jpg"
+      "image": "generated_images/Yeongjong_Island_Beach_32f28b27.png"
     },
     "ISTP-T": {
       "destination": {
@@ -961,7 +961,7 @@
         "ja": "雪岳山で静かに登山を楽しみながら自然と交感します。安全を最優先に考え、自分のペースで山を登ります。",
         "es": "Disfrutas tranquilamente del senderismo y comunas con la naturaleza en Seoraksan. Priorizas la seguridad y subes a tu propio ritmo."
       },
-      "image": "seoraksan.jpg"
+      "image": "generated_images/Mountain_Hiking_Trail_33e6d5b6.png"
     },
     "ISFJ-A": {
       "destination": {
@@ -982,7 +982,7 @@
         "ja": "北村韓屋村で伝統を大切にしながら静かに散歩します。一緒にいる人々を配慮し、落ち着いて文化を楽しみます。",
         "es": "Paseas tranquilamente valorando la tradición en Bukchon Hanok Village. Cuidas de los compañeros y disfrutas de la cultura con calma."
       },
-      "image": "bukchon.jpg"
+      "image": "generated_images/Korean_Countryside_80561396.png"
     },
     "ISFJ-T": {
       "destination": {
@@ -1003,7 +1003,7 @@
         "ja": "順天湾庭園で静かに自然を鑑賞しながらヒーリングします。写真を丁寧に撮り、一緒にいる人々の快適さを優先します。",
         "es": "Te sanas apreciando tranquilamente la naturaleza en Suncheon Bay Garden. Tomas fotos cuidadosamente y priorizas la comodidad de los compañeros."
       },
-      "image": "suncheon.jpg"
+      "image": "generated_images/May_18_Memorial_4716dc5b.png"
     },
     "ISFP-A": {
       "destination": {
@@ -1024,7 +1024,7 @@
         "ja": "牛島の静かなビーチで感性を充電します。自由に写真を撮りながら芸術的な瞬間を捉え、一人の時間を楽しみます。",
         "es": "Recargas emociones en las playas tranquilas de Udo. Tomas fotos libremente capturando momentos artísticos y disfrutas del tiempo a solas."
       },
-      "image": "udo.jpg"
+      "image": "generated_images/Gamcheon_Culture_Village_92876ea2.png"
     },
     "ISFP-T": {
       "destination": {
@@ -1045,7 +1045,7 @@
         "ja": "泰安のビーチで夕日を鑑賞しながら感性を表現します。静かに自然と交感し、完璧な瞬間を捉えようと努力します。",
         "es": "Expresas emociones viendo el atardecer en las playas de Taean. Comunas tranquilamente con la naturaleza, tratando de capturar momentos perfectos."
       },
-      "image": "taean.jpg"
+      "image": "generated_images/Damyang_Bamboo_Forest_8ef70471.png"
     },
     "INTJ-A": {
       "destination": {
@@ -1066,7 +1066,7 @@
         "ja": "DMZで歴史的意味を深く分析しながら旅行します。一人で静かに思索し、体系的に情報を収集して理解します。",
         "es": "Viajas analizando profundamente el significado de la historia en la DMZ. Contemplas tranquilamente solo, recopilando y comprendiendo información sistemáticamente."
       },
-      "image": "dmz.jpg"
+      "image": "generated_images/Jeju_Science_Park_5fb1bce6.png"
     },
     "INTJ-T": {
       "destination": {
@@ -1087,7 +1087,7 @@
         "ja": "漢拏山登山を徹底的に計画して実行します。一人で目標に向かって進み、完璧な登山を追求しますが、時には自分に厳しいです。",
         "es": "Planeas y ejecutas minuciosamente la escalada del Hallasan. Te mueves hacia objetivos solo, buscando escalada perfecta pero a veces siendo estricto contigo mismo."
       },
-      "image": "hallasan.jpg"
+      "image": "generated_images/Haeinsa_Temple_4086b2c3.png"
     },
     "INTP-A": {
       "destination": {
@@ -1108,7 +1108,7 @@
         "ja": "広蔵市場で様々な食べ物を論理的に分析しながら探検します。静かに観察し、新しい味の組み合わせを想像します。",
         "es": "Exploras el Mercado Gwangjang analizando lógicamente varios alimentos. Observas tranquilamente e imaginas nuevas combinaciones de sabores."
       },
-      "image": "gwangjang.jpg"
+      "image": "generated_images/Star_Observatory_ceb7b19b.png"
     },
     "INTP-T": {
       "destination": {
@@ -1129,7 +1129,7 @@
         "ja": "統営ケーブルカーから海を見下ろしながら思索します。一人で静かに考えに沈み、新しいアイデアを思い浮かべます。",
         "es": "Contemplas mirando el mar desde el teleférico de Tongyeong. Te sumerges tranquilamente en pensamientos solo, ideando nuevas ideas."
       },
-      "image": "tongyeong.jpg"
+      "image": "generated_images/Science_Museum_Library_06439a7a.png"
     },
     "INFJ-A": {
       "destination": {
@@ -1150,7 +1150,7 @@
         "ja": "南怡島のメタセコイアの道を歩きながら深い意味を見つけます。静かに思索し、他の人々にインスピレーションを与える旅行を追求します。",
         "es": "Encuentras significado profundo caminando por el sendero de metasecuoyas de la Isla Nami. Contemplas tranquilamente, buscando viajes que inspiren a otros."
       },
-      "image": "nami.jpg"
+      "image": "generated_images/Bongjeongsa_Temple_1159d268.png"
     },
     "INFJ-T": {
       "destination": {
@@ -1171,7 +1171,7 @@
         "ja": "南海ドイツ村で静かに異国的な文化を体験します。深い感情を感じながら旅行し、意味のある瞬間を大切にします。",
         "es": "Experimentas tranquilamente la cultura exótica en el Pueblo Alemán de Namhae. Viajas sintiendo emociones profundas y atesoras momentos significativos."
       },
-      "image": "namhae.jpg"
+      "image": "generated_images/Suwon_Hwaseong_Fortress_89aff3f3.png"
     },
     "INFP-A": {
       "destination": {
@@ -1192,7 +1192,7 @@
         "ja": "保寧マッドフェスティバルで自由に自分を表現します。静かに観察していても心が動けば積極的に参加し、ユニークな体験を楽しみます。",
         "es": "Te expresas libremente en el Festival del Barro de Boryeong. Observas tranquilamente pero participas activamente cuando te conmueves, disfrutando de experiencias únicas."
       },
-      "image": "boryeong.jpg"
+      "image": "generated_images/Nami_Island_3e663a62.png"
     },
     "INFP-T": {
       "destination": {
@@ -1213,7 +1213,7 @@
         "ja": "南山タワーで夜景を見ながら深い感情に浸ります。一人の時間を大切にし、完璧な瞬間を待ちます。",
         "es": "Te sumerges en emociones profundas viendo vistas nocturnas en la Torre N de Seúl. Atesoras el tiempo a solas y esperas momentos perfectos."
       },
-      "image": "namsan.jpg"
+      "image": "generated_images/Ulleungdo_Observatory_40bb645b.png"
     }
   }
 }
